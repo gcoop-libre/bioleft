@@ -1,0 +1,115 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - field.field.semilla.semilla_mejorada.field_adn
+    - field.field.semilla.semilla_mejorada.field_aspectos
+    - field.field.semilla.semilla_mejorada.field_cultivar
+    - field.field.semilla.semilla_mejorada.field_descripcion_adn
+    - field.field.semilla.semilla_mejorada.field_especie
+    - field.field.semilla.semilla_mejorada.field_fundamento
+    - field.field.semilla.semilla_mejorada.field_poder_germinativo
+    - field.field.semilla.semilla_mejorada.field_semilla_registrada
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_semilla_registrada:
+      children:
+        - field_semilla_registrada
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        label: 'Seleccione una semilla registrada'
+        description: 'Para agregar una semilla registrada por INASE pero con mejoras, primero debe seleccionar una semilla a través del número de registro, cultivar, especie o nombre botánico.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Seleccione una semilla registrada'
+    group_titulo:
+      children: {  }
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: titulo
+id: semilla.semilla_mejorada.default
+targetEntityType: semilla
+bundle: semilla_mejorada
+mode: default
+content:
+  field_adn:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_aspectos:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_cultivar:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_descripcion_adn:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_especie:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_fundamento:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_poder_germinativo:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_semilla_registrada:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  langcode: true
+  moderation_state: true
+  name: true
+  user_id: true

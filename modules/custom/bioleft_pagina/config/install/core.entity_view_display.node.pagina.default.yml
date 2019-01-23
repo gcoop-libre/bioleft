@@ -1,0 +1,26 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina.body
+    - node.type.pagina
+  module:
+    - text
+    - user
+id: node.pagina.default
+targetEntityType: node
+bundle: pagina
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

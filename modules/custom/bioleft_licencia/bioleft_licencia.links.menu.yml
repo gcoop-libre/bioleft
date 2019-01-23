@@ -1,0 +1,14 @@
+
+# Licencia menu items definition
+entity.licencia.collection:
+  title: 'Licencia list'
+  route_name: entity.licencia.collection
+  description: 'List Licencia entities'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 100
+
+licencia.admin.structure.settings:
+  title: 'Licencia settings'
+  description: 'Configure Licencia entities'
+  route_name: licencia.settings
+  parent: bioleft_menu_agrupador.admin_structure_bioleft

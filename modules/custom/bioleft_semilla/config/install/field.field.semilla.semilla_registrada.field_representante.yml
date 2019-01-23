@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.storage.semilla.field_representante
+id: semilla.semilla_registrada.field_representante
+field_name: field_representante
+entity_type: semilla
+bundle: semilla_registrada
+label: Representante
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,118 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_direccion
+    - field.field.user.user.field_imagen_perfil
+    - field.field.user.user.field_institucion
+    - field.field.user.user.field_mapa_usuario
+    - field.field.user.user.field_nombre
+    - field.field.user.user.field_ocupacion
+    - field.field.user.user.field_trabajo
+    - field.field.user.user.field_ubicacion
+    - image.style.thumbnail
+  module:
+    - address
+    - geolocation
+    - image
+    - path
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_direccion:
+    type: address_default
+    weight: 5
+    region: content
+    settings:
+      default_country: AR
+    third_party_settings: {  }
+  field_imagen_perfil:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_institucion:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mapa_usuario:
+    weight: 6
+    settings:
+      default_longitude: ''
+      default_latitude: ''
+      populate_address_field: '1'
+      target_address_field: field_direccion
+      google_map_settings:
+        height: 400px
+        width: 100%
+        type: ROADMAP
+        zoom: '10'
+        maxZoom: 18
+        minZoom: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        rotateControl: 0
+        fullscreenControl: 0
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      auto_client_location: '0'
+      auto_client_location_marker: '0'
+      explicite_actions_address_field: '0'
+      allow_override_map_settings: 0
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_nombre:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ocupacion:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_trabajo:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_ubicacion: true
+  langcode: true
+  language: true
+  timezone: true

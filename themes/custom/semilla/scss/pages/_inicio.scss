@@ -1,0 +1,14 @@
+//Panel de usuario
+
+.path-user .block-region-content section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.view-datos-usuario,
+.block-views-blockmapa-block-mis-semillas-mapa .view-content,
+.view-display-id-block_listado_cuaderno_de_campo {
+  border: 2px solid grey;
+	padding: 40px;
+	box-shadow: 10px 10px 5px 0px rgba(209,209,209,1);
+}

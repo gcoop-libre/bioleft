@@ -1,0 +1,14 @@
+
+# Mis cultivos menu items definition
+entity.mis_cultivos.collection:
+  title: 'Mis cultivos list'
+  route_name: entity.mis_cultivos.collection
+  description: 'List Mis cultivos entities'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 100
+
+mis_cultivos.admin.structure.settings:
+  title: 'Mis cultivos settings'
+  description: 'Configure Mis cultivos entities'
+  route_name: mis_cultivos.settings
+  parent: bioleft_menu_agrupador.admin_structure_bioleft

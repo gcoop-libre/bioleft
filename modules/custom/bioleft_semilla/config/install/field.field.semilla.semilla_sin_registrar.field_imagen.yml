@@ -1,0 +1,37 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_imagen
+  module:
+    - image
+id: semilla.semilla_sin_registrar.field_imagen
+field_name: field_imagen
+entity_type: semilla
+bundle: semilla_sin_registrar
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

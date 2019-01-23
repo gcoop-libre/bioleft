@@ -1,0 +1,36 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - content_moderation
+id: transaccion
+label: Transacción
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      published: false
+      default_revision: false
+      label: Pendiente
+      weight: 0
+    published:
+      published: true
+      default_revision: true
+      label: Aprobado
+      weight: 1
+  transitions:
+    create_new_draft:
+      label: 'Crear borrador'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+    publish:
+      label: Aprobado
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+  entity_types: {  }

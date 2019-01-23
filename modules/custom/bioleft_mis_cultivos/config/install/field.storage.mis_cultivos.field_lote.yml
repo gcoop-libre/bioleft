@@ -1,0 +1,26 @@
+uuid: 3482f90f-a022-4ec6-b82d-7e79661af564
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_cuaderno_de_campo
+    - bioleft_mis_cultivos
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: WaqJF7g13a9lV0OTsX_Ld985yaYXd9D1uxw86z6QBew
+id: mis_cultivos.field_lote
+field_name: field_lote
+entity_type: mis_cultivos
+type: entity_reference
+settings:
+  target_type: cuaderno_de_campo
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

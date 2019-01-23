@@ -1,0 +1,33 @@
+name: Semilla
+type: module
+description: 'Entidad para tipos de semilla'
+core: 8.x
+package: Bioleft
+dependencies:
+  - bioleft_licencia:bioleft_licencia
+  - bioleft_semilla:bioleft_semilla
+  - chosen:chosen_field
+  - conditional_fields:conditional_fields
+  - country:country
+  - drupal:content_moderation
+  - drupal:datetime
+  - drupal:field
+  - drupal:field_group
+  - drupal:file
+  - drupal:image
+  - drupal:language
+  - drupal:options
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - drupal:workflows
+  - entity_reference_views_select:entity_reference_views_select
+  - feeds:feeds
+  - field_permissions:field_permissions
+  - inline_entity_form:inline_entity_form
+  - page_manager:page_manager
+  - panels:panels
+  - views_bootstrap:views_bootstrap
+  - views_bulk_operations:views_bulk_operations
+  - views_conditional:views_conditional

@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - field.storage.semilla.field_cultivar
+id: semilla.semilla_mejorada.field_cultivar
+field_name: field_cultivar
+entity_type: semilla
+bundle: semilla_mejorada
+label: Cultivar
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

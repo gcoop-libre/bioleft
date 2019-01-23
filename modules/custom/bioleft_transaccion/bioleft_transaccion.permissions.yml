@@ -1,0 +1,33 @@
+add transaccion entities:
+  title: 'Create new Transacción entities'
+
+administer transaccion entities:
+  title: 'Administer Transacción entities'
+  description: 'Allow to access the administration form to configure Transacción entities.'
+  restrict access: true
+
+delete transaccion entities:
+  title: 'Delete Transacción entities'
+
+edit transaccion entities:
+  title: 'Edit Transacción entities'
+
+confirm transaccion entities:
+  title: 'Confirm Transaccion entities'
+
+view published transaccion entities:
+  title: 'View published Transacción entities'
+
+view unpublished transaccion entities:
+  title: 'View unpublished Transacción entities'
+
+view all transaccion revisions:
+  title: 'View all Transacción revisions'
+
+revert all transaccion revisions:
+  title: 'Revert all Transacción revisions'
+  description: 'Role requires permission <em>view Transacción revisions</em> and <em>edit rights</em> for transaccion entities in question or <em>administer transaccion entities</em>.'
+
+delete all transaccion revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Transacción revisions</em> and <em>delete rights</em> for transaccion entities in question or <em>administer transaccion entities</em>.'

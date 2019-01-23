@@ -1,0 +1,26 @@
+# Licencia routing definition
+licencia.settings_tab:
+  route_name: licencia.settings
+  title: 'Settings'
+  base_route: licencia.settings
+
+entity.licencia.canonical:
+  route_name: entity.licencia.canonical
+  base_route: entity.licencia.canonical
+  title: 'View'
+
+entity.licencia.edit_form:
+  route_name: entity.licencia.edit_form
+  base_route: entity.licencia.canonical
+  title: 'Edit'
+
+entity.licencia.version_history:
+  route_name: entity.licencia.version_history
+  base_route: entity.licencia.canonical
+  title: 'Revisions'
+
+entity.licencia.delete_form:
+  route_name:  entity.licencia.delete_form
+  base_route:  entity.licencia.canonical
+  title: Delete
+  weight: 10

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bioleft_menu_agrupador.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bioleft_menu_agrupador_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bioleft_menu_agrupador module.
+    case 'help.page.bioleft_menu_agrupador':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modulo agrupador de las Listas, Entidades y Bundles de Bioleft') . '</p>';
+      return $output;
+
+    default:
+  }
+}

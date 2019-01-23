@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.licencia.field_clausula
+  module:
+    - bioleft_licencia
+    - text
+id: licencia.licencia.field_clausula
+field_name: field_clausula
+entity_type: licencia
+bundle: licencia
+label: Cláusula
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

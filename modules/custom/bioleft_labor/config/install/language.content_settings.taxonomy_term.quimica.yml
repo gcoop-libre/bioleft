@@ -1,0 +1,13 @@
+uuid: bfc9f074-3860-43d3-88bc-98f034736294
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.quimica
+_core:
+  default_config_hash: qB-KC6y58ZxILMG7ZHi40yQXDPiIEgR4grR3gOOwLA8
+id: taxonomy_term.quimica
+target_entity_type_id: taxonomy_term
+target_bundle: quimica
+default_langcode: site_default
+language_alterable: false

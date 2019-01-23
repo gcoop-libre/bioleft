@@ -1,0 +1,35 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trabajo
+  module:
+    - path
+id: taxonomy_term.trabajo.default
+targetEntityType: taxonomy_term
+bundle: trabajo
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true

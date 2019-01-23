@@ -1,0 +1,85 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.cuaderno_de_campo.cuaderno_de_campo.field_direccion
+    - field.field.cuaderno_de_campo.cuaderno_de_campo.field_map
+    - field.field.cuaderno_de_campo.cuaderno_de_campo.field_superficie_ha
+    - field.field.cuaderno_de_campo.cuaderno_de_campo.field_tipo_de_suelo
+    - field.field.cuaderno_de_campo.cuaderno_de_campo.field_ubicacion_lote
+  module:
+    - address
+    - bioleft_cuaderno_de_campo
+    - geolocation
+id: cuaderno_de_campo.cuaderno_de_campo.default
+targetEntityType: cuaderno_de_campo
+bundle: cuaderno_de_campo
+mode: default
+content:
+  field_direccion:
+    weight: 3
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_map:
+    weight: 4
+    settings:
+      default_longitude: ''
+      default_latitude: ''
+      target_address_field: field_direccion
+      explicite_actions_address_field: '1'
+      google_map_settings:
+        height: 400px
+        width: 100%
+        type: ROADMAP
+        zoom: '10'
+        maxZoom: 18
+        minZoom: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        rotateControl: 0
+        fullscreenControl: 0
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      auto_client_location: '0'
+      auto_client_location_marker: '0'
+      populate_address_field: '0'
+      allow_override_map_settings: 0
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_superficie_ha:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tipo_de_suelo:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Nombre del lote o establecimiento'
+    third_party_settings: {  }
+hidden:
+  field_ubicacion_lote: true
+  langcode: true
+  user_id: true

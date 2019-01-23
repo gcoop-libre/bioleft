@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_semilla
+id: semilla.full_content
+label: 'Full content'
+targetEntityType: semilla
+cache: true

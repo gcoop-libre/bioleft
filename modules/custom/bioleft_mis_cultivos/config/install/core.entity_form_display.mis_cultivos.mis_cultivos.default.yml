@@ -1,0 +1,72 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.mis_cultivos.mis_cultivos.field_fecha_siembra
+    - field.field.mis_cultivos.mis_cultivos.field_labor
+    - field.field.mis_cultivos.mis_cultivos.field_lote
+    - field.field.mis_cultivos.mis_cultivos.field_semilla
+  module:
+    - bioleft_mis_cultivos
+    - content_moderation
+    - datetime
+    - inline_entity_form
+id: mis_cultivos.mis_cultivos.default
+targetEntityType: mis_cultivos
+bundle: mis_cultivos
+mode: default
+content:
+  field_fecha_siembra:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_labor:
+    weight: 4
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      override_labels: false
+      collapsed: false
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_lote:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_semilla:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 5
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true

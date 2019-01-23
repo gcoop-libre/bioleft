@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - field.storage.semilla.field_poder_germinativo
+id: semilla.semilla_mejorada.field_poder_germinativo
+field_name: field_poder_germinativo
+entity_type: semilla
+bundle: semilla_mejorada
+label: 'Poder germinativo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: '%'
+field_type: integer

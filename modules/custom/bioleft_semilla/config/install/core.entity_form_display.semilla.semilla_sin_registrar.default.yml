@@ -1,0 +1,166 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.field.semilla.semilla_sin_registrar.field_adn
+    - field.field.semilla.semilla_sin_registrar.field_aspectos
+    - field.field.semilla.semilla_sin_registrar.field_cultivar
+    - field.field.semilla.semilla_sin_registrar.field_descripcion_adn
+    - field.field.semilla.semilla_sin_registrar.field_enfermedades
+    - field.field.semilla.semilla_sin_registrar.field_especie
+    - field.field.semilla.semilla_sin_registrar.field_fundamento
+    - field.field.semilla.semilla_sin_registrar.field_hongos
+    - field.field.semilla.semilla_sin_registrar.field_imagen
+    - field.field.semilla.semilla_sin_registrar.field_informacion_genetica
+    - field.field.semilla.semilla_sin_registrar.field_insectos
+    - field.field.semilla.semilla_sin_registrar.field_poder_germinativo
+    - field.field.semilla.semilla_sin_registrar.field_rendimiento_promedio
+    - field.field.semilla.semilla_sin_registrar.field_salinidad
+    - field.field.semilla.semilla_sin_registrar.field_sequia
+    - image.style.thumbnail
+  module:
+    - chosen_field
+    - content_moderation
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_comportamiento:
+      children:
+        - field_enfermedades
+        - field_salinidad
+        - field_hongos
+      parent_name: ''
+      weight: 12
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Comportamiento frente a patógenos'
+id: semilla.semilla_sin_registrar.default
+targetEntityType: semilla
+bundle: semilla_sin_registrar
+mode: default
+content:
+  field_adn:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_aspectos:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_cultivar:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_descripcion_adn:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_enfermedades:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_especie:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_fundamento:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hongos:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_imagen:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_informacion_genetica:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_insectos:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: chosen_select
+    region: content
+  field_poder_germinativo:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_rendimiento_promedio:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_salinidad:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sequia:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 13
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  name: true
+  user_id: true

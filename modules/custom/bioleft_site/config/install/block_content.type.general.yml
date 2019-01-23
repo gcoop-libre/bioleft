@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: general
+label: General
+revision: 1
+description: ''

@@ -1,0 +1,12 @@
+langcode: es
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 2
+is_admin: null
+permissions:
+  - 'add licencia entities'
+  - 'delete licencia entities'
+  - 'edit licencia entities'
+  - 'view published licencia entities'

@@ -1,0 +1,28 @@
+uuid: 6997a680-31b6-414a-ad82-b5120f99a907
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.mis_cultivos.field_lote
+  module:
+    - bioleft_mis_cultivos
+_core:
+  default_config_hash: ZsdL6RJeJldUG3juyrfp4yEijEyl2ZHP1dZRWdSJQjg
+id: mis_cultivos.mis_cultivos.field_lote
+field_name: field_lote
+entity_type: mis_cultivos
+bundle: mis_cultivos
+label: Lote
+description: 'Enlazar un lote (nombre del cuaderno de campo)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: cuaderno_de_campo
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

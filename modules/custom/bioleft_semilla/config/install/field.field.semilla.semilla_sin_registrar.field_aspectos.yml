@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_aspectos
+  module:
+    - text
+id: semilla.semilla_sin_registrar.field_aspectos
+field_name: field_aspectos
+entity_type: semilla
+bundle: semilla_sin_registrar
+label: Aspectos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

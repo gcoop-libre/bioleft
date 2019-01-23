@@ -1,0 +1,9 @@
+uuid: db417744-5c05-4c56-9bca-d9694f813f10
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KV2eyuDk4Ux0da6fu6QsTUf_49rPDXilNurV5nRZqJE
+formId: user_pass
+captchaType: image_captcha/Image
+label: user_pass

@@ -1,0 +1,31 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.mis_semillas
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_form_semilla
+id: semilla.mis_semillas.field_form_semilla
+field_name: field_form_semilla
+entity_type: semilla
+bundle: mis_semillas
+label: 'Cargar semilla'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:semilla'
+  handler_settings:
+    target_bundles:
+      semilla_mejorada: semilla_mejorada
+      semilla_registrada: semilla_registrada
+      semilla_sin_registrar: semilla_sin_registrar
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: semilla_sin_registrar
+field_type: entity_reference

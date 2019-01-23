@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_mapa_usuario
+  module:
+    - geolocation
+    - user
+id: user.user.field_mapa_usuario
+field_name: field_mapa_usuario
+entity_type: user
+bundle: user
+label: 'Mapa Usuario'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

@@ -1,0 +1,14 @@
+
+# Labor menu items definition
+entity.labor.collection:
+  title: 'Labor list'
+  route_name: entity.labor.collection
+  description: 'List Labor entities'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 100
+
+labor.admin.structure.settings:
+  title: 'Labor settings'
+  description: 'Configure Labor entities'
+  route_name: labor.settings
+  parent: bioleft_menu_agrupador.admin_structure_bioleft

@@ -1,0 +1,5 @@
+bioleft_menu_agrupador.admin_structure_bioleft:
+  title: 'Bioleft'
+  parent: system.admin_structure
+  route_name: bioleft_menu_agrupador.menu
+  weight: -100

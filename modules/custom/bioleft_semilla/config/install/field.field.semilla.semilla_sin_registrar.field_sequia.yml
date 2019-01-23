@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_sequia
+  module:
+    - options
+id: semilla.semilla_sin_registrar.field_sequia
+field_name: field_sequia
+entity_type: semilla
+bundle: semilla_sin_registrar
+label: Sequía
+description: 'Comportamiento respecto a sequía. Elija una calificación.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

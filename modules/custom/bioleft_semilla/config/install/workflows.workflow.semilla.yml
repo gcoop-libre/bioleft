@@ -1,0 +1,44 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.mis_semillas
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+  module:
+    - content_moderation
+id: semilla
+label: Semilla
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      published: false
+      default_revision: false
+      label: Borrador
+      weight: 0
+    published:
+      published: true
+      default_revision: true
+      label: Publicado
+      weight: 1
+  transitions:
+    borrador:
+      label: Borrador
+      from:
+        - draft
+        - published
+      to: draft
+      weight: 2
+    publish:
+      label: Publicado
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+  entity_types:
+    semilla:
+      - mis_semillas
+      - semilla_mejorada
+      - semilla_sin_registrar

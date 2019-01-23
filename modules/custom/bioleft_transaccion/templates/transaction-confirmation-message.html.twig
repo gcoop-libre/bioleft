@@ -1,0 +1,34 @@
+{#
+/**
+ * @file template_preprocess_transaction_confirmation_message.html.twig
+ *
+ * This template is used when notifying the request of a site.
+ *
+ *
+ * Available variables:
+ * - receiver: The transaction owner.
+ * - sender: The semilla owner.
+ * - result: Transaction final state.
+ *
+ * @see template_preprocess_bioleft_transaction_confirmation_message()
+ *
+ * @ingroup themeable
+ */
+#}
+<p>
+   {% trans %}
+   Nueva notificación sobre la transacción entre {{ receiver }} y {{ sender }}!
+   {% endtrans %}
+</p>
+
+<p>
+   {% trans %}
+   La solicitud realizada por el usuario {{ sender }} tiene un nuevo estado: {{ result }}.
+   {% endtrans %}
+</p>
+
+<p>
+   {% trans %}
+   Saludos!
+   {% endtrans %}
+</p>

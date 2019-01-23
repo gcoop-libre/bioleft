@@ -1,0 +1,22 @@
+# Transacción routing definition
+
+entity.transaccion.canonical:
+  route_name: entity.transaccion.canonical
+  base_route: entity.transaccion.canonical
+  title: 'View'
+
+entity.transaccion.edit_form:
+  route_name: entity.transaccion.edit_form
+  base_route: entity.transaccion.canonical
+  title: 'Edit'
+
+entity.transaccion.version_history:
+  route_name: entity.transaccion.version_history
+  base_route: entity.transaccion.canonical
+  title: 'Revisions'
+
+entity.transaccion.delete_form:
+  route_name:  entity.transaccion.delete_form
+  base_route:  entity.transaccion.canonical
+  title: Delete
+  weight: 10

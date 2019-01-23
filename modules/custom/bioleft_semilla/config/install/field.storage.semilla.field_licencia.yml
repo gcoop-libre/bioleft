@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_licencia
+    - bioleft_semilla
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: semilla.field_licencia
+field_name: field_licencia
+entity_type: semilla
+type: entity_reference
+settings:
+  target_type: licencia
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

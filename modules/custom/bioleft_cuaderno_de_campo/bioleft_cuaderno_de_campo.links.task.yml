@@ -1,0 +1,21 @@
+# Cuaderno de campo routing definition
+cuaderno_de_campo.settings_tab:
+  route_name: cuaderno_de_campo.settings
+  title: 'Settings'
+  base_route: cuaderno_de_campo.settings
+
+entity.cuaderno_de_campo.canonical:
+  route_name: entity.cuaderno_de_campo.canonical
+  base_route: entity.cuaderno_de_campo.canonical
+  title: 'View'
+
+entity.cuaderno_de_campo.edit_form:
+  route_name: entity.cuaderno_de_campo.edit_form
+  base_route: entity.cuaderno_de_campo.canonical
+  title: 'Edit'
+
+entity.cuaderno_de_campo.delete_form:
+  route_name:  entity.cuaderno_de_campo.delete_form
+  base_route:  entity.cuaderno_de_campo.canonical
+  title: Delete
+  weight: 10

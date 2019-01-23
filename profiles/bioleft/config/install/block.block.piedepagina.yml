@@ -1,0 +1,26 @@
+uuid: ac40d992-7007-4f4e-86bf-3ccbb5ecdb67
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - semilla
+_core:
+  default_config_hash: 7d-CsL4iEPyCsglxwDCXQfqkAPT_C_YbtvqfsauhZnE
+id: piedepagina
+theme: semilla
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Pie de página'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

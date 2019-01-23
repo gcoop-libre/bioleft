@@ -1,0 +1,33 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_labor
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: labor.field_metodo_sobre_maleza
+field_name: field_metodo_sobre_maleza
+entity_type: labor
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: manual
+      label: Manual
+    -
+      value: mecanico
+      label: Mecánico
+    -
+      value: quimico
+      label: Químico
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

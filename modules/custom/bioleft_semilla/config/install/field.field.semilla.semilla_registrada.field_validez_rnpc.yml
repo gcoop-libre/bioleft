@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.storage.semilla.field_validez_rnpc
+  module:
+    - datetime
+id: semilla.semilla_registrada.field_validez_rnpc
+field_name: field_validez_rnpc
+entity_type: semilla
+bundle: semilla_registrada
+label: 'Validez RNPC'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

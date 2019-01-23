@@ -1,0 +1,21 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+    - taxonomy
+_core:
+  default_config_hash: 7JCmPCi02UaHGrJlPaZHbb5qbxAYhpdD8aQ4oA2TOCY
+id: taxonomy_term.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+type: feeds_item
+settings:
+  target_type: feeds_feed
+module: feeds
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

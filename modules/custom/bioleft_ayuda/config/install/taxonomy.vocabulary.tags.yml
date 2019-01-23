@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+name: Tags
+vid: tags
+description: 'Etiquetas para clasificar la ayuda del sitio.'
+hierarchy: 0
+weight: 0

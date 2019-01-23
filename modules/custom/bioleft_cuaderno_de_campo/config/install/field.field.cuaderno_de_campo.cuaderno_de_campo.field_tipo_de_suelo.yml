@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.cuaderno_de_campo.field_tipo_de_suelo
+  module:
+    - bioleft_cuaderno_de_campo
+    - options
+id: cuaderno_de_campo.cuaderno_de_campo.field_tipo_de_suelo
+field_name: field_tipo_de_suelo
+entity_type: cuaderno_de_campo
+bundle: cuaderno_de_campo
+label: 'Tipo de suelo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

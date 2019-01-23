@@ -1,0 +1,25 @@
+add labor entities:
+  title: 'Create new Labor entities'
+
+administer labor entities:
+  title: 'Administer Labor entities'
+  description: 'Allow to access the administration form to configure Labor entities.'
+  restrict access: true
+
+edit any labor entities:
+  title: 'Edit any Labor entities'
+
+edit own labor entities:
+  title: 'Edit own Labor entities'
+
+view any labor entities:
+  title: 'View any Labor entities'
+
+view own labor entities:
+  title: 'View own Labor entities'
+
+delete any labor entities:
+  title: 'Delete any Labor entities'
+
+delete own labor entities:
+  title: 'Delete own Labor entities'

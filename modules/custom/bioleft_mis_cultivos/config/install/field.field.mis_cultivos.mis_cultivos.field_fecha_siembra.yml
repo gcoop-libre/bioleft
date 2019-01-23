@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.mis_cultivos.field_fecha_siembra
+  module:
+    - bioleft_mis_cultivos
+    - datetime
+id: mis_cultivos.mis_cultivos.field_fecha_siembra
+field_name: field_fecha_siembra
+entity_type: mis_cultivos
+bundle: mis_cultivos
+label: 'Fecha de siembra'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

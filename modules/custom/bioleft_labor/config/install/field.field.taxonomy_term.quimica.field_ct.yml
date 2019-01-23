@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ct
+    - taxonomy.vocabulary.quimica
+_core:
+  default_config_hash: QbhOzhf4mNRVbnhNJeMi5zHuC7BeVsuhdR-7Afbgfss
+id: taxonomy_term.quimica.field_ct
+field_name: field_ct
+entity_type: taxonomy_term
+bundle: quimica
+label: CT
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

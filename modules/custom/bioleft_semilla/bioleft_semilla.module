@@ -1,0 +1,156 @@
+<?php
+
+/**
+ * @file
+ * Contains semilla.module.
+ */
+
+use Drupal\Core\Entity\Display\EntityFormDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bioleft_semilla_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the semilla module.
+    case 'help.page.semilla':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entidad para tipos de semilla') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bioleft_semilla_theme() {
+  $theme = [];
+  $theme['semilla'] = [
+    'render element' => 'elements',
+    'file' => 'semilla.page.inc',
+    'template' => 'semilla',
+  ];
+  $theme['semilla_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'semilla.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function bioleft_semilla_theme_suggestions_semilla(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#semilla'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'semilla__' . $sanitized_view_mode;
+  $suggestions[] = 'semilla__' . $entity->bundle();
+  $suggestions[] = 'semilla__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'semilla__' . $entity->id();
+  $suggestions[] = 'semilla__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+/**
+ * Implements hook_entity_form_display_alter().
+ */
+function bioleft_semilla_entity_form_display_alter(EntityFormDisplayInterface $form_display, array $context) {
+  $entity_types = [
+    'licencia',
+    'semilla',
+    'transaccion',
+  ];
+  if (in_array($context['entity_type'], $entity_types)) {
+    foreach ($form_display->getComponents() as $name => $options) {
+      if ($name == 'revision_log_message') {
+        $form_display->removeComponent($name);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_create().
+ */
+function bioleft_semilla_entity_create(EntityInterface $entity) {
+  // Entities not published by default.
+  $entities = [
+    'mis_semillas',
+    'semilla_mejorada',
+    'semilla_sin_registrar',
+    'transaccion',
+    'semilla_registrada',
+  ];
+
+  if (in_array($entity->bundle(), $entities)) {
+    $entity->set('status', TRUE);
+  }
+}
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ */
+function bioleft_semilla_inline_entity_form_table_fields_alter(&$fields, $context) {
+  if ($context['parent_entity_type'] === 'semilla' && $context['parent_bundle'] === 'mis_semillas' && $context['field_name'] === 'field_form_semilla') {
+    unset($fields['type']);
+
+    $fields['field_especie'] = [
+      'type' => 'field',
+      'label' => t('Especie'),
+      'weight' => 1,
+    ];
+    $fields['field_cultivar'] = [
+      'type' => 'field',
+      'label' => t('Cultivar'),
+      'weight' => 2,
+    ];
+    $fields['field_nombre_botanico'] = [
+      'type' => 'field',
+      'label' => t('Nombre botánico'),
+      'weight' => 3,
+    ];
+    $fields['field_nro_registro'] = [
+      'type' => 'field',
+      'label' => t('Nro Registro'),
+      'weight' => 4,
+    ];
+  }
+}
+
+/**
+ * Implements hook_inline_entity_form_reference_form_alter().
+ */
+function bioleft_semilla_inline_entity_form_reference_form_alter(&$reference_form, &$form_state) {
+  $labels = $reference_form['#ief_labels'];
+  $ief_id = $reference_form['#ief_id'];
+  /** @var \Drupal\field\Entity\FieldConfig $instance */
+  $instance = $form_state->get(['inline_entity_form', $ief_id, 'instance']);
+
+  $reference_form['#title'] = t('Add existing @type_singular', ['@type_singular' => $labels['singular']]);
+
+  $reference_form['entity_id'] = [
+    '#type' => 'entity_autocomplete',
+    '#selection_handler' => 'views',
+    '#selection_settings' => [
+      'view' => [
+        'view_name' => 'referencia_semilla_registrada',
+        'display_name' => 'entity_reference_semilla_registrada',
+        'arguments' => [],
+      ],
+      'match_operator' => 'CONTAINS',
+    ],
+    '#title' => t('@label', ['@label' => ucfirst($labels['singular'])]),
+    '#target_type' => $instance->getSetting('target_type'),
+    '#required' => TRUE,
+    '#maxlength' => 255,
+  ];
+  return $reference_form;
+}

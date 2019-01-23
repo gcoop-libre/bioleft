@@ -1,0 +1,22 @@
+{#
+/**
+ * @file mis_cultivos.html.twig
+ * Default theme implementation to present Mis cultivos data.
+ *
+ * This template is used when viewing Mis cultivos pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_mis_cultivos()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('mis_cultivos') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

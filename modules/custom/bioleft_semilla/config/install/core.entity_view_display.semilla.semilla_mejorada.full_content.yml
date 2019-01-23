@@ -1,0 +1,90 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - core.entity_view_mode.semilla.full_content
+    - field.field.semilla.semilla_mejorada.field_adn
+    - field.field.semilla.semilla_mejorada.field_aspectos
+    - field.field.semilla.semilla_mejorada.field_cultivar
+    - field.field.semilla.semilla_mejorada.field_descripcion_adn
+    - field.field.semilla.semilla_mejorada.field_especie
+    - field.field.semilla.semilla_mejorada.field_fundamento
+    - field.field.semilla.semilla_mejorada.field_poder_germinativo
+    - field.field.semilla.semilla_mejorada.field_semilla_registrada
+  module:
+    - text
+    - user
+id: semilla.semilla_mejorada.full_content
+targetEntityType: semilla
+bundle: semilla_mejorada
+mode: full_content
+content:
+  field_adn:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_aspectos:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cultivar:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_descripcion_adn:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_fundamento:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_poder_germinativo:
+    weight: 6
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_semilla_registrada:
+    weight: 1
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  user_id:
+    type: author
+    weight: 7
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_especie: true
+  langcode: true
+  name: true

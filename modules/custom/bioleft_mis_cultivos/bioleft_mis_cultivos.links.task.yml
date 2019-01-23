@@ -1,0 +1,26 @@
+# Mis cultivos routing definition
+mis_cultivos.settings_tab:
+  route_name: mis_cultivos.settings
+  title: 'Settings'
+  base_route: mis_cultivos.settings
+
+entity.mis_cultivos.canonical:
+  route_name: entity.mis_cultivos.canonical
+  base_route: entity.mis_cultivos.canonical
+  title: 'View'
+
+entity.mis_cultivos.edit_form:
+  route_name: entity.mis_cultivos.edit_form
+  base_route: entity.mis_cultivos.canonical
+  title: 'Edit'
+
+entity.mis_cultivos.version_history:
+  route_name: entity.mis_cultivos.version_history
+  base_route: entity.mis_cultivos.canonical
+  title: 'Revisions'
+
+entity.mis_cultivos.delete_form:
+  route_name:  entity.mis_cultivos.delete_form
+  base_route:  entity.mis_cultivos.canonical
+  title: Delete
+  weight: 10

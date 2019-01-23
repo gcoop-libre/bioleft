@@ -1,0 +1,68 @@
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_form_mode.user.registro_biolefter
+    - field.field.user.user.field_direccion
+    - field.field.user.user.field_imagen_perfil
+    - field.field.user.user.field_institucion
+    - field.field.user.user.field_nombre
+    - field.field.user.user.field_ocupacion
+    - field.field.user.user.field_trabajo
+    - field.field.user.user.field_ubicacion
+  module:
+    - address
+    - path
+    - user
+id: user.user.registro_biolefter
+targetEntityType: user
+bundle: user
+mode: registro_biolefter
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_direccion:
+    type: address_default
+    weight: 2
+    region: content
+    settings:
+      default_country: null
+    third_party_settings: {  }
+  field_institucion:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nombre:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_trabajo:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_imagen_perfil: true
+  field_ocupacion: true
+  field_ubicacion: true
+  langcode: true
+  language: true
+  timezone: true

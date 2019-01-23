@@ -1,0 +1,73 @@
+{#
+/**
+  * @file
+  * Default theme implementation for e-mails.
+  *
+  * Available variables:
+  * - subject: The subject.
+  * - body: The message content.
+  * - message: The $message array created and used in the mail building
+  *   procedure. Its content varies between cases, but typically contains at
+  *   least the following elements:
+  *   - id: The message identifier.
+  *   - module: The module that handles the building of the message.
+  *   - key: The key of the message.
+  *   - to: The recipient email address.
+  *   - from: The email address of the sender.
+  *   - langcode: The langcode to use to compose the e-mail.
+  *   - params: The message parameters.
+  *
+  * This template may be overriden by module and/or mail key, using any of the
+  * following template names:
+  * - swiftmailer.html.twig: global, used by default.
+  * - swiftmailer--mymodule.html.twig: only emails sent by the module "mymodule".
+  * - swiftmailer--mymodule--test.html.twig: only emails by the module
+  *   "mymodule" with key "test".
+  *
+  * @see template_preprocess()
+  * @see template_preprocess_swiftmailer()
+  *
+  * @ingroup themeable
+  */
+#}
+<html>
+  <head>
+    <style type="text/css">
+      table tr td {
+        font-family: Arial;
+        font-size: 18px;
+      }
+      body {
+        background: #CCCCCC;
+      }
+    </style>
+  </head>
+  <body>
+    <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper" bgcolor="#FFFFFF">
+      <tr>
+        <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="container">
+            <tr>
+              <td align="center" valign="top">
+                <img src="{{ logo_mail }}" style=" width: 170px;">
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" style=" padding: 30px 0 30px 0">
+                {{ body }}
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <img src="{{ footer_mail }}" style=" width: 100%;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

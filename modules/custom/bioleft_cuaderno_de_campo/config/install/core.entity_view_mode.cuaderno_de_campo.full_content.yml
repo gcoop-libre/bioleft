@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_cuaderno_de_campo
+id: cuaderno_de_campo.full_content
+label: 'Full content'
+targetEntityType: cuaderno_de_campo
+cache: true

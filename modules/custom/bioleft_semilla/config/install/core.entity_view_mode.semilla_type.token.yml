@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_semilla
+id: semilla_type.token
+label: Token
+targetEntityType: semilla_type
+cache: true

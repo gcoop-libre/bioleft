@@ -1,0 +1,17 @@
+
+# Semilla menu items definition
+entity.semilla.collection:
+  title: 'Semilla list'
+  route_name: entity.semilla.collection
+  description: 'List Semilla entities'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 100
+
+
+# Semilla type menu items definition
+entity.semilla_type.collection:
+  title: 'Semilla type'
+  route_name: entity.semilla_type.collection
+  description: 'List Semilla type (bundles)'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 99

@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_transaccion.transaccion_type.intercambio
+    - field.storage.transaccion.field_terminos_opcionales
+  module:
+    - options
+id: transaccion.intercambio.field_terminos_opcionales
+field_name: field_terminos_opcionales
+entity_type: transaccion
+bundle: intercambio
+label: 'Términos opcionales'
+description: 'Seleccione una o más opciones. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+administer semilla entities:
+  title: 'Administer Semilla entities'
+  description: 'Allow to access the administration form to configure Semilla entities.'
+  restrict access: true
+
+access semilla revisions:
+  title: 'View all Semilla revisions'
+
+revert all semilla revisions:
+  title: 'Revert all Semilla revisions'
+  description: 'Role requires permission <em>view Semilla revisions</em> and <em>edit rights</em> for semilla entities in question or <em>administer semilla entities</em>.'
+
+delete all semilla revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Semilla revisions</em> and <em>delete rights</em> for semilla entities in question or <em>administer semilla entities</em>.'
+
+permission_callbacks:
+  - \Drupal\bioleft_semilla\SemillaPermissions::semillaTypePermissions

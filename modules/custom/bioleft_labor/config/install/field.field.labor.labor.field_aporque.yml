@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.labor.field_aporque
+  module:
+    - bioleft_labor
+    - datetime
+id: labor.labor.field_aporque
+field_name: field_aporque
+entity_type: labor
+bundle: labor
+label: Aporque
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

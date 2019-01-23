@@ -1,0 +1,25 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - field.storage.semilla.field_semilla_registrada
+id: semilla.semilla_mejorada.field_semilla_registrada
+field_name: field_semilla_registrada
+entity_type: semilla
+bundle: semilla_mejorada
+label: 'Semilla registrada'
+description: 'Seleccione una semilla registrada. Puede comenzar escribiendo el número de registro, la especie, el cultivar o nombre botánico, todos seguidos de un guión.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referencia_semilla_registrada
+      display_name: entity_reference_semilla_registrada
+      arguments:
+        - especie
+field_type: entity_reference

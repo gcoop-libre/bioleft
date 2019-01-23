@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.storage.semilla.field_nro_registro
+id: semilla.semilla_registrada.field_nro_registro
+field_name: field_nro_registro
+entity_type: semilla
+bundle: semilla_registrada
+label: 'Nro Registro'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

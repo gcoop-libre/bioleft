@@ -1,0 +1,10 @@
+entity.semilla.add_form:
+  route_name: entity.semilla.add_page
+  title: 'Add Semilla'
+  appears_on:
+    - entity.semilla.collection
+entity.semilla_type.add_form:
+  route_name: entity.semilla_type.add_form
+  title: 'Add Semilla type'
+  appears_on:
+    - entity.semilla_type.collection

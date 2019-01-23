@@ -1,0 +1,51 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_cuaderno_de_campo
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: cuaderno_de_campo.field_tipo_de_suelo
+field_name: field_tipo_de_suelo
+entity_type: cuaderno_de_campo
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: aridisoles
+      label: Aridisoles
+    -
+      value: alfisoles
+      label: Alfisoles
+    -
+      value: suelos_lateriticos
+      label: 'Suelos Lateriticos'
+    -
+      value: vertisoles
+      label: Vertisoles
+    -
+      value: molisoles
+      label: Molisoles
+    -
+      value: gelisoles
+      label: Gelisoles
+    -
+      value: histosoles
+      label: Histosoles
+    -
+      value: inceptisoles_andisoles
+      label: 'Inceptisoles + Andisoles'
+    -
+      value: entisoles
+      label: Entisoles
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

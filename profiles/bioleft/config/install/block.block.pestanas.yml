@@ -1,0 +1,22 @@
+uuid: 708216d4-fc46-4a34-9180-02b1213477a1
+langcode: es
+status: true
+dependencies:
+  theme:
+    - semilla
+_core:
+  default_config_hash: zyynv5ONFiIXpVUe_S2qOva_9w5ikcP-O1JmKCZHrjI
+id: pestanas
+theme: semilla
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,5 @@
+entity.licencia.add_form:
+  route_name: entity.licencia.add_form
+  title: 'Add Licencia'
+  appears_on:
+    - entity.licencia.collection

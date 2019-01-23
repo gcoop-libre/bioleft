@@ -1,0 +1,94 @@
+.form-control {
+  border-radius: 1px;
+}
+.input-group-addon {
+  border-radius: 1px;
+}
+.btn {
+  border-radius: 1px;
+}
+.field--label {
+  background-color: #f1f1f1;
+  color: $tertiary-color;
+  padding: 10px;
+}
+form .field--type-entity-reference {
+  border: 0px solid #fff;
+}
+.field--name-field-form-semilla {
+  border: 2px solid #f1f1f1;
+}
+.field--type-entity-reference {
+  margin-bottom: 10px;
+}
+.field--item {
+  padding: 10px;
+}
+
+//Formulario de Semillas responsive
+@media (min-width: 1080px) {
+  .mis-semillas > .field {
+    width: inherit;
+    float: inherit;
+    position: inherit;
+  }
+  .semilla .field {
+    width: 32%;
+    margin: 0px 5px;
+    float: left;
+    position: relative;
+  }
+  .field--type-text-long {
+    width: 100% !important;
+  }
+}
+.licencia {
+  .field--name-field-icono {
+    width: 150px;
+    float: left;
+  }
+}
+.field--name-field-licencia,
+.field--name-field-cantidad {
+  border: 2px solid #f1f1f1;
+  .field--name-name {
+    font-size: 16px;
+  }
+}
+
+//Formulario interior para semilla
+.form-item-field-licencia {
+  background-color: #f1f1f1;
+  padding: 20px;
+  .views-field-name {
+    font-family: 'OpenSans-SemiBold', sans-serif;
+    margin-bottom: 10px;
+  }
+}
+
+//Formulario de Cuaderno de campo
+.view footer {
+  background-color: transparent!important;
+}
+.cuaderno-de-campo-form .panel-default {
+  margin-top: 10px;
+}
+
+//Tabla cuaderno de campo
+.view-cuaderno-de-campo td.views-field {
+  padding: 5px;
+  margin: 5px 5px 5px 0px;
+}
+
+//Mis cultivos
+.view-mis-cultivos .view-empty {
+  margin-top: 20px;
+}
+
+//Foro
+li.action-links {
+  list-style: none;
+  a {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bioleft_mis_cultivos.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bioleft_mis_cultivos_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bioleft_mis_cultivos module.
+    case 'help.page.bioleft_mis_cultivos':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modulo que habilita la creacion de entidades Mis Cultivos') . '</p>';
+      return $output;
+
+    default:
+  }
+}

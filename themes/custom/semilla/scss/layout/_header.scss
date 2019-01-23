@@ -1,0 +1,41 @@
+#navbar {
+  background-color: transparent;
+  border-color: transparent;
+  .menu {
+    li {
+      margin: 0 5px;
+      list-style: none;
+      a {
+        color: $quinary-color;
+        font-family: $tertiary-typography;
+        font-size: 16px;
+        background-color: transparent;
+        padding: 10px;
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+//Bloque usuario
+.bloque-usuario {
+  text-align: right;
+}
+
+.bloque-usuario img {
+  border: 2px solid #CCC;
+  float: right;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+// Header Responsive
+@media (max-width: 450px) {
+  .logo img {
+    width: 200px;
+  }
+}

@@ -1,0 +1,25 @@
+add cuaderno de campo entities:
+  title: 'Create new Cuaderno de campo entities'
+
+administer cuaderno de campo entities:
+  title: 'Administer Cuaderno de campo entities'
+  description: 'Allow to access the administration form to configure Cuaderno de campo entities.'
+  restrict access: true
+
+edit any cuaderno de campo entities:
+  title: 'Edit any Cuaderno de campo entities'
+
+edit own cuaderno de campo entities:
+  title: 'Edit own Cuaderno de campo entities'
+
+view any cuaderno de campo entities:
+  title: 'View any Cuaderno de campo entities'
+
+view own cuaderno de campo entities:
+  title: 'View own Cuaderno de campo entities'
+
+delete any cuaderno de campo entities:
+  title: 'Delete any Cuaderno de campo entities'
+
+delete own cuaderno de campo entities:
+  title: 'Delete own Cuaderno de campo entities'

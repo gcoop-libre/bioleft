@@ -1,0 +1,816 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.mis_semillas
+    - field.storage.semilla.field_cantidad
+    - field.storage.semilla.field_especie
+    - field.storage.user.field_direccion
+    - field.storage.user.field_ubicacion
+  module:
+    - bioleft_semilla
+    - geocoder_address
+    - leaflet
+    - leaflet_views
+    - user
+    - views_conditional
+id: mapa
+label: 'Mapa Mis Semillas'
+module: views
+description: 'Vista que trae Mis Semillas en un mapa'
+tag: ''
+base_table: semilla
+base_field: id
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: leafet_map
+        options:
+          grouping: {  }
+          data_source: field_ubicacion
+          name_field: ''
+          description_field: nothing
+          leaflet_map: 'OSM Mapnik'
+          height: '400'
+          hide_empty_map: 0
+          map_position:
+            force: 0
+            center:
+              lat: '0'
+              lon: '0'
+            zoom: '12'
+            minZoom: '1'
+            maxZoom: '18'
+          icon:
+            iconUrl: ''
+            shadowUrl: ''
+            iconSize:
+              x: ''
+              'y': ''
+            iconAnchor:
+              x: ''
+              'y': ''
+            shadowAnchor:
+              x: ''
+              'y': ''
+            popupAnchor:
+              x: ''
+              'y': ''
+      row:
+        type: fields
+      fields:
+        field_direccion:
+          id: field_direccion
+          table: user__field_direccion
+          field: field_direccion
+          relationship: user_id
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: address_line1
+          type: geocoder_address
+          settings:
+            plugins:
+              arcgisonline:
+                weight: '0'
+                checked: 0
+              bingmaps:
+                weight: '0'
+                checked: 0
+              file:
+                weight: '0'
+                checked: 0
+              freegeoip:
+                weight: '0'
+                checked: 0
+              gpxfile:
+                weight: '0'
+                checked: 0
+              geoplugin:
+                weight: '0'
+                checked: 0
+              geoip:
+                weight: '0'
+                checked: 0
+              geonames:
+                weight: '0'
+                checked: 0
+              googlemaps:
+                checked: '1'
+                weight: '0'
+              googlemaps_business:
+                weight: '0'
+                checked: 0
+              hostip:
+                weight: '0'
+                checked: 0
+              ipinfodb:
+                weight: '0'
+                checked: 0
+              mapquest:
+                weight: '0'
+                checked: 0
+              maxmind:
+                weight: '0'
+                checked: 0
+              nominatim:
+                weight: '0'
+                checked: 0
+              opencage:
+                weight: '0'
+                checked: 0
+              openstreetmap:
+                weight: '0'
+                checked: 0
+              random:
+                weight: '0'
+                checked: 0
+              tomtom:
+                weight: '0'
+                checked: 0
+              yandex:
+                weight: '0'
+                checked: 0
+            dumper: wkt
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_ubicacion:
+          id: field_ubicacion
+          table: user__field_ubicacion
+          field: field_ubicacion
+          relationship: user_id
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: leaflet_formatter_default
+          settings:
+            multiple_map: 0
+            popup: 0
+            leaflet_map: 'OSM Mapnik'
+            height: '400'
+            hide_empty_map: 0
+            map_position:
+              force: 0
+              zoom: '12'
+              minZoom: '1'
+              maxZoom: '18'
+            icon:
+              iconUrl: ''
+              shadowUrl: ''
+              iconSize:
+                x: ''
+                'y': ''
+              iconAnchor:
+                x: ''
+                'y': ''
+              shadowAnchor:
+                x: ''
+                'y': ''
+              popupAnchor:
+                x: ''
+                'y': ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        name_1:
+          id: name_1
+          table: users_field_data
+          field: name
+          relationship: user_id
+          group_type: group
+          admin_label: ''
+          label: Biolefter
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: user_name
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: user
+          entity_field: name
+          plugin_id: field
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
+          relationship: user_id
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: user
+          entity_field: mail
+          plugin_id: field
+        field_cantidad:
+          id: field_cantidad
+          table: semilla__field_cantidad
+          field: field_cantidad
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Cantidad
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_especie:
+          id: field_especie
+          table: semilla__field_especie
+          field: field_especie
+          relationship: reverse__semilla__field_semilla
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_especie_1:
+          id: field_especie_1
+          table: semilla__field_especie
+          field: field_especie
+          relationship: field_form_semilla
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        views_conditional_field:
+          id: views_conditional_field
+          table: views_conditional
+          field: views_conditional_field
+          relationship: none
+          group_type: group
+          admin_label: Especie
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          if: field_especie_1
+          condition: '5'
+          equalto: '[field_semilla]'
+          then: '{{ field_especie }}'
+          or: '{{ field_especie_1 }}'
+          strip_tags: 0
+          plugin_id: views_conditional_field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: 'Descripcion del punto'
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<h4>{{ name_1 }}</h4>\n<p> {{ mail }} </p>\n<p> {{ views_conditional_field }} </p>\n<p> {{ field_cantidad }} </p>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
+      filters:
+        type:
+          id: type
+          table: semilla
+          field: type
+          value:
+            mis_semillas: mis_semillas
+          entity_type: semilla
+          entity_field: type
+          plugin_id: bundle
+      sorts: {  }
+      title: 'Semillas disponibles'
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: 'Usuarios con semillas disponibles para intercambiar.'
+          plugin_id: text_custom
+      footer: {  }
+      empty: {  }
+      relationships:
+        user_id:
+          id: user_id
+          table: semilla
+          field: user_id
+          relationship: none
+          group_type: group
+          admin_label: User
+          required: false
+          entity_type: semilla
+          entity_field: user_id
+          plugin_id: standard
+        field_form_semilla:
+          id: field_form_semilla
+          table: semilla__field_form_semilla
+          field: field_form_semilla
+          relationship: none
+          group_type: group
+          admin_label: 'field_form_semilla: Semilla'
+          required: false
+          plugin_id: standard
+        reverse__semilla__field_semilla:
+          id: reverse__semilla__field_semilla
+          table: semilla
+          field: reverse__semilla__field_semilla
+          relationship: field_form_semilla
+          group_type: group
+          admin_label: field_semilla
+          required: false
+          entity_type: semilla
+          plugin_id: entity_reverse
+      arguments: {  }
+      display_extenders: {  }
+      css_class: 'col-md-12 no-gutters'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:field.storage.semilla.field_cantidad'
+        - 'config:field.storage.semilla.field_especie'
+        - 'config:field.storage.user.field_direccion'
+        - 'config:field.storage.user.field_ubicacion'
+  block_mis_semillas_mapa:
+    display_plugin: block
+    id: block_mis_semillas_mapa
+    display_title: Block
+    position: 1
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:field.storage.semilla.field_cantidad'
+        - 'config:field.storage.semilla.field_especie'
+        - 'config:field.storage.user.field_direccion'
+        - 'config:field.storage.user.field_ubicacion'

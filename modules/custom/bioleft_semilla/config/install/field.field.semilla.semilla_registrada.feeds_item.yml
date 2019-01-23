@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.storage.semilla.feeds_item
+  module:
+    - feeds
+id: semilla.semilla_registrada.feeds_item
+field_name: feeds_item
+entity_type: semilla
+bundle: semilla_registrada
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

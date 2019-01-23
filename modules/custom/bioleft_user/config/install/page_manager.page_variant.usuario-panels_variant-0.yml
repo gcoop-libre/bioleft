@@ -1,0 +1,98 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.usuario
+    - views.view.cuaderno_de_campo
+    - views.view.datos_usuario
+    - views.view.foro
+    - views.view.mapa
+    - views.view.mis_cultivos
+  module:
+    - panels
+    - views
+id: usuario-panels_variant-0
+label: Paneles
+variant: panels_variant
+variant_settings:
+  blocks:
+    26998651-ff4e-4408-87f2-d9fcc50a2b30:
+      id: page_title_block
+      label: 'Título de la página'
+      provider: core
+      label_display: '0'
+      region: content
+      weight: -2
+      uuid: 26998651-ff4e-4408-87f2-d9fcc50a2b30
+      context_mapping: {  }
+    35e4c5d9-a7d3-4290-a16c-0116cc61199f:
+      id: 'views_block:mapa-block_mis_semillas_mapa'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 2
+      uuid: 35e4c5d9-a7d3-4290-a16c-0116cc61199f
+      context_mapping: {  }
+    07c35da9-d188-43a1-9e01-c2473eab7352:
+      id: 'views_block:datos_usuario-block_user'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: -1
+      uuid: 07c35da9-d188-43a1-9e01-c2473eab7352
+      context_mapping:
+        uid: user
+    bf284c7f-d3ae-4176-a9ff-48b42d9f07c2:
+      id: 'views_block:foro-block_foro'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 1
+      uuid: bf284c7f-d3ae-4176-a9ff-48b42d9f07c2
+      context_mapping: {  }
+    de243f78-cb3f-4757-b76d-b7fb1cc06567:
+      id: 'views_block:cuaderno_de_campo-block_listado_cuaderno_de_campo'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: de243f78-cb3f-4757-b76d-b7fb1cc06567
+      context_mapping: {  }
+    56331433-6df6-482c-b7d8-94bc98f83b9f:
+      id: 'views_block:mis_cultivos-block_listado_mis_cultivos'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 56331433-6df6-482c-b7d8-94bc98f83b9f
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 5a61cfe9-f079-4b5a-8a29-85bd8e8e4e59
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: usuario-panels_variant-0
+  builder: standard
+page: usuario
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

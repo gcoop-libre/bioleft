@@ -1,0 +1,198 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.field.semilla.semilla_registrada.field_caracteristica
+    - field.field.semilla.semilla_registrada.field_condicion_genetica
+    - field.field.semilla.semilla_registrada.field_cultivar
+    - field.field.semilla.semilla_registrada.field_especie
+    - field.field.semilla.semilla_registrada.field_evento_transformacion
+    - field.field.semilla.semilla_registrada.field_grupo_especie
+    - field.field.semilla.semilla_registrada.field_inscripcion_rnc
+    - field.field.semilla.semilla_registrada.field_inscripcion_rncp
+    - field.field.semilla.semilla_registrada.field_nombre_botanico
+    - field.field.semilla.semilla_registrada.field_nro_registro
+    - field.field.semilla.semilla_registrada.field_pais
+    - field.field.semilla.semilla_registrada.field_representante
+    - field.field.semilla.semilla_registrada.field_solicitante
+    - field.field.semilla.semilla_registrada.field_tipo
+    - field.field.semilla.semilla_registrada.field_validez_rnpc
+  module:
+    - bioleft_semilla
+label: 'Semillas registradas'
+id: semillas_registradas
+description: 'Importa semillas registradas por INASE'
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:semilla'
+processor_configuration:
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: semilla_registrada
+custom_sources:
+  caracteristica:
+    label: Característica
+    value: Característica
+    machine_name: caracteristica
+  condicion_genetica:
+    label: 'Condicion genetica'
+    value: 'Condicion genetica'
+    machine_name: condicion_genetica
+  cultivar:
+    label: Cultivar
+    value: Cultivar
+    machine_name: cultivar
+  especie:
+    label: Especie
+    value: Especie
+    machine_name: especie
+  evento_de_transformacion:
+    label: 'Evento de Transformación'
+    value: 'Evento de Transformación'
+    machine_name: evento_de_transformacion
+  g_especie:
+    label: 'G Especie'
+    value: 'G Especie'
+    machine_name: g_especie
+  inscripcion_rnc:
+    label: 'Inscripción RNC'
+    value: 'Inscripción RNC'
+    machine_name: inscripcion_rnc
+  inscripcion_rnpc:
+    label: 'Inscripción RNPC'
+    value: 'Inscripción RNPC'
+    machine_name: inscripcion_rnpc
+  nombre_botanico:
+    label: 'Nombre botánico'
+    value: 'Nombre botánico'
+    machine_name: nombre_botanico
+  nro_registro:
+    label: 'Nro Registro'
+    value: 'Nro Registro'
+    machine_name: nro_registro
+  representante:
+    label: Representante
+    value: Representante
+    machine_name: representante
+  solicitante:
+    label: Solicitante
+    value: Solicitante
+    machine_name: solicitante
+  tipo:
+    label: Tipo
+    value: Tipo
+    machine_name: tipo
+  validez_rnpc:
+    label: 'Validez RNPC'
+    value: 'Validez RNPC'
+    machine_name: validez_rnpc
+  vigencia:
+    label: Vigencia
+    value: Vigencia
+    machine_name: vigencia
+  pais:
+    label: País
+    value: País
+    machine_name: pais
+mappings:
+  -
+    target: field_caracteristica
+    map:
+      value: caracteristica
+    unique: {  }
+  -
+    target: field_condicion_genetica
+    map:
+      value: condicion_genetica
+    unique: {  }
+  -
+    target: field_cultivar
+    map:
+      value: cultivar
+    unique: {  }
+  -
+    target: field_especie
+    map:
+      target_id: especie
+    settings:
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_evento_transformacion
+    map:
+      value: evento_de_transformacion
+    unique: {  }
+  -
+    target: field_grupo_especie
+    map:
+      target_id: g_especie
+    settings:
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_inscripcion_rnc
+    map:
+      value: inscripcion_rnc
+    settings:
+      timezone: America/Argentina/Buenos_Aires
+  -
+    target: field_inscripcion_rncp
+    map:
+      value: inscripcion_rnpc
+    settings:
+      timezone: America/Argentina/Buenos_Aires
+  -
+    target: field_nombre_botanico
+    map:
+      target_id: nombre_botanico
+    settings:
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_nro_registro
+    map:
+      value: nro_registro
+  -
+    target: field_representante
+    map:
+      value: representante
+    unique: {  }
+  -
+    target: field_solicitante
+    map:
+      value: solicitante
+    unique: {  }
+  -
+    target: field_tipo
+    map:
+      value: tipo
+  -
+    target: field_validez_rnpc
+    map:
+      value: validez_rnpc
+    settings:
+      timezone: America/Argentina/Buenos_Aires
+  -
+    target: name
+    map:
+      value: 'parent:title'
+    unique: {  }
+  -
+    target: field_pais
+    map:
+      value: pais

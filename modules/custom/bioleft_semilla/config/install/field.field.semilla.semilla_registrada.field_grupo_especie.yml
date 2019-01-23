@@ -1,0 +1,28 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.storage.semilla.field_grupo_especie
+    - taxonomy.vocabulary.grupo_especie
+id: semilla.semilla_registrada.field_grupo_especie
+field_name: field_grupo_especie
+entity_type: semilla
+bundle: semilla_registrada
+label: 'Grupo Especie'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grupo_especie: grupo_especie
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

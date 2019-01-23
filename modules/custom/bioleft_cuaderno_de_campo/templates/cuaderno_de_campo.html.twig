@@ -1,0 +1,22 @@
+{#
+/**
+ * @file cuaderno_de_campo.html.twig
+ * Default theme implementation to present Cuaderno de campo data.
+ *
+ * This template is used when viewing Cuaderno de campo pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_cuaderno_de_campo()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('cuaderno_de_campo') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

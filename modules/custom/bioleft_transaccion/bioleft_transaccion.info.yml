@@ -1,0 +1,22 @@
+name: Transaccion
+type: module
+description: 'Entidades para tipos de transaccion'
+core: 8.x
+package: Bioleft
+dependencies:
+  - bioleft_semilla:bioleft_semilla
+  - conditional_fields:conditional_fields
+  - drupal:content_moderation
+  - drupal:datetime
+  - drupal:field
+  - drupal:options
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - drupal:workflows
+  - field_permissions:field_permissions
+  - rules:rules
+  - state_machine:state_machine
+  - swiftmailer:swiftmailer
+  - views_bootstrap:views_bootstrap
+  - views_conditional:views_conditional

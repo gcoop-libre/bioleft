@@ -1,0 +1,53 @@
+uuid: b0246669-5967-4a6a-a701-00c46502df72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.plaga.field_nombre_comun
+    - taxonomy.vocabulary.plaga
+  module:
+    - taxonomy
+label: Plagas
+id: plagas
+description: 'Importa plagas para la entidad Labor'
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    vid: plaga
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  nombre_comun:
+    label: 'Nombre Común'
+    value: 'Nombre Común'
+    machine_name: nombre_comun
+  nombre_cientifico:
+    label: 'Nombre Científico'
+    value: 'Nombre Científico'
+    machine_name: nombre_cientifico
+mappings:
+  -
+    target: field_nombre_comun
+    map:
+      value: nombre_comun
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_cientifico
+    unique: {  }
