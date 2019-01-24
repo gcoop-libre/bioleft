@@ -1,0 +1,113 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - semilla
+_core:
+  default_config_hash: aksidfilNuoz-NS8Cp0W7_WFO_FjdOKAP4608DDrWwY
+id: socialmedialinks
+theme: semilla
+region: footer
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-10'
+    facebook:
+      value: Bioleft/
+      description: ''
+      weight: '-9'
+    rss:
+      value: ''
+      description: ''
+      weight: '-8'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-7'
+    email:
+      value: ''
+      description: ''
+      weight: '-6'
+    twitter:
+      value: bioleft_tw
+      description: ''
+      weight: '-5'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-4'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-3'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-2'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-1'
+    flickr:
+      value: ''
+      description: ''
+      weight: '0'
+    contact:
+      value: ''
+      description: ''
+      weight: '1'
+    youtube:
+      value: ''
+      description: ''
+      weight: '2'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '3'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '4'
+    drupal:
+      value: ''
+      description: ''
+      weight: '5'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '6'
+    behance:
+      value: ''
+      description: ''
+      weight: '7'
+    github:
+      value: ''
+      description: ''
+      weight: '8'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '9'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

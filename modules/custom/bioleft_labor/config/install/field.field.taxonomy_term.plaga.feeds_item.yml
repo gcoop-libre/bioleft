@@ -1,0 +1,24 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.plaga
+  module:
+    - feeds
+_core:
+  default_config_hash: WFDfgGPZlAsszWXHyYHT8UfCYNSFJG7-43wKer1AUc0
+id: taxonomy_term.plaga.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: plaga
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

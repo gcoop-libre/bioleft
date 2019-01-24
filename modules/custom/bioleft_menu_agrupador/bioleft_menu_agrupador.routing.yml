@@ -1,0 +1,7 @@
+bioleft_menu_agrupador.menu:
+  path: '/admin/structure/bioleft'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Bioleft'
+  requirements:
+    _permission: 'administer site configuration'

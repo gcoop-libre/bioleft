@@ -1,0 +1,12 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.plaga
+_core:
+  default_config_hash: IzJEbNxU1SZAFiM22P5FXF86wjv1DBLjGssOYXdRSN0
+id: taxonomy_term.plaga
+target_entity_type_id: taxonomy_term
+target_bundle: plaga
+default_langcode: site_default
+language_alterable: false

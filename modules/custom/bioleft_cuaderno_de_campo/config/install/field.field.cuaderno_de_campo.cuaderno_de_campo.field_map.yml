@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.cuaderno_de_campo.field_map
+  module:
+    - bioleft_cuaderno_de_campo
+    - geolocation
+id: cuaderno_de_campo.cuaderno_de_campo.field_map
+field_name: field_map
+entity_type: cuaderno_de_campo
+bundle: cuaderno_de_campo
+label: Mapa
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

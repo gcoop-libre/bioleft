@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bioleft_licencia.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bioleft_licencia_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bioleft_licencia module.
+    case 'help.page.bioleft_licencia':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entidad para Licencia') . '</p>';
+      return $output;
+
+    default:
+  }
+}

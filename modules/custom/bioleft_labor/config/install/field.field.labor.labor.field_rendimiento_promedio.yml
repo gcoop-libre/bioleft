@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.labor.field_rendimiento_promedio
+  module:
+    - bioleft_labor
+id: labor.labor.field_rendimiento_promedio
+field_name: field_rendimiento_promedio
+entity_type: labor
+bundle: labor
+label: 'Rendimiento promedio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: kg/ha
+field_type: integer

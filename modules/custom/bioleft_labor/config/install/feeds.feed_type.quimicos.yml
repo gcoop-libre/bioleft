@@ -1,0 +1,73 @@
+uuid: 0478d036-b35c-4333-af09-324196c49b0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.quimica.field_ct
+    - field.field.taxonomy_term.quimica.field_ingrediente_activo
+    - field.field.taxonomy_term.quimica.field_unidad
+    - taxonomy.vocabulary.quimica
+  module:
+    - taxonomy
+label: Quimicos
+id: quimicos
+description: 'Importa químicos para la entidad Labor'
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    vid: quimica
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  ct:
+    label: CT
+    value: CT
+    machine_name: ct
+  unidad:
+    label: Unidad
+    value: Unidad
+    machine_name: unidad
+  ingrediente_activo:
+    label: 'Ingrediente activo'
+    value: 'Ingrediente activo'
+    machine_name: ingrediente_activo
+  marca_comercial:
+    label: 'Marca comercial'
+    value: 'Marca comercial'
+    machine_name: marca_comercial
+mappings:
+  -
+    target: field_ct
+    map:
+      value: ct
+    unique: {  }
+  -
+    target: field_unidad
+    map:
+      value: unidad
+    unique: {  }
+  -
+    target: field_ingrediente_activo
+    map:
+      value: ingrediente_activo
+    unique: {  }
+  -
+    target: name
+    map:
+      value: marca_comercial
+    unique: {  }

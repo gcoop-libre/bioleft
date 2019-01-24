@@ -1,0 +1,280 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.labor.labor.field_aporque
+    - field.field.labor.labor.field_cosecha
+    - field.field.labor.labor.field_despunte
+    - field.field.labor.labor.field_dosis
+    - field.field.labor.labor.field_dosis_herbicida
+    - field.field.labor.labor.field_dosis_quimica
+    - field.field.labor.labor.field_enfermedades
+    - field.field.labor.labor.field_heladas
+    - field.field.labor.labor.field_herbicida
+    - field.field.labor.labor.field_hongos
+    - field.field.labor.labor.field_insectos
+    - field.field.labor.labor.field_inundaciones
+    - field.field.labor.labor.field_metodo
+    - field.field.labor.labor.field_metodo_sobre_maleza
+    - field.field.labor.labor.field_organica
+    - field.field.labor.labor.field_plagas
+    - field.field.labor.labor.field_plantacion
+    - field.field.labor.labor.field_poda
+    - field.field.labor.labor.field_quimica
+    - field.field.labor.labor.field_quimica_malezas
+    - field.field.labor.labor.field_raleo
+    - field.field.labor.labor.field_rendimiento_promedio
+    - field.field.labor.labor.field_riego
+    - field.field.labor.labor.field_salinidad
+    - field.field.labor.labor.field_sequia
+    - field.field.labor.labor.field_transplante
+    - field.field.labor.labor.field_tutorado
+  module:
+    - bioleft_labor
+    - datetime
+    - options
+    - user
+id: labor.labor.default
+targetEntityType: labor
+bundle: labor
+mode: default
+content:
+  field_aporque:
+    weight: 8
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_cosecha:
+    weight: 14
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_despunte:
+    weight: 13
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_dosis:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_dosis_herbicida:
+    weight: 27
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_dosis_quimica:
+    weight: 26
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_enfermedades:
+    weight: 17
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_heladas:
+    weight: 21
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_herbicida:
+    weight: 6
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_hongos:
+    weight: 18
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_insectos:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_inundaciones:
+    weight: 22
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_metodo:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_metodo_sobre_maleza:
+    weight: 24
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_organica:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_plagas:
+    weight: 23
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_plantacion:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_poda:
+    weight: 12
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_quimica:
+    weight: 3
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_quimica_malezas:
+    weight: 25
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_raleo:
+    weight: 9
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_rendimiento_promedio:
+    weight: 15
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_riego:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_salinidad:
+    weight: 20
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sequia:
+    weight: 19
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_transplante:
+    weight: 10
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_tutorado:
+    weight: 11
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  name:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

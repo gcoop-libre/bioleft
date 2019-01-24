@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.labor.field_dosis_quimica
+  module:
+    - bioleft_labor
+id: labor.labor.field_dosis_quimica
+field_name: field_dosis_quimica
+entity_type: labor
+bundle: labor
+label: 'Dosis química'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: kg/ha
+field_type: decimal

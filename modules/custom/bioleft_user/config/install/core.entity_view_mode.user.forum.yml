@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.forum
+label: Foro
+targetEntityType: user
+cache: true

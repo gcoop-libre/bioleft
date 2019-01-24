@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+name: Trabajo
+vid: trabajo
+description: 'Referido al Lugar de trabajo'
+hierarchy: 1
+weight: 0

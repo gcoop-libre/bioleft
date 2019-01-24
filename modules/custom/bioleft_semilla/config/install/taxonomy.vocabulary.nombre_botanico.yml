@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+name: 'Nombre botánico'
+vid: nombre_botanico
+description: 'Referido a las semillas registradas'
+hierarchy: 0
+weight: 0

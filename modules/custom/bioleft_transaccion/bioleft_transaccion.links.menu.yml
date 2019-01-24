@@ -1,0 +1,17 @@
+
+# Transacción menu items definition
+entity.transaccion.collection:
+  title: 'Transacción list'
+  route_name: entity.transaccion.collection
+  description: 'List Transacción entities'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 100
+
+
+# Transacción type menu items definition
+entity.transaccion_type.collection:
+  title: 'Transacción type'
+  route_name: entity.transaccion_type.collection
+  description: 'List Transacción type (bundles)'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 99

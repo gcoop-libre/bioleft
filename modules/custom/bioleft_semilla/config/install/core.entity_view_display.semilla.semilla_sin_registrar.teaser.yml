@@ -1,0 +1,103 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - core.entity_view_mode.semilla.teaser
+    - field.field.semilla.semilla_sin_registrar.field_adn
+    - field.field.semilla.semilla_sin_registrar.field_aspectos
+    - field.field.semilla.semilla_sin_registrar.field_cultivar
+    - field.field.semilla.semilla_sin_registrar.field_descripcion_adn
+    - field.field.semilla.semilla_sin_registrar.field_enfermedades
+    - field.field.semilla.semilla_sin_registrar.field_especie
+    - field.field.semilla.semilla_sin_registrar.field_fundamento
+    - field.field.semilla.semilla_sin_registrar.field_hongos
+    - field.field.semilla.semilla_sin_registrar.field_imagen
+    - field.field.semilla.semilla_sin_registrar.field_informacion_genetica
+    - field.field.semilla.semilla_sin_registrar.field_insectos
+    - field.field.semilla.semilla_sin_registrar.field_poder_germinativo
+    - field.field.semilla.semilla_sin_registrar.field_rendimiento_promedio
+    - field.field.semilla.semilla_sin_registrar.field_salinidad
+    - field.field.semilla.semilla_sin_registrar.field_sequia
+    - image.style.medium
+  module:
+    - image
+    - text
+id: semilla.semilla_sin_registrar.teaser
+targetEntityType: semilla
+bundle: semilla_sin_registrar
+mode: teaser
+content:
+  content_moderation_control:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_aspectos:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cultivar:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_especie:
+    weight: 0
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fundamento:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_imagen:
+    weight: 2
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_poder_germinativo:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  user_id:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  field_adn: true
+  field_descripcion_adn: true
+  field_enfermedades: true
+  field_hongos: true
+  field_informacion_genetica: true
+  field_insectos: true
+  field_rendimiento_promedio: true
+  field_salinidad: true
+  field_sequia: true
+  langcode: true
+  name: true

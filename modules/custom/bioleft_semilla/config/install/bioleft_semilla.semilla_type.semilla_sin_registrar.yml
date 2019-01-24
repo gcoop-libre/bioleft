@@ -1,0 +1,5 @@
+langcode: es
+status: true
+dependencies: {  }
+id: semilla_sin_registrar
+label: 'Semilla sin registrar'

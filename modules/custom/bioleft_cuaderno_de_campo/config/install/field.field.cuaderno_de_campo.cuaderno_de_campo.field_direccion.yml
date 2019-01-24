@@ -1,0 +1,35 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.cuaderno_de_campo.field_direccion
+  module:
+    - address
+    - bioleft_cuaderno_de_campo
+id: cuaderno_de_campo.cuaderno_de_campo.field_direccion
+field_name: field_direccion
+entity_type: cuaderno_de_campo
+bundle: cuaderno_de_campo
+label: Dirección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    AR: AR
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine2:
+      override: hidden
+  fields: {  }
+field_type: address

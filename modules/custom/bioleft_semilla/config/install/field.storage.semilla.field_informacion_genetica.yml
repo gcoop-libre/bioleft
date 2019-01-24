@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_semilla
+    - text
+id: semilla.field_informacion_genetica
+field_name: field_informacion_genetica
+entity_type: semilla
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

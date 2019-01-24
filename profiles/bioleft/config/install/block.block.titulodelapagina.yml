@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  theme:
+    - semilla
+_core:
+  default_config_hash: IMGOTCQMZXAT0d1VJuXr40yKH4FMhCYIH38e6vpxR7c
+id: titulodelapagina
+theme: semilla
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  provider: core
+  label_display: '0'
+visibility: {  }

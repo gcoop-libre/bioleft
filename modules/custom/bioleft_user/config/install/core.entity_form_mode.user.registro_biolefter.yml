@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.registro_biolefter
+label: 'Registro Biolefter'
+targetEntityType: user
+cache: true

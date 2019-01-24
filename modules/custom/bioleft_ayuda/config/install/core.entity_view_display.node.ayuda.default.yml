@@ -1,0 +1,35 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.ayuda.body
+    - field.field.node.ayuda.field_tags
+    - node.type.ayuda
+  module:
+    - text
+    - user
+id: node.ayuda.default
+targetEntityType: node
+bundle: ayuda
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

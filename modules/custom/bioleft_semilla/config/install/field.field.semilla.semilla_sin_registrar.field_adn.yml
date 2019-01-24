@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_adn
+id: semilla.semilla_sin_registrar.field_adn
+field_name: field_adn
+entity_type: semilla
+bundle: semilla_sin_registrar
+label: ADN
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

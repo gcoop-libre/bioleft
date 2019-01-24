@@ -1,0 +1,25 @@
+add mis cultivos entities:
+  title: 'Create new Mis cultivos entities'
+
+administer mis cultivos entities:
+  title: 'Administer Mis cultivos entities'
+  description: 'Allow to access the administration form to configure Mis cultivos entities.'
+  restrict access: true
+
+edit any mis cultivos entities:
+  title: 'Edit any Mis cultivos entities'
+
+edit own mis cultivos entities:
+  title: 'Edit own Mis cultivos entities'
+
+view any mis cultivos entities:
+  title: 'View any Mis cultivos entities'
+
+view own mis cultivos entities:
+  title: 'View own Mis cultivos entities'
+
+delete any mis cultivos entities:
+  title: 'Delete any Mis cultivos entities'
+
+delete own mis cultivos entities:
+  title: 'Delete own Mis cultivos entities'

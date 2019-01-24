@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_insectos
+  module:
+    - options
+id: semilla.semilla_sin_registrar.field_insectos
+field_name: field_insectos
+entity_type: semilla
+bundle: semilla_sin_registrar
+label: Insectos
+description: 'Elija una de las calificaciones.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_rendimiento_promedio
+id: semilla.semilla_sin_registrar.field_rendimiento_promedio
+field_name: field_rendimiento_promedio
+entity_type: semilla
+bundle: semilla_sin_registrar
+label: 'Rendimiento promedio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

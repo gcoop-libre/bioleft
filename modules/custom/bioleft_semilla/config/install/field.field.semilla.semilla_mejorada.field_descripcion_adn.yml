@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_mejorada
+    - field.storage.semilla.field_descripcion_adn
+  module:
+    - text
+id: semilla.semilla_mejorada.field_descripcion_adn
+field_name: field_descripcion_adn
+entity_type: semilla
+bundle: semilla_mejorada
+label: 'Descripción ADN'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: perfil
+label: 'Imagen Perfil'
+effects:
+  66d0c01a-a033-485a-a663-403248e160ea:
+    uuid: 66d0c01a-a033-485a-a663-403248e160ea
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

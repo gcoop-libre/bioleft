@@ -1,0 +1,77 @@
+# Spanish translation of Bioleft (8.x-1.0)
+# Copyright 2018 by gcoop <info@gcoop.coop>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bioleft (8.x-1.0)\n"
+"POT-Creation-Date: 2018-04-26 14:00-0300\n"
+"PO-Revision-Date: 2018-04-26 14:00-0300\n"
+"Last-Translator: Cristian G. Segarra <cristian@segarra.com.ar>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+# Core
+msgid "Operations"
+msgstr "Operaciones"
+
+# User
+msgid "The email address %value is already taken."
+msgstr "La dirección de correo electrónico %value ya se encuentra utilizada."
+
+msgid "Let the site determine which avatar to use."
+msgstr "Permitir que el sistema elija qué avatar voy a utilizar."
+
+msgctxt "Address label"
+msgid "Street address"
+msgstr "Dirección"
+
+msgctxt "Address label"
+msgid "Postal code"
+msgstr "Código postal"
+
+msgctxt "Address label"
+msgid "City"
+msgstr "Ciudad"
+
+msgctxt "Address label"
+msgid "Province"
+msgstr "Provincia"
+
+msgctxt "workflow state"
+msgid "Pending"
+msgstr "Pendiente"
+
+msgctxt "workflow state"
+msgid "Approved"
+msgstr "Aprobado"
+
+msgctxt "workflow state"
+msgid "Rejected"
+msgstr "Rechazada"
+
+msgid "Created the %label Licencia."
+msgstr "Creado el %label Licencia"
+
+msgid "Created the %label Semilla."
+msgstr "Creado el %label Semilla"
+
+msgid "Created the %label Transacción."
+msgstr "Creado el %label Transacción"
+
+msgid "Bioleft: new transaction request"
+msgstr "Bioleft: nueva solicitud de transacción"
+
+msgid "Are you sure you want to approve the transaccion @transaccion?"
+msgstr ""
+"Estás seguro de que querés aprobar esta transacción "
+"\"@transaccion\"?"
+
+msgid "Bioleft: your transaction has a new state"
+msgstr "Bioleft: tu transacción tiene un nuevo estado"
+
+# Bootstrap
+msgid "Upload requirements"
+msgstr "Requerimientos del archivo"

@@ -1,0 +1,49 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.forum
+    - field.field.user.user.field_direccion
+    - field.field.user.user.field_imagen_perfil
+    - field.field.user.user.field_institucion
+    - field.field.user.user.field_nombre
+    - field.field.user.user.field_ocupacion
+    - field.field.user.user.field_trabajo
+    - field.field.user.user.field_ubicacion
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+id: user.user.forum
+targetEntityType: user
+bundle: user
+mode: forum
+content:
+  field_imagen_perfil:
+    weight: 0
+    label: visually_hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_nombre:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_direccion: true
+  field_institucion: true
+  field_lote: true
+  field_ocupacion: true
+  field_suelo: true
+  field_superficie_ha: true
+  field_trabajo: true
+  field_ubicacion: true
+  langcode: true
+  member_for: true

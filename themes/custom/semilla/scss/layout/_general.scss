@@ -1,0 +1,64 @@
+body {
+  font-family: $primary-typography;
+  font-size: 14px;
+}
+
+.page-header {
+  font-family: $secundary-typography;
+}
+
+.btn.btn-success {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+.btn,
+.btn *,
+.btn *:hover,
+.btn *:focus {
+  color: white;
+}
+.btn.btn-default,
+.btn.btn-info {
+  background-color: $quaternary-color;
+  border-color: $quaternary-color;
+}
+.btn.btn-danger {
+  background-color: $senary-color;
+  border-color: $senary-color;
+}
+.btn.btn-primary {
+  background-color: $tertiary-color;
+  border-color:$tertiary-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: $secundary-color;
+  text-decoration: none;
+}
+
+section.block {
+  margin-bottom: 40px;
+}
+/* */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+//Usuario
+
+h4.label {
+  color: #333;
+}

@@ -1,0 +1,5 @@
+entity.cuaderno_de_campo.add_form:
+  route_name: entity.cuaderno_de_campo.add_form
+  title: 'Add Cuaderno de campo'
+  appears_on:
+    - entity.cuaderno_de_campo.collection

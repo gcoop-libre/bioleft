@@ -1,0 +1,25 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.bloque_usuario
+  module:
+    - views
+  theme:
+    - semilla
+id: views_block__bloque_usuario_block_user
+theme: semilla
+region: header_right
+weight: 0
+provider: null
+plugin: 'views_block:bloque_usuario-block_user'
+settings:
+  id: 'views_block:bloque_usuario-block_user'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping:
+    uid: '@user.current_user_context:current_user'
+visibility: {  }

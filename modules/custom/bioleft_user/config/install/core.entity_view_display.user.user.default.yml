@@ -1,0 +1,86 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_direccion
+    - field.field.user.user.field_imagen_perfil
+    - field.field.user.user.field_institucion
+    - field.field.user.user.field_mapa_usuario
+    - field.field.user.user.field_nombre
+    - field.field.user.user.field_ocupacion
+    - field.field.user.user.field_trabajo
+    - field.field.user.user.field_ubicacion
+    - image.style.micro
+  module:
+    - address
+    - geolocation
+    - image
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_direccion:
+    type: address_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_imagen_perfil:
+    weight: 1
+    label: above
+    settings:
+      image_style: micro
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_institucion:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mapa_usuario:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_sexagesimal
+    region: content
+  field_nombre:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ocupacion:
+    weight: 7
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_trabajo:
+    weight: 5
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  member_for:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_ubicacion: true
+  langcode: true

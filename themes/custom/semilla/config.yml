@@ -1,0 +1,59 @@
+sass:
+  options:
+    sourceMap: true
+    includePaths:
+      - 'node_modules/bootstrap-sass/assets/stylesheets'
+  bootstrap:
+    files:
+      'bootstrap/bootstrap.css': 'scss/bootstrap.scss'
+  dist:
+    files:
+      'css/style.css': 'scss/style.scss'
+copy:
+  bootstrap-fonts:
+    expand: true
+    cwd: 'node_modules/bootstrap-sass/assets/fonts/bootstrap/'
+    src:
+      - '*'
+    dest: 'bootstrap/fonts'
+  # Copia los archivos javascript de bootstrap sin concatenarlos.
+  bootstrap-js:
+    expand: true
+    cwd: 'node_modules/bootstrap-sass/assets/javascripts/bootstrap'
+    src:
+      - '*'
+    dest: 'bootstrap/js'
+  assets:
+    expand: true
+    cwd: 'assets'
+    src:
+      - '**/*'
+    dest: 'css'
+concat:
+  # Concatena los archivos javascript como bootstrap.js.
+  bootstrap-js:
+    src:
+      - 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/*.js'
+    dest: 'bootstrap/bootstrap.js'
+jsComponents:
+  - affix
+  - alert
+  - button
+  - carousel
+  - collapse
+  - dropdown
+  - modal
+  - tooltip
+  - popover
+  - scrollspy
+  - tab
+  - transition
+watch:
+  css:
+    files: 'scss/**/*.scss'
+    tasks:
+      - 'default'
+clean:
+  bootstrap: [bootstrap]
+  css: [css]
+  map: [css/*.map, bootstrap/*.map]

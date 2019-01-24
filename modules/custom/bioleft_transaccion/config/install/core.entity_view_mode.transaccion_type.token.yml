@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_transaccion
+id: transaccion_type.token
+label: Token
+targetEntityType: transaccion_type
+cache: true

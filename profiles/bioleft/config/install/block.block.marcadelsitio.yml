@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - semilla
+id: marcadelsitio
+theme: semilla
+region: header_left
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility: {  }

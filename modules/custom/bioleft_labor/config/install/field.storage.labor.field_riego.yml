@@ -1,0 +1,33 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_labor
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: labor.field_riego
+field_name: field_riego
+entity_type: labor
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: goteo
+      label: Goteo
+    -
+      value: aspersion
+      label: Aspersión
+    -
+      value: 'prueba riego dif'
+      label: 'prueba riego dif'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

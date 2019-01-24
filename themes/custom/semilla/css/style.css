@@ -1,0 +1,250 @@
+#navbar {
+  background-color: transparent;
+  border-color: transparent; }
+  #navbar .menu li {
+    margin: 0 5px;
+    list-style: none; }
+    #navbar .menu li a {
+      color: #777;
+      font-family: "OpenSans-SemiBold";
+      font-size: 16px;
+      background-color: transparent;
+      padding: 10px; }
+      #navbar .menu li a:hover, #navbar .menu li a:focus {
+        background-color: transparent;
+        color: #8dc63f; }
+
+.bloque-usuario {
+  text-align: right; }
+
+.bloque-usuario img {
+  border: 2px solid #CCC;
+  float: right;
+  margin-left: 10px;
+  border-radius: 50%; }
+
+@media (max-width: 450px) {
+  .logo img {
+    width: 200px; } }
+
+footer.pie-de-pagina {
+  background-color: #777;
+  padding-bottom: 0px;
+  margin-top: 45px; }
+
+.footer {
+  border-top: 0px solid transparent !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px; }
+
+section.block {
+  margin-bottom: 0px !important; }
+
+.gcoop {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white; }
+
+@font-face {
+  font-family: 'OpenSans-SemiBoldItalic';
+  src: url("fonts/OpenSans-SemiBoldItalic.eot");
+  src: url("fonts/OpenSans-SemiBoldItalic.woff2") format("woff2"), url("fonts/OpenSans-SemiBoldItalic.woff") format("woff"), url("fonts/OpenSans-SemiBoldItalic.ttf") format("truetype"), url("fonts/OpenSans-SemiBoldItalic.svg#OpenSans-SemiBoldItalic") format("svg"), url("fonts/OpenSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url("fonts/OpenSans-SemiBold.eot");
+  src: url("fonts/OpenSans-SemiBold.woff2") format("woff2"), url("fonts/OpenSans-SemiBold.woff") format("woff"), url("fonts/OpenSans-SemiBold.ttf") format("truetype"), url("fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold") format("svg"), url("fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("fonts/OpenSans-Regular.eot");
+  src: url("fonts/OpenSans-Regular.woff2") format("woff2"), url("fonts/OpenSans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("truetype"), url("fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg"), url("fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("fonts/OpenSans-Italic.eot");
+  src: url("fonts/OpenSans-Italic.woff2") format("woff2"), url("fonts/OpenSans-Italic.woff") format("woff"), url("fonts/OpenSans-Italic.ttf") format("truetype"), url("fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg"), url("fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  src: url("fonts/OpenSans-BoldItalic.eot");
+  src: url("fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("fonts/OpenSans-BoldItalic.woff") format("woff"), url("fonts/OpenSans-BoldItalic.ttf") format("truetype"), url("fonts/OpenSans-BoldItalic.svg#OpenSans-BoldItalic") format("svg"), url("fonts/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("fonts/OpenSans-Bold.eot");
+  src: url("fonts/OpenSans-Bold.woff2") format("woff2"), url("fonts/OpenSans-Bold.woff") format("woff"), url("fonts/OpenSans-Bold.ttf") format("truetype"), url("fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg"), url("fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BandaRegular';
+  src: url("fonts/BandaRegular.eot");
+  src: url("fonts/BandaRegular.woff2") format("woff2"), url("fonts/BandaRegular.woff") format("woff"), url("fonts/BandaRegular.ttf") format("truetype"), url("fonts/BandaRegular.svg#BandaRegular") format("svg"), url("fonts/BandaRegular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "OpenSans-Regular";
+  font-size: 14px; }
+
+.page-header {
+  font-family: "BandaRegular"; }
+
+.btn.btn-success {
+  background-color: #8dc63f;
+  border-color: #8dc63f; }
+
+.btn,
+.btn *,
+.btn *:hover,
+.btn *:focus {
+  color: white; }
+
+.btn.btn-default,
+.btn.btn-info {
+  background-color: #49c2c9;
+  border-color: #49c2c9; }
+
+.btn.btn-danger {
+  background-color: #902d05;
+  border-color: #902d05; }
+
+.btn.btn-primary {
+  background-color: #009aa3;
+  border-color: #009aa3; }
+
+a {
+  color: #8dc63f;
+  text-decoration: none; }
+
+a:hover,
+a:focus {
+  color: #A0CF5E;
+  text-decoration: none; }
+
+section.block {
+  margin-bottom: 40px; }
+
+/* */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0; }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+h4.label {
+  color: #333; }
+
+.path-user .block-region-content section {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.view-datos-usuario,
+.block-views-blockmapa-block-mis-semillas-mapa .view-content,
+.view-display-id-block_listado_cuaderno_de_campo {
+  border: 2px solid grey;
+  padding: 40px;
+  box-shadow: 10px 10px 5px 0px #d1d1d1; }
+
+.form-control {
+  border-radius: 1px; }
+
+.input-group-addon {
+  border-radius: 1px; }
+
+.btn {
+  border-radius: 1px; }
+
+.field--label {
+  background-color: #f1f1f1;
+  color: #009aa3;
+  padding: 10px; }
+
+form .field--type-entity-reference {
+  border: 0px solid #fff; }
+
+.field--name-field-form-semilla {
+  border: 2px solid #f1f1f1; }
+
+.field--type-entity-reference {
+  margin-bottom: 10px; }
+
+.field--item {
+  padding: 10px; }
+
+@media (min-width: 1080px) {
+  .mis-semillas > .field {
+    width: inherit;
+    float: inherit;
+    position: inherit; }
+  .semilla .field {
+    width: 32%;
+    margin: 0px 5px;
+    float: left;
+    position: relative; }
+  .field--type-text-long {
+    width: 100% !important; } }
+
+.licencia .field--name-field-icono {
+  width: 150px;
+  float: left; }
+
+.field--name-field-licencia,
+.field--name-field-cantidad {
+  border: 2px solid #f1f1f1; }
+  .field--name-field-licencia .field--name-name,
+  .field--name-field-cantidad .field--name-name {
+    font-size: 16px; }
+
+.form-item-field-licencia {
+  background-color: #f1f1f1;
+  padding: 20px; }
+  .form-item-field-licencia .views-field-name {
+    font-family: 'OpenSans-SemiBold', sans-serif;
+    margin-bottom: 10px; }
+
+.view footer {
+  background-color: transparent !important; }
+
+.cuaderno-de-campo-form .panel-default {
+  margin-top: 10px; }
+
+.view-cuaderno-de-campo td.views-field {
+  padding: 5px;
+  margin: 5px 5px 5px 0px; }
+
+.view-mis-cultivos .view-empty {
+  margin-top: 20px; }
+
+li.action-links {
+  list-style: none; }
+  li.action-links a {
+    padding: 5px; }
+
+.views-exposed-form div.form-item {
+  padding: 5px 5px 5px 0px; }
+
+.views-exposed-form label {
+  display: block; }
+
+.views-exposed-form input#edit-combine,
+.views-exposed-form .form-item-combine {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

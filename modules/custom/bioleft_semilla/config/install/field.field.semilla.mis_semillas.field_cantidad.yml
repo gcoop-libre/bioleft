@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.mis_semillas
+    - field.storage.semilla.field_cantidad
+id: semilla.mis_semillas.field_cantidad
+field_name: field_cantidad
+entity_type: semilla
+bundle: mis_semillas
+label: Cantidad
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: grs
+field_type: integer

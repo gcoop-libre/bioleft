@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_transaccion.transaccion_type.intercambio
+    - field.storage.transaccion.field_transaccion_state
+  module:
+    - state_machine
+id: transaccion.intercambio.field_transaccion_state
+field_name: field_transaccion_state
+entity_type: transaccion
+bundle: intercambio
+label: State
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  workflow: transaccion_default
+  workflow_callback: ''
+field_type: state

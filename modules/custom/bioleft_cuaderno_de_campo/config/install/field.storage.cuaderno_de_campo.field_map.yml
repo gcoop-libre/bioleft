@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_cuaderno_de_campo
+    - field_permissions
+    - geolocation
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: cuaderno_de_campo.field_map
+field_name: field_map
+entity_type: cuaderno_de_campo
+type: geolocation
+settings: {  }
+module: geolocation
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

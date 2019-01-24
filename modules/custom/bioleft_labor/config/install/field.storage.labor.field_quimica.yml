@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_labor
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: labor.field_quimica
+field_name: field_quimica
+entity_type: labor
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

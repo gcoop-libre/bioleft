@@ -1,0 +1,26 @@
+<?php
+/**
+ * @file
+ * semilla theme.
+ *
+ * Place your custom PHP code in this file.
+*/
+/**
+ * Hook change user_view in node forum.
+ */
+function semilla_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $node_type = $node->type->entity->id();
+  if ($node_type == 'forum') {
+    $variables['author_picture'] = user_view($node->getOwner(), 'forum');
+  }
+}
+
+/**
+* Implements hook_preprocess().
+*/
+function semilla_preprocess_swiftmailer(&$variables) {
+  global $base_url, $base_path;
+  $variables['logo_mail'] = $base_url . $base_path . drupal_get_path('theme','semilla') . '/logo_mail.png';
+  $variables['footer_mail'] = $base_url . $base_path . drupal_get_path('theme','semilla') . '/footer_mail.jpg';
+}

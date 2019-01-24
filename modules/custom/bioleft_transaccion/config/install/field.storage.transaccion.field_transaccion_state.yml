@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_transaccion
+    - field_permissions
+    - state_machine
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: transaccion.field_transaccion_state
+field_name: field_transaccion_state
+entity_type: transaccion
+type: state
+settings: {  }
+module: state_machine
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

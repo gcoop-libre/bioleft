@@ -1,0 +1,68 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.mis_semillas
+    - field.field.semilla.mis_semillas.field_cantidad
+    - field.field.semilla.mis_semillas.field_form_semilla
+    - field.field.semilla.mis_semillas.field_licencia
+    - field.field.semilla.mis_semillas.field_semilla
+  module:
+    - entity_reference_views_select
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_detalles_de_semilla:
+      children:
+        - field_cantidad
+        - field_licencia
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Detalles de semilla'
+id: semilla.mis_semillas.default
+targetEntityType: semilla
+bundle: mis_semillas
+mode: default
+content:
+  field_cantidad:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_form_semilla:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_licencia:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_buttons
+    region: content
+hidden:
+  field_semilla: true
+  langcode: true
+  moderation_state: true
+  name: true
+  user_id: true

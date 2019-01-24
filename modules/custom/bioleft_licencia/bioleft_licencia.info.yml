@@ -1,0 +1,16 @@
+name: Licencia
+type: module
+description: 'Entidad para Licencia'
+core: 8.x
+package: Bioleft
+dependencies:
+  - bioleft_licencia:bioleft_licencia
+  - drupal:content_moderation
+  - drupal:field
+  - drupal:file
+  - drupal:image
+  - drupal:options
+  - drupal:text
+  - drupal:views
+  - field_permissions:field_permissions
+  - views_conditional:views_conditional

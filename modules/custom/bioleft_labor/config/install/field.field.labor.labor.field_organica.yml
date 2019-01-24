@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.labor.field_organica
+  module:
+    - bioleft_labor
+id: labor.labor.field_organica
+field_name: field_organica
+entity_type: labor
+bundle: labor
+label: Orgánica
+description: Producto.
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

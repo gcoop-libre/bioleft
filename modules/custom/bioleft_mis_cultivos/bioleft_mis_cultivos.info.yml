@@ -1,0 +1,16 @@
+name: 'Mis Cultivos'
+type: module
+description: 'Modulo que habilita la creacion de entidades Mis Cultivos'
+core: 8.x
+package: 'Bioleft'
+dependencies: 
+  - bioleft_cuaderno_de_campo:bioleft_cuaderno_de_campo
+  - bioleft_semilla:bioleft_semilla
+  - bioleft_labor:bioleft_labor
+  - drupal:content_moderation
+  - drupal:datetime
+  - drupal:user
+  - eva:eva
+  - field_permissions:field_permissions
+  - inline_entity_form:inline_entity_form
+  - views_bootstrap:views_bootstrap

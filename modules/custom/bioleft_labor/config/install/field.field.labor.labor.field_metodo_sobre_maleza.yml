@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.labor.field_metodo_sobre_maleza
+  module:
+    - bioleft_labor
+    - options
+id: labor.labor.field_metodo_sobre_maleza
+field_name: field_metodo_sobre_maleza
+entity_type: labor
+bundle: labor
+label: 'Método sobre maleza'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

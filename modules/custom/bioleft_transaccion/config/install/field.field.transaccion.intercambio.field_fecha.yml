@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_transaccion.transaccion_type.intercambio
+    - field.storage.transaccion.field_fecha
+  module:
+    - datetime
+id: transaccion.intercambio.field_fecha
+field_name: field_fecha
+entity_type: transaccion
+bundle: intercambio
+label: Fecha
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,86 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - core.entity_view_mode.semilla.teaser
+    - field.field.semilla.semilla_registrada.feeds_item
+    - field.field.semilla.semilla_registrada.field_caracteristica
+    - field.field.semilla.semilla_registrada.field_condicion_genetica
+    - field.field.semilla.semilla_registrada.field_cultivar
+    - field.field.semilla.semilla_registrada.field_especie
+    - field.field.semilla.semilla_registrada.field_evento_transformacion
+    - field.field.semilla.semilla_registrada.field_grupo_especie
+    - field.field.semilla.semilla_registrada.field_inscripcion_rnc
+    - field.field.semilla.semilla_registrada.field_inscripcion_rncp
+    - field.field.semilla.semilla_registrada.field_nombre_botanico
+    - field.field.semilla.semilla_registrada.field_nro_registro
+    - field.field.semilla.semilla_registrada.field_pais
+    - field.field.semilla.semilla_registrada.field_representante
+    - field.field.semilla.semilla_registrada.field_solicitante
+    - field.field.semilla.semilla_registrada.field_tipo
+    - field.field.semilla.semilla_registrada.field_validez_rnpc
+    - field.field.semilla.semilla_registrada.field_vigencia
+id: semilla.semilla_registrada.teaser
+targetEntityType: semilla
+bundle: semilla_registrada
+mode: teaser
+content:
+  field_cultivar:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_especie:
+    weight: 3
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_nombre_botanico:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_nro_registro:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_tipo:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  feeds_item: true
+  field_caracteristica: true
+  field_condicion_genetica: true
+  field_evento_transformacion: true
+  field_grupo_especie: true
+  field_inscripcion_rnc: true
+  field_inscripcion_rncp: true
+  field_pais: true
+  field_representante: true
+  field_solicitante: true
+  field_validez_rnpc: true
+  field_vigencia: true
+  langcode: true
+  name: true
+  user_id: true

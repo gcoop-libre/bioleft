@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+name: 'Grupo Especie'
+vid: grupo_especie
+description: 'Referido a las semillas registradas'
+hierarchy: 0
+weight: 0

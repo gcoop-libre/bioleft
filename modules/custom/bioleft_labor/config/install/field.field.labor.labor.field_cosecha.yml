@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.labor.field_cosecha
+  module:
+    - bioleft_labor
+    - datetime
+id: labor.labor.field_cosecha
+field_name: field_cosecha
+entity_type: labor
+bundle: labor
+label: Cosecha
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

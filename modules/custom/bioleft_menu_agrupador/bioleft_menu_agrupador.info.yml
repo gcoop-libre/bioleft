@@ -1,0 +1,5 @@
+name: 'Bioleft'
+type: module
+description: 'Modulo agrupador de las Listas, Entidades y Bundles de Bioleft'
+core: 8.x
+package: 'Bioleft'

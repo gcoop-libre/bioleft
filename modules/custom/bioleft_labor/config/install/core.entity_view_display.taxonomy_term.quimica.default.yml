@@ -1,0 +1,44 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.quimica.feeds_item
+    - field.field.taxonomy_term.quimica.field_ct
+    - field.field.taxonomy_term.quimica.field_ingrediente_activo
+    - field.field.taxonomy_term.quimica.field_unidad
+    - taxonomy.vocabulary.quimica
+_core:
+  default_config_hash: '-DN1QQ61L3QoStIY6jDSrEt8Q97tD4owF5Xun3LUG5c'
+id: taxonomy_term.quimica.default
+targetEntityType: taxonomy_term
+bundle: quimica
+mode: default
+content:
+  field_ct:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ingrediente_activo:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_unidad:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  description: true
+  feeds_item: true
+  langcode: true

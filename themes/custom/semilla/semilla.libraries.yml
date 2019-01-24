@@ -1,0 +1,9 @@
+global-styling:
+  css:
+    theme:
+      bootstrap/bootstrap.css: {}
+      css/style.css: {}
+
+bootstrap-scripts:
+  js:
+    bootstrap/bootstrap.js: {}

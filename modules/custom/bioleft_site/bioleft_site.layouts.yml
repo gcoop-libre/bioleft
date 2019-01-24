@@ -1,0 +1,10 @@
+semilla-portada:
+  label: Portada
+  category: semilla
+  #path: templates
+  icon: portada.png
+  template: templates/portada
+  #theme: semilla
+  regions:
+    bloquesportada:
+      label: Bloques Portada

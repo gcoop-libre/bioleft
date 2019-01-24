@@ -1,0 +1,25 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.mis_cultivos.field_semilla
+  module:
+    - bioleft_mis_cultivos
+id: mis_cultivos.mis_cultivos.field_semilla
+field_name: field_semilla
+entity_type: mis_cultivos
+bundle: mis_cultivos
+label: Semilla
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referencia_semilla_registrada
+      display_name: entity_reference_mis_cultivos
+      arguments: {  }
+field_type: entity_reference

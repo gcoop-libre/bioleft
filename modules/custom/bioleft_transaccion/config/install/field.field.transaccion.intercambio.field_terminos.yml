@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_transaccion.transaccion_type.intercambio
+    - field.storage.transaccion.field_terminos
+  module:
+    - text
+id: transaccion.intercambio.field_terminos
+field_name: field_terminos
+entity_type: transaccion
+bundle: intercambio
+label: 'Otros términos'
+description: 'Escriba otros términos que requiera para este intercambio o transacción. Es opcional.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

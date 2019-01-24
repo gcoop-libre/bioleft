@@ -1,0 +1,31 @@
+{#
+/**
+ * @file semilla.html.twig
+ * Default theme implementation to present Semilla data.
+ *
+ * This template is used when viewing Semilla pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_semilla()
+ *
+ * @ingroup themeable
+ */
+#}
+<div>
+  {% if content %}
+    <div class="col-sm-12 mis-semillas">
+      <div class="field--label"> <h4>Descripción de la semilla </h4> </div>
+      {{ content.field_form_semilla }}
+    </div>
+    <div class="col-sm-8 licencia">
+      {{ content.field_licencia }}
+    </div>
+    <div class="col-sm-4">
+      {{ content.field_cantidad }}
+    </div>
+  {% endif %}
+</div>

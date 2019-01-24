@@ -1,0 +1,86 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_transaccion.transaccion_type.intercambio
+    - field.field.transaccion.intercambio.field_fecha
+    - field.field.transaccion.intercambio.field_semilla
+    - field.field.transaccion.intercambio.field_terminos
+    - field.field.transaccion.intercambio.field_terminos_opcionales
+    - field.field.transaccion.intercambio.field_texto_largo
+    - field.field.transaccion.intercambio.field_transaccion_state
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: transaccion.intercambio.default
+targetEntityType: transaccion
+bundle: intercambio
+mode: default
+content:
+  field_fecha:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_semilla:
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_terminos:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_terminos_opcionales:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_texto_largo:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_transaccion_state:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: above
+    type: author
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_usuario: true
+  langcode: true

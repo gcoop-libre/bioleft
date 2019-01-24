@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.especie
+id: taxonomy_term.especie.default
+targetEntityType: taxonomy_term
+bundle: especie
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

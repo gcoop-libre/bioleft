@@ -1,0 +1,19 @@
+uuid: 5eb0c815-d424-4e1a-971b-47e420d777d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nombre_comun
+    - taxonomy.vocabulary.plaga
+id: taxonomy_term.plaga.field_nombre_comun
+field_name: field_nombre_comun
+entity_type: taxonomy_term
+bundle: plaga
+label: 'Nombre comun'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

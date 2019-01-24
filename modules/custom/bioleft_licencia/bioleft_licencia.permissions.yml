@@ -1,0 +1,30 @@
+add licencia entities:
+  title: 'Create new Licencia entities'
+
+administer licencia entities:
+  title: 'Administer Licencia entities'
+  description: 'Allow to access the administration form to configure Licencia entities.'
+  restrict access: true
+
+delete licencia entities:
+  title: 'Delete Licencia entities'
+
+edit licencia entities:
+  title: 'Edit Licencia entities'
+
+view published licencia entities:
+  title: 'View published Licencia entities'
+
+view unpublished licencia entities:
+  title: 'View unpublished Licencia entities'
+
+view all licencia revisions:
+  title: 'View all Licencia revisions'
+
+revert all licencia revisions:
+  title: 'Revert all Licencia revisions'
+  description: 'Role requires permission <em>view Licencia revisions</em> and <em>edit rights</em> for licencia entities in question or <em>administer licencia entities</em>.'
+
+delete all licencia revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Licencia revisions</em> and <em>delete rights</em> for licencia entities in question or <em>administer licencia entities</em>.'

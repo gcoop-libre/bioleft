@@ -1,0 +1,11 @@
+langcode: es
+status: true
+dependencies: {  }
+id: usuario
+label: Usuario
+description: ''
+use_admin_theme: false
+path: /user/%
+access_logic: and
+access_conditions: {  }
+parameters: {  }

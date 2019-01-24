@@ -1,0 +1,68 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.mis_cultivos.mis_cultivos.field_fecha_siembra
+    - field.field.mis_cultivos.mis_cultivos.field_labor
+    - field.field.mis_cultivos.mis_cultivos.field_lote
+    - field.field.mis_cultivos.mis_cultivos.field_semilla
+  module:
+    - bioleft_mis_cultivos
+    - datetime
+    - user
+id: mis_cultivos.mis_cultivos.default
+targetEntityType: mis_cultivos
+bundle: mis_cultivos
+mode: default
+content:
+  field_fecha_siembra:
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_labor:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_lote:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_semilla:
+    weight: 2
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  name:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HSjgfN4S7s2T4nDFD0IzMVgfU-vdNGwmRFCuem2Ngtc
+name: Química
+vid: quimica
+description: 'Lista de agroquímicos para la entidad Labor'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: micro
+label: 'Micro (50x50)'
+effects:
+  4438c02a-9258-475a-9aa1-00e610eef417:
+    uuid: 4438c02a-9258-475a-9aa1-00e610eef417
+    id: image_scale
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      upscale: false

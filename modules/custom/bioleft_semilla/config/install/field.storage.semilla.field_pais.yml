@@ -1,0 +1,767 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_semilla
+    - options
+id: semilla.field_pais
+field_name: field_pais
+entity_type: semilla
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: AFG
+      label: Afganistán
+    -
+      value: ALA
+      label: 'Åland, Islas'
+    -
+      value: ALB
+      label: Albania
+    -
+      value: DEU
+      label: Alemania
+    -
+      value: AND
+      label: Andorra
+    -
+      value: AGO
+      label: Angola
+    -
+      value: AIA
+      label: Anguila
+    -
+      value: ATA
+      label: Antártida
+    -
+      value: ATG
+      label: 'Antigua y Barbuda'
+    -
+      value: SAU
+      label: 'Arabia Saudita'
+    -
+      value: DZA
+      label: Argelia
+    -
+      value: ARG
+      label: Argentina
+    -
+      value: ARM
+      label: Armenia
+    -
+      value: ABW
+      label: Aruba
+    -
+      value: AUS
+      label: Australia
+    -
+      value: AUT
+      label: Austria
+    -
+      value: AZE
+      label: Azerbaiyán
+    -
+      value: BHS
+      label: 'Bahamas (las)'
+    -
+      value: BGD
+      label: Bangladesh
+    -
+      value: BRB
+      label: Barbados
+    -
+      value: BHR
+      label: Bahrein
+    -
+      value: BEL
+      label: Bélgica
+    -
+      value: BLZ
+      label: Belice
+    -
+      value: BEN
+      label: Benin
+    -
+      value: BMU
+      label: Bermudas
+    -
+      value: BLR
+      label: Belarús
+    -
+      value: BOL
+      label: 'Bolivia (Estado Plurinacional de)'
+    -
+      value: BES
+      label: 'Bonaire, San Eustaquio y Saba'
+    -
+      value: BIH
+      label: 'Bosnia y Herzegovina'
+    -
+      value: BWA
+      label: Botswana
+    -
+      value: BRA
+      label: Brasil
+    -
+      value: BRN
+      label: 'Brunei Darussalam'
+    -
+      value: BGR
+      label: Bulgaria
+    -
+      value: BFA
+      label: 'Burkina Faso'
+    -
+      value: BDI
+      label: Burundi
+    -
+      value: BTN
+      label: Bhután
+    -
+      value: CPV
+      label: 'Cabo Verde'
+    -
+      value: KHM
+      label: Camboya
+    -
+      value: CMR
+      label: Camerún
+    -
+      value: CAN
+      label: Canadá
+    -
+      value: QAT
+      label: Qatar
+    -
+      value: TCD
+      label: Chad
+    -
+      value: CHL
+      label: Chile
+    -
+      value: CHN
+      label: China
+    -
+      value: CYP
+      label: Chipre
+    -
+      value: COL
+      label: Colombia
+    -
+      value: COM
+      label: 'Comoras (las)'
+    -
+      value: PRK
+      label: 'Corea (la República Popular Democrática de)'
+    -
+      value: KOR
+      label: 'Corea (la República de)'
+    -
+      value: CIV
+      label: 'Côte d''Ivoire'
+    -
+      value: CRI
+      label: 'Costa Rica'
+    -
+      value: HRV
+      label: Croacia
+    -
+      value: CUB
+      label: Cuba
+    -
+      value: CUW
+      label: Curaçao
+    -
+      value: DNK
+      label: Dinamarca
+    -
+      value: DMA
+      label: Dominica
+    -
+      value: ECU
+      label: Ecuador
+    -
+      value: EGY
+      label: Egipto
+    -
+      value: SLV
+      label: 'El Salvador'
+    -
+      value: ARE
+      label: 'Emiratos Árabes Unidos (los)'
+    -
+      value: ERI
+      label: Eritrea
+    -
+      value: SVK
+      label: Eslovaquia
+    -
+      value: SVN
+      label: Eslovenia
+    -
+      value: ESP
+      label: España
+    -
+      value: USA
+      label: 'Estados Unidos de América (los)'
+    -
+      value: EST
+      label: Estonia
+    -
+      value: ETH
+      label: Etiopía
+    -
+      value: PHL
+      label: 'Filipinas (las)'
+    -
+      value: FIN
+      label: Finlandia
+    -
+      value: FJI
+      label: Fiji
+    -
+      value: FRA
+      label: Francia
+    -
+      value: GAB
+      label: Gabón
+    -
+      value: GMB
+      label: 'Gambia (la)'
+    -
+      value: GEO
+      label: Georgia
+    -
+      value: GHA
+      label: Ghana
+    -
+      value: GIB
+      label: Gibraltar
+    -
+      value: GRD
+      label: Granada
+    -
+      value: GRC
+      label: Grecia
+    -
+      value: GRL
+      label: Groenlandia
+    -
+      value: GLP
+      label: Guadeloupe
+    -
+      value: GUM
+      label: Guam
+    -
+      value: GTM
+      label: Guatemala
+    -
+      value: GUF
+      label: 'Guayana Francesa'
+    -
+      value: GGY
+      label: Guernsey
+    -
+      value: GIN
+      label: Guinea
+    -
+      value: GNB
+      label: 'Guinea Bissau'
+    -
+      value: GNQ
+      label: 'Guinea Ecuatorial'
+    -
+      value: GUY
+      label: Guyana
+    -
+      value: HTI
+      label: Haití
+    -
+      value: HND
+      label: Honduras
+    -
+      value: HKG
+      label: 'Hong Kong'
+    -
+      value: HUN
+      label: Hungría
+    -
+      value: IND
+      label: India
+    -
+      value: IDN
+      label: Indonesia
+    -
+      value: IRQ
+      label: Iraq
+    -
+      value: IRN
+      label: 'Irán (República Islámica de)'
+    -
+      value: IRL
+      label: Irlanda
+    -
+      value: BVT
+      label: 'Bouvet, Isla'
+    -
+      value: IMN
+      label: 'Isla de Man'
+    -
+      value: CXR
+      label: 'Navidad, Isla de'
+    -
+      value: ISL
+      label: Islandia
+    -
+      value: CYM
+      label: 'Caimán, (las) Islas'
+    -
+      value: CCK
+      label: 'Cocos / Keeling, (las) Islas'
+    -
+      value: COK
+      label: 'Cook, (las) Islas'
+    -
+      value: FRO
+      label: 'Feroe, (las) Islas'
+    -
+      value: SGS
+      label: 'Georgia del Sur (la) y las Islas Sandwich del Sur'
+    -
+      value: HMD
+      label: 'Heard (Isla) e Islas McDonald'
+    -
+      value: FLK
+      label: 'Malvinas [Falkland], (las) Islas'
+    -
+      value: MNP
+      label: 'Marianas del Norte, (las) Islas'
+    -
+      value: MHL
+      label: 'Marshall, (las) Islas'
+    -
+      value: PCN
+      label: Pitcairn
+    -
+      value: SLB
+      label: 'Salomón, Islas'
+    -
+      value: TCA
+      label: 'Turcas y Caicos, (las) Islas'
+    -
+      value: UMI
+      label: 'Islas Ultramarinas Menores de los Estados Unidos (las)'
+    -
+      value: VGB
+      label: 'Vírgenes británicas, Islas'
+    -
+      value: VIR
+      label: 'Vírgenes de los Estados Unidos, Islas'
+    -
+      value: ISR
+      label: Israel
+    -
+      value: ITA
+      label: Italia
+    -
+      value: JAM
+      label: Jamaica
+    -
+      value: JPN
+      label: Japón
+    -
+      value: JEY
+      label: Jersey
+    -
+      value: JOR
+      label: Jordania
+    -
+      value: KAZ
+      label: Kazajstán
+    -
+      value: KEN
+      label: Kenya
+    -
+      value: KGZ
+      label: Kirguistán
+    -
+      value: KIR
+      label: Kiribati
+    -
+      value: KWT
+      label: Kuwait
+    -
+      value: LAO
+      label: 'Lao, (la) República Democrática Popular'
+    -
+      value: LSO
+      label: Lesotho
+    -
+      value: LVA
+      label: Letonia
+    -
+      value: LBN
+      label: Líbano
+    -
+      value: LBR
+      label: Liberia
+    -
+      value: LBY
+      label: Libia
+    -
+      value: LIE
+      label: Liechtenstein
+    -
+      value: LTU
+      label: Lituania
+    -
+      value: LUX
+      label: Luxemburgo
+    -
+      value: MAC
+      label: Macao
+    -
+      value: MKD
+      label: 'Macedonia (la ex República Yugoslava de)'
+    -
+      value: MDG
+      label: Madagascar
+    -
+      value: MYS
+      label: Malasia
+    -
+      value: MWI
+      label: Malawi
+    -
+      value: MDV
+      label: Maldivas
+    -
+      value: MLI
+      label: Malí
+    -
+      value: MLT
+      label: Malta
+    -
+      value: MAR
+      label: Marruecos
+    -
+      value: MTQ
+      label: Martinique
+    -
+      value: MUS
+      label: Mauricio
+    -
+      value: MRT
+      label: Mauritania
+    -
+      value: MYT
+      label: Mayotte
+    -
+      value: MEX
+      label: México
+    -
+      value: FSM
+      label: 'Micronesia (Estados Federados de)'
+    -
+      value: MDA
+      label: 'Moldova (la República de)'
+    -
+      value: MCO
+      label: Mónaco
+    -
+      value: MNG
+      label: Mongolia
+    -
+      value: MNE
+      label: Montenegro
+    -
+      value: MSR
+      label: Montserrat
+    -
+      value: MOZ
+      label: Mozambique
+    -
+      value: MMR
+      label: Myanmar
+    -
+      value: NAM
+      label: Namibia
+    -
+      value: NRU
+      label: Nauru
+    -
+      value: NPL
+      label: Nepal
+    -
+      value: NIC
+      label: Nicaragua
+    -
+      value: NER
+      label: 'Níger (el)'
+    -
+      value: NGA
+      label: Nigeria
+    -
+      value: NIU
+      label: Niue
+    -
+      value: NFK
+      label: 'Norfolk, Isla'
+    -
+      value: NOR
+      label: Noruega
+    -
+      value: NCL
+      label: 'Nueva Caledonia'
+    -
+      value: NZL
+      label: 'Nueva Zelandia'
+    -
+      value: OMN
+      label: Omán
+    -
+      value: NLD
+      label: 'Países Bajos (los)'
+    -
+      value: PAK
+      label: Pakistán
+    -
+      value: PLW
+      label: Palau
+    -
+      value: PSE
+      label: 'Palestina, Estado de'
+    -
+      value: PAN
+      label: Panamá
+    -
+      value: PNG
+      label: 'Papua Nueva Guinea'
+    -
+      value: PRY
+      label: Paraguay
+    -
+      value: PER
+      label: Perú
+    -
+      value: PYF
+      label: 'Polinesia Francesa'
+    -
+      value: POL
+      label: Polonia
+    -
+      value: PRT
+      label: Portugal
+    -
+      value: PRI
+      label: 'Puerto Rico'
+    -
+      value: GBR
+      label: 'Reino Unido de Gran Bretaña e Irlanda del Norte (el)'
+    -
+      value: ESH
+      label: 'República Árabe Saharaui Democrática'
+    -
+      value: CAF
+      label: 'República Centroafricana (la)'
+    -
+      value: CZE
+      label: 'República Checa'
+    -
+      value: COG
+      label: 'Congo (el)'
+    -
+      value: COD
+      label: 'Congo (la República Democrática del)'
+    -
+      value: DOM
+      label: 'Dominicana, (la) República'
+    -
+      value: REU
+      label: Reunión
+    -
+      value: RWA
+      label: Rwanda
+    -
+      value: ROU
+      label: Rumania
+    -
+      value: RUS
+      label: 'Rusia, (la) Federación de'
+    -
+      value: WSM
+      label: Samoa
+    -
+      value: ASM
+      label: 'Samoa Americana'
+    -
+      value: BLM
+      label: 'Saint Barthélemy'
+    -
+      value: KNA
+      label: 'Saint Kitts y Nevis'
+    -
+      value: SMR
+      label: 'San Marino'
+    -
+      value: MAF
+      label: 'Saint Martin (parte francesa)'
+    -
+      value: SPM
+      label: 'San Pedro y Miquelón'
+    -
+      value: VCT
+      label: 'San Vicente y las Granadinas'
+    -
+      value: SHN
+      label: 'Santa Helena, Ascensión y Tristán de Acuña'
+    -
+      value: LCA
+      label: 'Santa Lucía'
+    -
+      value: STP
+      label: 'Santo Tomé y Príncipe'
+    -
+      value: SEN
+      label: Senegal
+    -
+      value: SRB
+      label: Serbia
+    -
+      value: SYC
+      label: Seychelles
+    -
+      value: SLE
+      label: 'Sierra leona'
+    -
+      value: SGP
+      label: Singapur
+    -
+      value: SXM
+      label: 'Sint Maarten (parte neerlandesa)'
+    -
+      value: SYR
+      label: 'República Árabe Siria'
+    -
+      value: SOM
+      label: Somalia
+    -
+      value: LKA
+      label: 'Sri Lanka'
+    -
+      value: SWZ
+      label: Swazilandia
+    -
+      value: ZAF
+      label: Sudáfrica
+    -
+      value: SDN
+      label: 'Sudán (el)'
+    -
+      value: SSD
+      label: 'Sudán del Sur'
+    -
+      value: SWE
+      label: Suecia
+    -
+      value: CHE
+      label: Suiza
+    -
+      value: SUR
+      label: Suriname
+    -
+      value: SJM
+      label: 'Svalbard y Jan Mayen'
+    -
+      value: THA
+      label: Tailandia
+    -
+      value: TWN
+      label: 'Taiwán (Provincia de China)'
+    -
+      value: TZA
+      label: 'Tanzania, República Unida de'
+    -
+      value: TJK
+      label: Tayikistán
+    -
+      value: IOT
+      label: 'Territorio Británico del Océano Índico (el)'
+    -
+      value: ATF
+      label: 'Tierras Australes Francesas (las)'
+    -
+      value: TLS
+      label: Timor-Leste
+    -
+      value: TGO
+      label: Togo
+    -
+      value: TKL
+      label: Tokelau
+    -
+      value: TON
+      label: Tonga
+    -
+      value: TTO
+      label: 'Trinidad y Tobago'
+    -
+      value: TUN
+      label: Túnez
+    -
+      value: TKM
+      label: Turkmenistán
+    -
+      value: TUR
+      label: Turquía
+    -
+      value: TUV
+      label: Tuvalu
+    -
+      value: UKR
+      label: Ucrania
+    -
+      value: UGA
+      label: Uganda
+    -
+      value: URY
+      label: Uruguay
+    -
+      value: UZB
+      label: Uzbekistán
+    -
+      value: VUT
+      label: Vanuatu
+    -
+      value: VAT
+      label: 'Santa Sede (la)'
+    -
+      value: VEN
+      label: 'Venezuela (República Bolivariana de)'
+    -
+      value: VNM
+      label: 'Viet Nam'
+    -
+      value: WLF
+      label: 'Wallis y Futuna'
+    -
+      value: YEM
+      label: Yemen
+    -
+      value: DJI
+      label: Djibouti
+    -
+      value: ZMB
+      label: Zambia
+    -
+      value: ZWE
+      label: Zimbabwe
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

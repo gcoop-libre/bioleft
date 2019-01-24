@@ -1,0 +1,22 @@
+{#
+/**
+ * @file semilla.html.twig
+ * Default theme implementation to present Semilla data.
+ *
+ * This template is used when viewing Semilla pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_semilla()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('semilla') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

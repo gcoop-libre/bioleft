@@ -1,0 +1,101 @@
+<?php
+
+/**
+ * @file
+ * Contains bioleft_cuaderno_de_campo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\Views;
+
+/**
+ * Implements hook_help().
+ */
+function bioleft_cuaderno_de_campo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bioleft_cuaderno_de_campo module.
+    case 'help.page.bioleft_cuaderno_de_campo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entidad para tipos de Cuaderno de campo') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements bioleft_cuaderno_de_campo_form_alter().
+ */
+function bioleft_cuaderno_de_campo_form_alter(&$form, $form_state, $form_id) {
+
+  $view = Views::getView('cuaderno_de_campo');
+  $view->setDisplay('page_listado_cuaderno_de_campo');
+  $displayObj = $view->getDisplay();
+  $displayTitle = $displayObj->getOption('header');
+  $displayMenu = $displayTitle['area_text_custom'];
+  $tabs_lote = $displayMenu['content'];
+
+  $view = Views::getView('mis_cultivos');
+  $view->setDisplay('page_listado_mis_cultivos');
+  $displayObj = $view->getDisplay();
+  $displayTitle = $displayObj->getOption('header');
+  $displayMenu = $displayTitle['area_text_custom'];
+  $tabs_cultivo = $displayMenu['content'];
+
+  switch ($form_id) {
+
+    case 'cuaderno_de_campo_add_form':
+      $form['actions']['submit']['#value'] = t('Crear lote');
+      $encabezado = str_replace(' id="1" class="active"', "", $tabs_lote);
+      $form['#prefix'] = str_replace(' id="2"', ' id="2" class="active"', $encabezado);
+      $form['field_tipo_de_suelo']['#suffix'] = '<a data-toggle="collapse" href="#footwear" aria-expanded="false" aria-controls="footwear">Ver detalle de tipos suelo</a><div class="collapse panel panel-default" id="footwear"><div class="panel-heading">
+<strong>Aridisoles:</strong> suelo de color castaño o gris que se encuentra en zonas áridas y semiáridas. Se caracterizan por absorber con rapidez el agua de las lluvias.<br>
+<strong>Alfisoles:</strong> son suelos arcillosos poco permeables. Esto forma muchos bañados y pantanos.<br>
+<strong>Suelos lateriticos:</strong> son de color rojo y se encuentran en las regiones tropicales. En estos suelos se desarrolla una muy buena vegetación arbórea.<br>
+<strong>Vertisoles:</strong> cuentan con gran cantidad de arcilla extensible. Esto causa agrietamiento. Son malos para la agricultura pero muy buenos para la ganadería.<br>
+<strong>Molisoles:</strong> son suelos de color oscuro, que tienen la capacidad de drenar bien. Son los más fértiles del país. Ideales para la agricultura.<br>
+<strong>Gelisoles:</strong> suelos que se mantienen helados durante todo el año.<br>
+<strong>Histosoles:</strong> son de composición acida. Normalmente se encuentran en zonas de pantanos. Son buenos para el pastoreo del ganado.<br>
+<strong>Inceptisoles + andisoles:</strong> se encuentran en los valles húmedos de zonas cálidas y frías.<br>
+<strong>Entisoles:</strong> son suelos que se forman por lo arrastrado por aguas y vientos. No tienen materia orgánica ni son fértiles para cultivar en ellos.<br>
+</div></div><br><br>';
+      break;
+
+    case 'cuaderno_de_campo_edit_form':
+      $form['actions']['submit']['#value'] = t('Crear lote');
+      $form['#prefix'] = $tabs_lote;
+      $form['field_tipo_de_suelo']['#suffix'] = '<a data-toggle="collapse" href="#footwear" aria-expanded="false" aria-controls="footwear">Ver detalle de tipos suelo</a><div class="collapse panel-heading" id="footwear">
+<strong>Aridisoles:</strong> suelo de color castaño o gris que se encuentra en zonas áridas y semiáridas. Se caracterizan por absorber con rapidez el agua de las lluvias.<br>
+<strong>Alfisoles:</strong> son suelos arcillosos poco permeables. Esto forma muchos bañados y pantanos.<br>
+<strong>Suelos lateriticos:</strong> son de color rojo y se encuentran en las regiones tropicales. En estos suelos se desarrolla una muy buena vegetación arbórea.<br>
+<strong>Vertisoles:</strong> cuentan con gran cantidad de arcilla extensible. Esto causa agrietamiento. Son malos para la agricultura pero muy buenos para la ganadería.<br>
+<strong>Molisoles:</strong> son suelos de color oscuro, que tienen la capacidad de drenar bien. Son los más fértiles del país. Ideales para la agricultura.<br>
+<strong>Gelisoles:</strong> suelos que se mantienen helados durante todo el año.<br>
+<strong>Histosoles:</strong> son de composición acida. Normalmente se encuentran en zonas de pantanos. Son buenos para el pastoreo del ganado.<br>
+<strong>Inceptisoles + andisoles:</strong> se encuentran en los valles húmedos de zonas cálidas y frías.<br>
+<strong>Entisoles:</strong> son suelos que se forman por lo arrastrado por aguas y vientos. No tienen materia orgánica ni son fértiles para cultivar en ellos.<br>
+</div><br><br>';
+      break;
+
+    case 'mis_cultivos_add_form':
+      $form['actions']['submit']['#value'] = t('Crear cultivo');
+      $encabezado = str_replace(' id="3" class="active"', "", $tabs_cultivo);
+      $form['#prefix'] = str_replace(' id="4"', ' id="4" class="active"', $encabezado);
+      break;
+
+    case 'mis_cultivos_edit_form':
+      $form['actions']['submit']['#value'] = t('Crear cultivo');
+      $form['#prefix'] = $tabs_cultivo;
+      break;
+
+    case 'semilla_mis_semillas_add_form':
+      $form['actions']['submit']['#value'] = t('Crear semilla');
+      break;
+
+    case 'transaccion_intercambio_add-from-catalogo_form':
+      $form['actions']['submit']['#value'] = t('Solicitar semilla');
+      break;
+
+  }
+}

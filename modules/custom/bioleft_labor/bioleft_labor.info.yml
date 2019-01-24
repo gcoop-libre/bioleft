@@ -1,0 +1,18 @@
+name: 'Labor'
+type: module
+description: 'Modulo contenedor de entidad Labor.'
+core: 8.x
+package: 'Bioleft'
+dependencies:
+  - bioleft_labor:bioleft_labor
+  - conditional_fields:conditional_fields
+  - drupal:content_moderation
+  - drupal:datetime
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:options
+  - drupal:user
+  - feeds:feeds
+  - field_group:field_group
+  - field_permissions:field_permissions
+  - select_or_other:select_or_other

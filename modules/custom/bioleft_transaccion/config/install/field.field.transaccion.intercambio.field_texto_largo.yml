@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_transaccion.transaccion_type.intercambio
+    - field.storage.transaccion.field_texto_largo
+id: transaccion.intercambio.field_texto_largo
+field_name: field_texto_largo
+entity_type: transaccion
+bundle: intercambio
+label: Detalles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,22 @@
+transaccion_default:
+  id: transaccion_default
+  group: bioleft_transaccion
+  label: 'Workflow transacciones'
+  states:
+    pending:
+      label: 'Pending'
+    approved:
+      label: 'Approved'
+    rejected:
+      label: 'Rejected'
+  transitions:
+    approve:
+      label: 'Approve transaccion'
+      from:
+        - pending
+      to: approved
+    reject:
+      label: 'Reject transaccion'
+      from:
+        - pending
+      to: rejected

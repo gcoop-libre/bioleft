@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.cuaderno_de_campo.field_superficie_ha
+  module:
+    - bioleft_cuaderno_de_campo
+id: cuaderno_de_campo.cuaderno_de_campo.field_superficie_ha
+field_name: field_superficie_ha
+entity_type: cuaderno_de_campo
+bundle: cuaderno_de_campo
+label: 'Superficie HA'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: HA
+field_type: integer

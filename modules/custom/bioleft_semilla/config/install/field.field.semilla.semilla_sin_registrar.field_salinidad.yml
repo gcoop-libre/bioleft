@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - field.storage.semilla.field_salinidad
+  module:
+    - options
+id: semilla.semilla_sin_registrar.field_salinidad
+field_name: field_salinidad
+entity_type: semilla
+bundle: semilla_sin_registrar
+label: Salinidad
+description: 'Comportamiento respecto a la salinidad. Elija una calificación.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

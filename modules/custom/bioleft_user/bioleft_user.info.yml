@@ -1,0 +1,36 @@
+name: User
+description: 'Provide User related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - address:address
+  - bioleft_cuaderno_de_campo:bioleft_cuaderno_de_campo
+  - bioleft_semilla:bioleft_semilla
+  - captcha:captcha
+  - drupal:block
+  - drupal:block_content
+  - drupal:field
+  - drupal:file
+  - drupal:forum
+  - drupal:image
+  - drupal:language
+  - drupal:node
+  - drupal:options
+  - drupal:path
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - features:features
+  - field_group:field_group
+  - field_permissions:field_permissions
+  - geocoder:geocoder_address
+  - geocoder:geocoder_field
+  - geofield:geofield
+  - geolocation:geolocation
+  - leaflet:leaflet
+  - leaflet:leaflet_views
+  - page_manager:page_manager
+  - panels:panels
+  - views_conditional:views_conditional
+package: Bioleft

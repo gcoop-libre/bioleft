@@ -1,0 +1,112 @@
+<?php
+
+/**
+ * @file
+ * Contains bioleft_transaccion.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bioleft_transaccion_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bioleft_transaccion module.
+    case 'help.page.bioleft_transaccion':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entidades para tipos de transaccion') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bioleft_transaccion_theme() {
+  $theme = [];
+  $theme['transaccion'] = [
+    'render element' => 'elements',
+    'file' => 'transaccion.page.inc',
+    'template' => 'transaccion',
+  ];
+  $theme['transaccion_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'transaccion.page.inc',
+  ];
+  $theme['transaction_request_notification'] = [
+    'file' => 'bioleft_transaccion.mail.inc',
+    'template' => 'transaction-request-notification',
+    'variables' => [
+      'transaction' => NULL,
+    ],
+  ];
+  $theme['transaction_confirmation_message'] = [
+    'file' => 'bioleft_transaccion.mail.inc',
+    'template' => 'transaction-confirmation-message',
+    'variables' => [
+      'transaction' => NULL,
+    ],
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function bioleft_transaccion_theme_suggestions_transaccion(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#transaccion'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'transaccion__' . $sanitized_view_mode;
+  $suggestions[] = 'transaccion__' . $entity->bundle();
+  $suggestions[] = 'transaccion__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'transaccion__' . $entity->id();
+  $suggestions[] = 'transaccion__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+/**
+ * Implements hook_mail().
+ */
+function bioleft_transaccion_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'transaction_message':
+      $transaction = $params['transaction'];
+      $body = [
+        '#theme' => 'transaction_request_notification',
+        '#transaction' => $transaction,
+      ];
+      $message['subject'] = t('Bioleft: new transaction request');
+      $message['body'][] = \drupal::service('renderer')
+        ->render($body);
+      break;
+
+    case 'transaction_confirmation_message':
+      $transaction = $params['transaction'];
+      $body = [
+        '#theme' => 'transaction_confirmation_message',
+        '#transaction' => $transaction,
+      ];
+      $message['subject'] = t('Bioleft: your transaction has a new state');
+      $message['body'][] = \drupal::service('renderer')
+        ->render($body);
+      break;
+  }
+}
+
+/**
+ * Implements bioleft_transaccion_form_alter().
+ */
+function bioleft_transaccion_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'transaccion_intercambio_add-from-catalogo_form':
+      $form['actions']['submit']['#value'] = t('Solicitar semillas');
+      break;
+  }
+}

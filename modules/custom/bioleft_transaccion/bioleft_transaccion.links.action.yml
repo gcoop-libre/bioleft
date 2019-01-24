@@ -1,0 +1,10 @@
+entity.transaccion.add_form:
+  route_name: entity.transaccion.add_page
+  title: 'Add Transacción'
+  appears_on:
+    - entity.transaccion.collection
+entity.transaccion_type.add_form:
+  route_name: entity.transaccion_type.add_form
+  title: 'Add Transacción type'
+  appears_on:
+    - entity.transaccion_type.collection

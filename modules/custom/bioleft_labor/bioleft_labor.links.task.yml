@@ -1,0 +1,26 @@
+# Labor routing definition
+labor.settings_tab:
+  route_name: labor.settings
+  title: 'Settings'
+  base_route: labor.settings
+
+entity.labor.canonical:
+  route_name: entity.labor.canonical
+  base_route: entity.labor.canonical
+  title: 'View'
+
+entity.labor.edit_form:
+  route_name: entity.labor.edit_form
+  base_route: entity.labor.canonical
+  title: 'Edit'
+
+entity.labor.version_history:
+  route_name: entity.labor.version_history
+  base_route: entity.labor.canonical
+  title: 'Revisions'
+
+entity.labor.delete_form:
+  route_name:  entity.labor.delete_form
+  base_route:  entity.labor.canonical
+  title: Delete
+  weight: 10

@@ -1,0 +1,11 @@
+uuid: c60f0e66-42a4-4720-b0ef-a85a7f4dfdc9
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: X7mpyLlTnbVDgQq2Hj-6bhR3PtdAQCGCMtRPRH9e600
+name: Plaga
+vid: plaga
+description: 'Vocabulario relacionado con la entidad Labor'
+hierarchy: 0
+weight: 0

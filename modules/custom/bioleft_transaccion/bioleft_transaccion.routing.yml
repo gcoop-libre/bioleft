@@ -1,0 +1,39 @@
+entity.bioleft_transaccion.add_form:
+  path: '/transaccion/add/{transaccion_type}'
+  defaults:
+    _entity_form: 'transaccion.add'
+  requirements:
+    #Aun no se implementaron los permission profiles.
+    _access: 'TRUE'
+  options:
+    parameters:
+      transaccion_type:
+        type: entity:transaccion_type
+entity.bioleft_transaccion.confirm_form:
+  path: '/transaccion/{transaccion}/confirm'
+  defaults:
+    _entity_form: 'transaccion.confirm'
+    _title: 'Confirmation Form'
+  requirements:
+    transaccion: \d+
+    #Aun no se implementaron los permission profiles.
+    _entity_access: 'transaccion.confirm'
+  options:
+    parameters:
+      transaccion:
+        type: entity:transaccion
+entity.bioleft_transaccion.add-from-catalogo:
+  path: '/semillas/{semilla}/transaccion/{transaccion_type}'
+  defaults:
+    _entity_form: 'transaccion.add-from-catalogo'
+    _title: 'Create Transaccion'    
+  requirements:
+    semilla: \d+
+    #Aun no se implementaron los permission profiles.
+    _access: 'TRUE'
+  options:
+    parameters:
+      transaccion_type:
+        type: entity:transaccion_type
+      semilla:
+        type: entity:semilla

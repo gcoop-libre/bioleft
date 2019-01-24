@@ -1,0 +1,43 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.licencia.licencia.field_clausula
+    - field.field.licencia.licencia.field_icono
+    - image.style.thumbnail
+  module:
+    - bioleft_licencia
+    - image
+    - text
+id: licencia.licencia.default
+targetEntityType: licencia
+bundle: licencia
+mode: default
+content:
+  field_clausula:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_icono:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true

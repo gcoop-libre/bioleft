@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bioleft_labor.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bioleft_labor_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bioleft_labor module.
+    case 'help.page.bioleft_labor':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modulo contenedor de entidad Labor.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

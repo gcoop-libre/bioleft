@@ -1,0 +1,22 @@
+# Semilla routing definition
+
+entity.semilla.canonical:
+  route_name: entity.semilla.canonical
+  base_route: entity.semilla.canonical
+  title: 'View'
+
+entity.semilla.edit_form:
+  route_name: entity.semilla.edit_form
+  base_route: entity.semilla.canonical
+  title: 'Edit'
+
+entity.semilla.version_history:
+  route_name: entity.semilla.version_history
+  base_route: entity.semilla.canonical
+  title: 'Revisions'
+
+entity.semilla.delete_form:
+  route_name:  entity.semilla.delete_form
+  base_route:  entity.semilla.canonical
+  title: Delete
+  weight: 10

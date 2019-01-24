@@ -1,0 +1,38 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.cuaderno_de_campo.field_ubicacion_lote
+  module:
+    - bioleft_cuaderno_de_campo
+    - geocoder_field
+    - geofield
+third_party_settings:
+  geocoder_field:
+    method: source
+    weight: 0
+    geocode_field: field_direccion
+    reverse_geocode_field: ''
+    hidden: false
+    disabled: false
+    plugins:
+      - googlemaps
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: cuaderno_de_campo.cuaderno_de_campo.field_ubicacion_lote
+field_name: field_ubicacion_lote
+entity_type: cuaderno_de_campo
+bundle: cuaderno_de_campo
+label: 'Ubicación Lote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

@@ -1,0 +1,35 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.plaga.feeds_item
+    - field.field.taxonomy_term.plaga.field_nombre_comun
+    - taxonomy.vocabulary.plaga
+_core:
+  default_config_hash: eyJQM2QXHHlp3FQOwcTuV7tFS7iTsl0sG78DK7K_BCA
+id: taxonomy_term.plaga.default
+targetEntityType: taxonomy_term
+bundle: plaga
+mode: default
+content:
+  field_nombre_comun:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  feeds_item: true
+  langcode: true
+  path: true

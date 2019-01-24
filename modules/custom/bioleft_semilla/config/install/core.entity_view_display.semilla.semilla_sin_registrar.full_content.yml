@@ -1,0 +1,165 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_sin_registrar
+    - core.entity_view_mode.semilla.full_content
+    - field.field.semilla.semilla_sin_registrar.field_adn
+    - field.field.semilla.semilla_sin_registrar.field_aspectos
+    - field.field.semilla.semilla_sin_registrar.field_cultivar
+    - field.field.semilla.semilla_sin_registrar.field_descripcion_adn
+    - field.field.semilla.semilla_sin_registrar.field_enfermedades
+    - field.field.semilla.semilla_sin_registrar.field_especie
+    - field.field.semilla.semilla_sin_registrar.field_fundamento
+    - field.field.semilla.semilla_sin_registrar.field_hongos
+    - field.field.semilla.semilla_sin_registrar.field_imagen
+    - field.field.semilla.semilla_sin_registrar.field_informacion_genetica
+    - field.field.semilla.semilla_sin_registrar.field_insectos
+    - field.field.semilla.semilla_sin_registrar.field_poder_germinativo
+    - field.field.semilla.semilla_sin_registrar.field_rendimiento_promedio
+    - field.field.semilla.semilla_sin_registrar.field_salinidad
+    - field.field.semilla.semilla_sin_registrar.field_sequia
+  module:
+    - image
+    - options
+    - text
+id: semilla.semilla_sin_registrar.full_content
+targetEntityType: semilla
+bundle: semilla_sin_registrar
+mode: full_content
+content:
+  field_adn:
+    weight: 8
+    label: above
+    settings:
+      format: yes-no
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_aspectos:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cultivar:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_descripcion_adn:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_enfermedades:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_especie:
+    weight: 1
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fundamento:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_hongos:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_imagen:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_informacion_genetica:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_insectos:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_poder_germinativo:
+    weight: 7
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_rendimiento_promedio:
+    weight: 10
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_salinidad:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sequia:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  name:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_label
+    weight: 16
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  langcode: true

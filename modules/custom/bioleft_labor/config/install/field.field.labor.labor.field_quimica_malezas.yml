@@ -1,0 +1,29 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.labor.field_quimica_malezas
+    - taxonomy.vocabulary.quimica
+  module:
+    - bioleft_labor
+id: labor.labor.field_quimica_malezas
+field_name: field_quimica_malezas
+entity_type: labor
+bundle: labor
+label: 'Química para malezas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quimica: quimica
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,30 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ayuda.body
+    - field.field.node.ayuda.field_tags
+    - node.type.ayuda
+  module:
+    - text
+    - user
+id: node.ayuda.teaser
+targetEntityType: node
+bundle: ayuda
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_tags: true
+  langcode: true

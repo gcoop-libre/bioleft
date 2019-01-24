@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.storage.semilla.field_pais
+  module:
+    - options
+id: semilla.semilla_registrada.field_pais
+field_name: field_pais
+entity_type: semilla
+bundle: semilla_registrada
+label: País
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

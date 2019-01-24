@@ -1,0 +1,165 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.semilla_registrada
+    - field.field.semilla.semilla_registrada.feeds_item
+    - field.field.semilla.semilla_registrada.field_caracteristica
+    - field.field.semilla.semilla_registrada.field_condicion_genetica
+    - field.field.semilla.semilla_registrada.field_cultivar
+    - field.field.semilla.semilla_registrada.field_especie
+    - field.field.semilla.semilla_registrada.field_evento_transformacion
+    - field.field.semilla.semilla_registrada.field_grupo_especie
+    - field.field.semilla.semilla_registrada.field_inscripcion_rnc
+    - field.field.semilla.semilla_registrada.field_inscripcion_rncp
+    - field.field.semilla.semilla_registrada.field_nombre_botanico
+    - field.field.semilla.semilla_registrada.field_nro_registro
+    - field.field.semilla.semilla_registrada.field_pais
+    - field.field.semilla.semilla_registrada.field_representante
+    - field.field.semilla.semilla_registrada.field_solicitante
+    - field.field.semilla.semilla_registrada.field_tipo
+    - field.field.semilla.semilla_registrada.field_validez_rnpc
+    - field.field.semilla.semilla_registrada.field_vigencia
+  module:
+    - datetime
+id: semilla.semilla_registrada.default
+targetEntityType: semilla
+bundle: semilla_registrada
+mode: default
+content:
+  field_caracteristica:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_condicion_genetica:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cultivar:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_especie:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_evento_transformacion:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_grupo_especie:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_inscripcion_rnc:
+    weight: 7
+    settings:
+      date_order: YMD
+      time_type: none
+      increment: 15
+    third_party_settings: {  }
+    type: datetime_datelist
+    region: content
+  field_inscripcion_rncp:
+    weight: 8
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+    type: datetime_datelist
+    region: content
+  field_nombre_botanico:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_nro_registro:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_pais:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_representante:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_solicitante:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tipo:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_validez_rnpc:
+    weight: 9
+    settings:
+      date_order: YMD
+      time_type: none
+      increment: 15
+    third_party_settings: {  }
+    type: datetime_datelist
+    region: content
+  field_vigencia:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true
+  moderation_state: true
+  name: true
+  user_id: true

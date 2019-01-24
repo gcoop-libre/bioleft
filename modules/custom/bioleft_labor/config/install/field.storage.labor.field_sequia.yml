@@ -1,0 +1,39 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - bioleft_labor
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: labor.field_sequia
+field_name: field_sequia
+entity_type: labor
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: malo
+      label: Malo
+    -
+      value: regular
+      label: Regular
+    -
+      value: bueno
+      label: Bueno
+    -
+      value: muybueno
+      label: 'Muy Bueno'
+    -
+      value: excelente
+      label: Excelente
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

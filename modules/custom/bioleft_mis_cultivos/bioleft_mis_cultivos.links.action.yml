@@ -1,0 +1,5 @@
+entity.mis_cultivos.add_form:
+  route_name: entity.mis_cultivos.add_form
+  title: 'Add Mis cultivos'
+  appears_on:
+    - entity.mis_cultivos.collection

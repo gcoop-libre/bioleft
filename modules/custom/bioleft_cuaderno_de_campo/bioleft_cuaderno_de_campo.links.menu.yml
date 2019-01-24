@@ -1,0 +1,14 @@
+
+# Cuaderno de campo menu items definition
+entity.cuaderno_de_campo.collection:
+  title: 'Cuaderno de campo list'
+  route_name: entity.cuaderno_de_campo.collection
+  description: 'List Cuaderno de campo entities'
+  parent: bioleft_menu_agrupador.admin_structure_bioleft
+  weight: 100
+
+cuaderno_de_campo.admin.structure.settings:
+  title: 'Cuaderno de campo settings'
+  description: 'Configure Cuaderno de campo entities'
+  route_name: cuaderno_de_campo.settings
+  parent: bioleft_menu_agrupador.admin_structure_bioleft

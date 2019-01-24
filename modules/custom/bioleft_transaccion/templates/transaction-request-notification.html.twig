@@ -1,0 +1,41 @@
+{#
+/**
+ * @file template_preprocess_transaction_request.html.twig
+ * Default theme implementation to present site request email data.
+ *
+ * This template is used when notifying the request of a site.
+ *
+ *
+ * Available variables:
+ * - receiver: The semilla owner.
+ * - sender: The transaction owner.
+ * - url: Transaction confirm url.
+ *
+ * @see template_preprocess_bioleft_transaction_request_notification()
+ *
+ * @ingroup themeable
+ */
+#}
+<p>
+   {% trans %}
+   Hola {{ receiver }}!
+   {% endtrans %}
+</p>
+
+<p>
+   {% trans %}
+   El usuario {{ sender }} desea llevar a cabo una transacción sobre una semilla que se fue registrada por usted.
+   {% endtrans %}
+</p>
+
+<p>
+   {% trans %} 
+   Para aceptar o rechazar la transacción, acceda al formulario de confirmación haciendo click <a href="{{ url }}">aquí</a>
+   {% endtrans %}
+</p>
+
+<p>
+   {% trans %}
+   Muchas gracias!
+   {% endtrans %}
+</p>

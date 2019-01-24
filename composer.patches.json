@@ -1,0 +1,14 @@
+{
+  "patches": {
+    "drupal/core": {
+      "2174633: View output is not used for entityreference options": "https://www.drupal.org/files/issues/2018-03-09/drupal-use_view_output_for_entityreference_options-2174633-206.patch"
+    },
+    "drupal/hide_revision_field": {
+      "Module stops working with Drupal 8.3.0+": "https://www.drupal.org/files/issues/revisioning-drupal-8-2868543-4.patch"
+    },
+    "drupal/draggableviews": {
+      "Temporary fix to apply the next patch": "https://www.drupal.org/files/issues/2767437-n38-remove-update-hook-for-now.patch",
+      "Allow sort handler to select the view that stored the order": "https://www.drupal.org/files/issues/2767437-36.patch"
+    }
+  }
+}

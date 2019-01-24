@@ -1,0 +1,25 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.mis_cultivos.field_labor
+  module:
+    - bioleft_mis_cultivos
+id: mis_cultivos.mis_cultivos.field_labor
+field_name: field_labor
+entity_type: mis_cultivos
+bundle: mis_cultivos
+label: Labor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:labor'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
