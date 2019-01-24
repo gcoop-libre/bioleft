@@ -1,9 +1,9 @@
-# Spanish translation of MiPago.coop (8.x-1.0)
+# Spanish translation of Bioleft (8.x-1.0)
 # Copyright 2018 by gcoop <info@gcoop.coop>
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: MiPago.coop (8.x-1.0)\n"
+"Project-Id-Version: Bioleft (8.x-1.0)\n"
 "POT-Creation-Date: 2018-04-26 14:00-0300\n"
 "PO-Revision-Date: 2018-04-26 14:00-0300\n"
 "Last-Translator: Cristian G. Segarra <cristian@segarra.com.ar>\n"
