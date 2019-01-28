@@ -84,7 +84,6 @@ $ grunt watch
 
 para compilar automáticamente los archivos cada vez que se modifique una de las fuentes.
 
-
 ### Configuraciones
 
 #### Geolocalización
@@ -99,7 +98,10 @@ Obtener una [API Key de google maps][8] y configurarla en:
 Para que el sitio pueda enviar correos es necesario configurar el módulo
 [Swift Mailer][9] en *Configuración > Sistema > Swift Mailer*.
 
+### Documentación
 
+En [documentacion.md](doc/documentacion.md) hay más información sobre el uso
+de la plataforma, la importación de los contenidos iniciales, etc.
 
 [0]: https://getcomposer.org
 [1]: https://www.drush.org
