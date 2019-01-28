@@ -85,6 +85,21 @@ $ grunt watch
 para compilar automáticamente los archivos cada vez que se modifique una de las fuentes.
 
 
+### Configuraciones
+
+#### Geolocalización
+
+Obtener una [API Key de google maps][8] y configurarla en:
+
+* *Configuración > Sistema > Geocoder*
+* *Configuración > Servicios > Geolocalización*
+
+#### Envío de correos
+
+Para que el sitio pueda enviar correos es necesario configurar el módulo
+[Swift Mailer][9] en *Configuración > Sistema > Swift Mailer*.
+
+
 
 [0]: https://getcomposer.org
 [1]: https://www.drush.org
@@ -94,3 +109,5 @@ para compilar automáticamente los archivos cada vez que se modifique una de las
 [5]: https://sass-lang.com
 [6]: https://gruntjs.com
 [7]: https://nodejs.org
+[8]: https://developers.google.com/maps/documentation/javascript/get-api-key
+[9]: https://www.drupal.org/project/swift_mailer
