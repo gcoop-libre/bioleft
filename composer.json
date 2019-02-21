@@ -70,6 +70,7 @@
     "drupal/views_conditional": "^1.0",
     "drupal/views_contextual_filters_or": "^1.0",
     "drupal/xmlsitemap": "1.x-dev",
+    "drush/drush": "^9.5",
     "harvesthq/chosen": "^1.7",
     "roave/security-advisories": "dev-master"
   },
@@ -80,7 +81,6 @@
     "drupal/coder": "^8.2",
     "drupal/console": "~1.0",
     "drupal/drupal-extension": "~3.0",
-    "drush/drush": "^8",
     "jcalderonzumba/gastonjs": "~1.0.2",
     "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
     "mikey179/vfsstream": "~1.2",
