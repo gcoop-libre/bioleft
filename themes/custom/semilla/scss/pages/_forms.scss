@@ -81,14 +81,27 @@ form .field--type-entity-reference {
 }
 
 //Mis cultivos
+.view-cuaderno-de-campo .view-empty,
 .view-mis-cultivos .view-empty {
   margin-top: 20px;
 }
 
-//Foro
+//Foro 
 li.action-links {
   list-style: none;
   a {
     padding: 5px;
   }
+}
+
+//Usuario
+.panel-arrowed{
+    .panel-heading{
+        &:before{
+            font: normal normal normal 14px/1 FontAwesome;
+            content: "\f0da";
+            padding: 4px 13px 4px 0px;
+            float: left;
+        }
+      }
 }

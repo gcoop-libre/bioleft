@@ -5,7 +5,7 @@
     margin: 0 5px;
     list-style: none; }
     #navbar .menu li a {
-      color: #777;
+      color: #8CC63E;
       font-family: "OpenSans-SemiBold";
       font-size: 16px;
       background-color: transparent;
@@ -28,8 +28,8 @@
     width: 200px; } }
 
 footer.pie-de-pagina {
-  background-color: #777;
-  padding-bottom: 0px;
+  background-color: #8CC63E;
+  padding-bottom: 10px;
   margin-top: 45px; }
 
 .footer {
@@ -45,6 +45,12 @@ section.block {
   text-align: center;
   margin-bottom: 10px;
   color: white; }
+
+.social-media-links--platforms {
+  text-align: center; }
+  .social-media-links--platforms a {
+    color: white;
+    padding: 0px 8px; }
 
 @font-face {
   font-family: 'OpenSans-SemiBoldItalic';
@@ -158,9 +164,9 @@ h4.label {
 .view-datos-usuario,
 .block-views-blockmapa-block-mis-semillas-mapa .view-content,
 .view-display-id-block_listado_cuaderno_de_campo {
-  border: 2px solid grey;
+  border: 1px solid #666;
   padding: 40px;
-  box-shadow: 10px 10px 5px 0px #d1d1d1; }
+  box-shadow: 1px 2px 3px #ddd; }
 
 .form-control {
   border-radius: 1px; }
@@ -229,6 +235,7 @@ form .field--type-entity-reference {
   padding: 5px;
   margin: 5px 5px 5px 0px; }
 
+.view-cuaderno-de-campo .view-empty,
 .view-mis-cultivos .view-empty {
   margin-top: 20px; }
 
@@ -236,6 +243,12 @@ li.action-links {
   list-style: none; }
   li.action-links a {
     padding: 5px; }
+
+.panel-arrowed .panel-heading:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f0da";
+  padding: 4px 13px 4px 0px;
+  float: left; }
 
 .views-exposed-form div.form-item {
   padding: 5px 5px 5px 0px; }
