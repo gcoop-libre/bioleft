@@ -3,15 +3,26 @@ description: 'Provides site components.'
 type: module
 core: 8.x
 dependencies:
-  - drupal:block_content
-  - drupal:content_moderation
-  - drupal:ckeditor
-  - drupal:editor
-  - drupal:filter
-  - drupal:field
-  - drupal:language
-  - page_manager:page_manager
-  - panels:panels
-  - drupal:text
-  - drupal:user
+  - block_content
+  - ckeditor
+  - content_moderation
+  - 'drupal:block_content'
+  - 'drupal:ckeditor'
+  - 'drupal:content_moderation'
+  - 'drupal:editor'
+  - 'drupal:field'
+  - 'drupal:filter'
+  - 'drupal:language'
+  - 'drupal:text'
+  - 'drupal:user'
+  - editor
+  - field
+  - filter
+  - language
+  - page_manager
+  - 'page_manager:page_manager'
+  - panels
+  - 'panels:panels'
+  - text
+  - user
 package: Bioleft

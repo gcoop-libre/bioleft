@@ -6,6 +6,7 @@ dependencies:
     - field.field.user.user.field_direccion
     - field.field.user.user.field_imagen_perfil
     - field.field.user.user.field_institucion
+    - field.field.user.user.field_mapa_usuario
     - field.field.user.user.field_nombre
     - field.field.user.user.field_ocupacion
     - field.field.user.user.field_trabajo
@@ -40,6 +41,7 @@ hidden:
   field_direccion: true
   field_institucion: true
   field_lote: true
+  field_mapa_usuario: true
   field_ocupacion: true
   field_suelo: true
   field_superficie_ha: true

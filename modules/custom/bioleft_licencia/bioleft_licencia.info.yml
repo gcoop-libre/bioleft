@@ -4,13 +4,21 @@ description: 'Entidad para Licencia'
 core: 8.x
 package: Bioleft
 dependencies:
-  - bioleft_licencia:bioleft_licencia
-  - drupal:content_moderation
-  - drupal:field
-  - drupal:file
-  - drupal:image
-  - drupal:options
-  - drupal:text
-  - drupal:views
-  - field_permissions:field_permissions
-  - views_conditional:views_conditional
+  - bioleft_licencia
+  - 'bioleft_licencia:bioleft_licencia'
+  - content_moderation
+  - 'drupal:content_moderation'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:options'
+  - 'drupal:text'
+  - 'drupal:views'
+  - field
+  - field_permissions
+  - 'field_permissions:field_permissions'
+  - file
+  - image
+  - text
+  - views
+  - 'views_conditional:views_conditional'

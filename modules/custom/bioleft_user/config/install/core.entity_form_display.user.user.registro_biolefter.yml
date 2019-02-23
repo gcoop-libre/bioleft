@@ -6,6 +6,7 @@ dependencies:
     - field.field.user.user.field_direccion
     - field.field.user.user.field_imagen_perfil
     - field.field.user.user.field_institucion
+    - field.field.user.user.field_mapa_usuario
     - field.field.user.user.field_nombre
     - field.field.user.user.field_ocupacion
     - field.field.user.user.field_trabajo
@@ -61,6 +62,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_imagen_perfil: true
+  field_mapa_usuario: true
   field_ocupacion: true
   field_ubicacion: true
   langcode: true
