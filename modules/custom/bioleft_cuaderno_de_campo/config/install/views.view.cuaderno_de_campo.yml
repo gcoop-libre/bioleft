@@ -617,7 +617,7 @@ display:
           destination: false
           entity_type: cuaderno_de_campo
           plugin_id: entity_operations
-      css_class: col-md-6
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

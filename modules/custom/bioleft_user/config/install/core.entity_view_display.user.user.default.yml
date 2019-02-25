@@ -8,6 +8,7 @@ dependencies:
     - field.field.user.user.field_mapa_usuario
     - field.field.user.user.field_nombre
     - field.field.user.user.field_ocupacion
+    - field.field.user.user.field_telefono
     - field.field.user.user.field_trabajo
     - field.field.user.user.field_ubicacion
     - image.style.micro
@@ -67,6 +68,14 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_telefono:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_trabajo:
     weight: 5

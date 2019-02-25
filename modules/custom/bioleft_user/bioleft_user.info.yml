@@ -27,6 +27,7 @@ dependencies:
   - features
   - 'features:features'
   - field
+  - field_group
   - 'field_group:field_group'
   - field_permissions
   - 'field_permissions:field_permissions'

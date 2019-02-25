@@ -81,12 +81,12 @@ form .field--type-entity-reference {
 }
 
 //Mis cultivos
-.view-cuaderno-de-campo .view-empty,
+.view-cuaderno-de-campo  .view-empty,
 .view-mis-cultivos .view-empty {
   margin-top: 20px;
 }
 
-//Foro 
+//Foro
 li.action-links {
   list-style: none;
   a {
@@ -95,13 +95,19 @@ li.action-links {
 }
 
 //Usuario
-.panel-arrowed{
-    .panel-heading{
-        &:before{
-            font: normal normal normal 14px/1 FontAwesome;
-            content: "\f0da";
-            padding: 4px 13px 4px 0px;
-            float: left;
-        }
-      }
+.form-number{
+  width: 100% !important;
 }
+.mobile-number-field{
+   .select-wrapper:after{
+      display: none;
+    }
+    label {
+        width: 100%;
+    }
+    .local-number{
+        box-shadow: none; 
+        height: inherit;
+    }
+} 
+

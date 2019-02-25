@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14be2406cac158b07bd2467b7e8f7497",
+    "content-hash": "57941661abbc69f9729202f174886c53",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3371,6 +3371,73 @@
             }
         },
         {
+            "name": "drupal/fbl",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/fbl",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fbl-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "a4cfe2f8f98a36bd1ece9ec263684b9da804d3a7"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1463464741",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "N.kishorekumar",
+                    "homepage": "https://www.drupal.org/user/2887361"
+                },
+                {
+                    "name": "chishah92",
+                    "homepage": "https://www.drupal.org/user/2866197"
+                },
+                {
+                    "name": "krknth",
+                    "homepage": "https://www.drupal.org/user/2659743"
+                },
+                {
+                    "name": "mahaveer003",
+                    "homepage": "https://www.drupal.org/user/3063119"
+                },
+                {
+                    "name": "neerajskydiver",
+                    "homepage": "https://www.drupal.org/user/227792"
+                },
+                {
+                    "name": "xaiwant",
+                    "homepage": "https://www.drupal.org/user/2598494"
+                }
+            ],
+            "description": "Allows users login with different fields.",
+            "homepage": "https://www.drupal.org/project/fbl",
+            "support": {
+                "source": "http://cgit.drupalcode.org/fbl"
+            }
+        },
+        {
             "name": "drupal/features",
             "version": "3.8.0",
             "source": {
@@ -4264,17 +4331,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.0.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/leaflet",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "58d9fb8f90d5ee5d74fb750a97ea6aa5418297c2"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "5a08a9b798621a98912c2c91af34bf7fb39ee32e"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4286,8 +4353,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1548201484",
+                    "version": "8.x-1.3",
+                    "datestamp": "1550423885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10452,6 +10519,61 @@
             "time": "2017-12-06T20:35:40+00:00"
         },
         {
+            "name": "drupal/international_phone",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/international_phone",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/international_phone-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "6bd0cc87dd1a4c58728ad5dea2f37f4a114d19cb"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1500739142",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ajayNimbolkar",
+                    "homepage": "https://www.drupal.org/user/2876727"
+                },
+                {
+                    "name": "heathdutton",
+                    "homepage": "https://www.drupal.org/user/2403690"
+                },
+                {
+                    "name": "mayurjadhav",
+                    "homepage": "https://www.drupal.org/user/2266604"
+                }
+            ],
+            "description": "The international_phone module allows administrators to define a field type for international phone numbers.",
+            "homepage": "https://www.drupal.org/project/international_phone",
+            "support": {
+                "source": "http://cgit.drupalcode.org/international_phone"
+            }
+        },
+        {
             "name": "fabpot/goutte",
             "version": "v3.2.3",
             "source": {
@@ -11976,7 +12098,6 @@
         "drupal/geocoder_geofield": 10,
         "drupal/geofield": 10,
         "drupal/inline_entity_form": 5,
-        "drupal/leaflet": 10,
         "drupal/libraries": 15,
         "drupal/page_manager": 10,
         "drupal/redirect": 10,

@@ -177,7 +177,7 @@ display:
           entity_field: uid
           plugin_id: user_uid
       display_extenders: {  }
-      css_class: col-md-6
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

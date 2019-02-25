@@ -244,11 +244,18 @@ li.action-links {
   li.action-links a {
     padding: 5px; }
 
-.panel-arrowed .panel-heading:before {
-  font: normal normal normal 14px/1 FontAwesome;
-  content: "\f0da";
-  padding: 4px 13px 4px 0px;
-  float: left; }
+.form-number {
+  width: 100% !important; }
+
+.mobile-number-field .select-wrapper:after {
+  display: none; }
+
+.mobile-number-field label {
+  width: 100%; }
+
+.mobile-number-field .local-number {
+  box-shadow: none;
+  height: inherit; }
 
 .views-exposed-form div.form-item {
   padding: 5px 5px 5px 0px; }

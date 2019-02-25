@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_telefono
+  module:
+    - user
+id: user.user.field_telefono
+field_name: field_telefono
+entity_type: user
+bundle: user
+label: Teléfono
+description: 'Puede usar este número para iniciar sesión'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
