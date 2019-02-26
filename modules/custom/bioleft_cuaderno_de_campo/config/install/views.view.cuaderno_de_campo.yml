@@ -417,7 +417,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Aún no hay cuadernos de campo creados. Creá tu primer cuaderno de campo.'
+          content: 'Aún no hay cuadernos de campo creados. Crea tu primer cuaderno de campo.'
           plugin_id: text_custom
       display_description: ''
       header: {  }
@@ -771,6 +771,8 @@ display:
         fields: false
         header: false
         title: false
+        footer: false
+        empty: false
       relationships:
         user_id:
           id: user_id
@@ -1175,6 +1177,19 @@ display:
           content: "<ul class=\"nav nav-tabs\">\r\n  <li id=\"1\" class=\"active\"><a href=\"/lote\">Lista de lotes</a></li>\r\n  <li id=\"2\"><a href=\"/admin/structure/cuaderno_de_campo/add\">Agregar lote</a></li>\r\n  <li id=\"3\"><a href=\"/mis-cultivos\">Lista de cultivos</a></li>\r\n  <li id=\"4\"><a href=\"/admin/structure/mis_cultivos/add\">Agregar cultivo</a></li>\r\n</ul> "
           plugin_id: text_custom
       title: Lote
+      footer: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: "<p>Aún no hay lotes creados. Crea tu primer lote.</p>\r\n\r\n<div>\r\n<a href=\"/admin/structure/cuaderno_de_campo/add\" class=\"btn btn-default\">Agregar Lote</a>\r\n</div>"
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:
