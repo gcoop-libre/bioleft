@@ -75,9 +75,7 @@ assignments:
         block: block
         language_content_settings: language_content_settings
         configurable_language: configurable_language
-        migration: migration
-        shortcut_set: shortcut_set
-        tour: tour
+        menu: menu
     enabled: true
     weight: 10
   site:
