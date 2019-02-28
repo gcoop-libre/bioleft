@@ -1,9 +1,17 @@
 //Panel de usuario
 
-.path-user .block-region-content section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+.path-user{
+	.block-region-content section {
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	}
+	.block-views-blockmapa-block-mis-semillas-mapa{
+		.view-header{
+			display: none;
+		}
+	}	
+} 
+
 
 .view-datos-usuario,
 .block-views-blockmapa-block-mis-semillas-mapa .view-content,
@@ -19,9 +27,16 @@
 //Página de inicio
 .view-id-mis_semillas{
 		.view-header{
+				.subtitle{
 					padding: 40px 0px 50px 0px;
 					font-size:20px;
+				}
 			}
+		.view-id-mapa{
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid #ddd;
+		}			
 		.pager-nav{
 			margin-top: 50px;
 		}

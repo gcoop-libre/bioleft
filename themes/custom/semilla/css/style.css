@@ -193,6 +193,9 @@ h4.label {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+.path-user .block-views-blockmapa-block-mis-semillas-mapa .view-header {
+  display: none; }
+
 .view-datos-usuario,
 .block-views-blockmapa-block-mis-semillas-mapa .view-content,
 .view-display-id-block_listado_mis_cultivos,
@@ -201,9 +204,14 @@ h4.label {
   padding: 40px;
   box-shadow: 1px 2px 3px #ddd; }
 
-.view-id-mis_semillas .view-header {
+.view-id-mis_semillas .view-header .subtitle {
   padding: 40px 0px 50px 0px;
   font-size: 20px; }
+
+.view-id-mis_semillas .view-id-mapa {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd; }
 
 .view-id-mis_semillas .pager-nav {
   margin-top: 50px; }
@@ -275,7 +283,7 @@ form .field--type-entity-reference {
 
 .field--name-field-licencia,
 .field--name-field-cantidad {
-  border: 2px solid #f1f1f1; }
+  /*border: 2px solid #f1f1f1;*/ }
   .field--name-field-licencia .field--name-name,
   .field--name-field-cantidad .field--name-name {
     font-size: 16px; }
