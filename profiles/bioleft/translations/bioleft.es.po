@@ -75,3 +75,31 @@ msgstr "Bioleft: tu transacción tiene un nuevo estado"
 # Bootstrap
 msgid "Upload requirements"
 msgstr "Requerimientos del archivo"
+
+#Custom
+msgid "Created the %label Licencia."
+msgstr "Se guardó la licencia." 
+
+msgid "Created the %label Semilla."
+msgstr "Se guardó la semilla."
+
+msgid "Created the %label Transacción."
+msgstr "Se guardó la transacción." 
+
+msgid "Access denied. You must log in to view this page."
+msgstr "Acceso no permitido. Debes iniciar sesión para ver esta página."
+
+msgid "Add Semilla type"
+msgstr "Añadir tipo de semilla"
+
+msgid "Save and import" 
+msgstr "Guardar e importar"
+
+msgid "Fetching: %title"
+msgstr "Procesando: %title"
+
+msgid "Processing: %title"
+msgstr "Procesando: %title"
+
+msgid "General discussion"
+msgstr "Debate General"

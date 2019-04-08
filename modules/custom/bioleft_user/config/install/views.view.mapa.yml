@@ -65,14 +65,15 @@ display:
           name_field: ''
           description_field: nothing
           leaflet_map: 'OSM Mapnik'
-          height: '400'
+          height: '500'
           hide_empty_map: 0
+          disable_wheel: 1
           map_position:
-            force: 0
+            force: 1
             center:
-              lat: '0'
+              lat: '17'
               lon: '0'
-            zoom: '12'
+            zoom: '2'
             minZoom: '1'
             maxZoom: '18'
           icon:
@@ -84,12 +85,16 @@ display:
             iconAnchor:
               x: ''
               'y': ''
+            shadowSize:
+              x: ''
+              'y': ''
             shadowAnchor:
               x: ''
               'y': ''
             popupAnchor:
               x: ''
               'y': ''
+          path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
       row:
         type: fields
       fields:

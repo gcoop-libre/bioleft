@@ -50,11 +50,11 @@ Los campos opcionales son:
 
 Desde *Estructura > Menús* se pueden agregar links a la Navegación Principal del sitio.
 
-Las páginas disponibles para agregar en el menú son
+Las páginas que denerán añadirse en el menú son:
 
 * *Catalogo de Semillas* (`/catalogo-semillas`)
 * *Mis Semillas* (`/mis-semillas`)
-* *Lotes* (`/lote`)
+* *Cuaderno de campo* (`/lote`)
 * *Mis Transacciones* (`/mis-transacciones`)
 * *Foro* (`/forum`)
 

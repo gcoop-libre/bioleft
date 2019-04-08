@@ -5,8 +5,11 @@ dependencies:
     - bioleft_semilla.semilla_type.mis_semillas
     - field.field.semilla.mis_semillas.field_cantidad
     - field.field.semilla.mis_semillas.field_form_semilla
+    - field.field.semilla.mis_semillas.field_imagen
     - field.field.semilla.mis_semillas.field_licencia
     - field.field.semilla.mis_semillas.field_semilla
+  module:
+    - image
 id: semilla.mis_semillas.default
 targetEntityType: semilla
 bundle: mis_semillas
@@ -29,6 +32,15 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_imagen:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_licencia:
     weight: 2

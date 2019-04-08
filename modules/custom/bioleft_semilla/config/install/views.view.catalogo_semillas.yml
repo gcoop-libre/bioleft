@@ -1241,7 +1241,8 @@ display:
               anonymous: '0'
               editor: '0'
               biolefter: '0'
-            placeholder: 'Inserte un nro. de registro o cultivar'
+              admin: '0'
+            placeholder: 'Inserte un número de registro o cultivar'
           is_grouped: false
           group_info:
             label: 'Combinar los campos de filtro'

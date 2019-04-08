@@ -8,15 +8,52 @@ dependencies:
     - field.field.user.user.field_mapa_usuario
     - field.field.user.user.field_nombre
     - field.field.user.user.field_ocupacion
+    - field.field.user.user.field_telefono
     - field.field.user.user.field_trabajo
     - field.field.user.user.field_ubicacion
     - image.style.thumbnail
   module:
     - address
+    - field_group
     - geolocation
     - image
     - path
     - user
+third_party_settings:
+  field_group:
+    group_work:
+      children:
+        - field_institucion
+        - field_trabajo
+        - field_ocupacion
+      parent_name: ''
+      weight: 6
+      format_type: tab
+      format_settings:
+        label: 'Datos de trabajo'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: 'panel-success panel-arrowed'
+      label: 'Datos de trabajo'
+      region: content
+    group_datos_de_ubicacion:
+      children:
+        - field_direccion
+        - field_mapa_usuario
+      parent_name: ''
+      weight: 5
+      format_type: tab
+      format_settings:
+        label: 'Datos de ubicación'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: 'panel-success panel-arrowed'
+      label: 'Datos de ubicación'
+      region: content
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -51,7 +88,7 @@ content:
     type: string_textfield
     region: content
   field_mapa_usuario:
-    weight: 6
+    weight: 7
     settings:
       default_longitude: ''
       default_latitude: ''
@@ -94,13 +131,21 @@ content:
     type: string_textfield
     region: content
   field_ocupacion:
-    weight: 8
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_telefono:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_trabajo:
-    weight: 7
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select

@@ -5,11 +5,14 @@ dependencies:
     - bioleft_semilla.semilla_type.mis_semillas
     - field.field.semilla.mis_semillas.field_cantidad
     - field.field.semilla.mis_semillas.field_form_semilla
+    - field.field.semilla.mis_semillas.field_imagen
     - field.field.semilla.mis_semillas.field_licencia
     - field.field.semilla.mis_semillas.field_semilla
+    - image.style.thumbnail
   module:
     - entity_reference_views_select
     - field_group
+    - image
     - inline_entity_form
 third_party_settings:
   field_group:
@@ -53,6 +56,14 @@ content:
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
+    region: content
+  field_imagen:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_licencia:
     weight: 3

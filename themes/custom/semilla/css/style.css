@@ -5,7 +5,7 @@
     margin: 0 5px;
     list-style: none; }
     #navbar .menu li a {
-      color: #777;
+      color: #8CC63E;
       font-family: "OpenSans-SemiBold";
       font-size: 16px;
       background-color: transparent;
@@ -28,8 +28,8 @@
     width: 200px; } }
 
 footer.pie-de-pagina {
-  background-color: #777;
-  padding-bottom: 0px;
+  background-color: #8CC63E;
+  padding-bottom: 10px;
   margin-top: 45px; }
 
 .footer {
@@ -45,6 +45,12 @@ section.block {
   text-align: center;
   margin-bottom: 10px;
   color: white; }
+
+.social-media-links--platforms {
+  text-align: center; }
+  .social-media-links--platforms a {
+    color: white;
+    padding: 0px 8px; }
 
 @font-face {
   font-family: 'OpenSans-SemiBoldItalic';
@@ -148,6 +154,38 @@ section.block {
   margin-right: 0;
   margin-left: 0; }
 
+.pagination {
+  border-radius: 0; }
+  .pagination > li {
+    display: inline; }
+    .pagination > li > a,
+    .pagination > li > span {
+      color: #333; }
+  .pagination > li > a:hover, .pagination > li > a:focus,
+  .pagination > li > span:hover,
+  .pagination > li > span:focus {
+    z-index: 2;
+    color: white;
+    background-color: #8CC63E;
+    border-color: #8CC63E; }
+  .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+  .pagination > .active > span,
+  .pagination > .active > span:hover,
+  .pagination > .active > span:focus {
+    z-index: 3;
+    color: white;
+    background-color: #8CC63E;
+    border-color: #8CC63E; }
+  .pagination > .disabled > span,
+  .pagination > .disabled > span:hover,
+  .pagination > .disabled > span:focus,
+  .pagination > .disabled > a,
+  .pagination > .disabled > a:hover,
+  .pagination > .disabled > a:focus {
+    color: #333;
+    background-color: #ddd;
+    border-color: #ddd; }
+
 h4.label {
   color: #333; }
 
@@ -155,12 +193,50 @@ h4.label {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+.path-user .block-views-blockmapa-block-mis-semillas-mapa .view-header {
+  display: none; }
+
 .view-datos-usuario,
 .block-views-blockmapa-block-mis-semillas-mapa .view-content,
+.view-display-id-block_listado_mis_cultivos,
 .view-display-id-block_listado_cuaderno_de_campo {
-  border: 2px solid grey;
+  border: 1px solid #ddd;
   padding: 40px;
-  box-shadow: 10px 10px 5px 0px #d1d1d1; }
+  box-shadow: 1px 2px 3px #ddd; }
+
+.view-id-mis_semillas .view-header .subtitle {
+  padding: 40px 0px 50px 0px;
+  font-size: 20px; }
+
+.view-id-mis_semillas .view-id-mapa {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd; }
+
+.view-id-mis_semillas .pager-nav {
+  margin-top: 50px; }
+
+.view-id-mis_semillas #views-bootstrap-mis-semillas-page-1 .col {
+  margin-bottom: 40px; }
+  .view-id-mis_semillas #views-bootstrap-mis-semillas-page-1 .col .views-field-field-imagen img {
+    width: 100%; }
+  .view-id-mis_semillas #views-bootstrap-mis-semillas-page-1 .col .views-field-created .field-content {
+    width: 100%;
+    text-align: right;
+    display: block;
+    color: #888;
+    font-size: 12px;
+    padding: 10px 0px; }
+  .view-id-mis_semillas #views-bootstrap-mis-semillas-page-1 .col .media {
+    margin: 12px 0px 0px; }
+    .view-id-mis_semillas #views-bootstrap-mis-semillas-page-1 .col .media img {
+      width: 30px;
+      margin-right: 10px; }
+  .view-id-mis_semillas #views-bootstrap-mis-semillas-page-1 .col .media-body {
+    padding-top: 6px; }
+  .view-id-mis_semillas #views-bootstrap-mis-semillas-page-1 .col .views-field-field-cantidad {
+    padding: 4px 0px;
+    font-weight: bold; }
 
 .form-control {
   border-radius: 1px; }
@@ -207,7 +283,7 @@ form .field--type-entity-reference {
 
 .field--name-field-licencia,
 .field--name-field-cantidad {
-  border: 2px solid #f1f1f1; }
+  /*border: 2px solid #f1f1f1;*/ }
   .field--name-field-licencia .field--name-name,
   .field--name-field-cantidad .field--name-name {
     font-size: 16px; }
@@ -225,10 +301,12 @@ form .field--type-entity-reference {
 .cuaderno-de-campo-form .panel-default {
   margin-top: 10px; }
 
-.view-cuaderno-de-campo td.views-field {
+.view-cuaderno-de-campo td.views-field,
+.view-mis-cultivos td.views-field {
   padding: 5px;
   margin: 5px 5px 5px 0px; }
 
+.view-cuaderno-de-campo .view-empty,
 .view-mis-cultivos .view-empty {
   margin-top: 20px; }
 
@@ -236,6 +314,19 @@ li.action-links {
   list-style: none; }
   li.action-links a {
     padding: 5px; }
+
+.form-number {
+  width: 100% !important; }
+
+.mobile-number-field .select-wrapper:after {
+  display: none; }
+
+.mobile-number-field label {
+  width: 100%; }
+
+.mobile-number-field .local-number {
+  box-shadow: none;
+  height: inherit; }
 
 .views-exposed-form div.form-item {
   padding: 5px 5px 5px 0px; }

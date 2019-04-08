@@ -50,7 +50,7 @@ form .field--type-entity-reference {
 }
 .field--name-field-licencia,
 .field--name-field-cantidad {
-  border: 2px solid #f1f1f1;
+  /*border: 2px solid #f1f1f1;*/
   .field--name-name {
     font-size: 16px;
   }
@@ -75,12 +75,14 @@ form .field--type-entity-reference {
 }
 
 //Tabla cuaderno de campo
-.view-cuaderno-de-campo td.views-field {
+.view-cuaderno-de-campo td.views-field,
+.view-mis-cultivos td.views-field {
   padding: 5px;
   margin: 5px 5px 5px 0px;
 }
 
 //Mis cultivos
+.view-cuaderno-de-campo  .view-empty,
 .view-mis-cultivos .view-empty {
   margin-top: 20px;
 }
@@ -92,3 +94,21 @@ li.action-links {
     padding: 5px;
   }
 }
+
+//Usuario
+.form-number{
+  width: 100% !important;
+}
+.mobile-number-field{
+   .select-wrapper:after{
+      display: none;
+    }
+    label {
+        width: 100%;
+    }
+    .local-number{
+        box-shadow: none; 
+        height: inherit;
+    }
+} 
+

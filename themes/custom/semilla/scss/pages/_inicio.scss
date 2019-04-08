@@ -1,14 +1,79 @@
 //Panel de usuario
 
-.path-user .block-region-content section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+.path-user{
+	.block-region-content section {
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	}
+	.block-views-blockmapa-block-mis-semillas-mapa{
+		.view-header{
+			display: none;
+		}
+	}	
+} 
+
 
 .view-datos-usuario,
 .block-views-blockmapa-block-mis-semillas-mapa .view-content,
+.view-display-id-block_listado_mis_cultivos,
 .view-display-id-block_listado_cuaderno_de_campo {
-  border: 2px solid grey;
+    border: 1px solid #ddd;
 	padding: 40px;
-	box-shadow: 10px 10px 5px 0px rgba(209,209,209,1);
+	box-shadow: 1px 2px 3px #ddd
 }
+
+
+
+//Página de inicio
+.view-id-mis_semillas{
+		.view-header{
+				.subtitle{
+					padding: 40px 0px 50px 0px;
+					font-size:20px;
+				}
+			}
+		.view-id-mapa{
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid #ddd;
+		}			
+		.pager-nav{
+			margin-top: 50px;
+		}
+		#views-bootstrap-mis-semillas-page-1{
+
+			.col{
+				margin-bottom: 40px;
+				.views-field-field-imagen{
+					img{
+						width: 100%;
+					}		
+				}
+				.views-field-created{
+					.field-content{
+						width: 100%;
+					    text-align: right;
+					    display: block;
+					    color: #888;
+					    font-size: 12px;
+					    padding: 10px 0px;
+					}
+				}
+				.media{
+						margin: 12px 0px 0px;
+					img{
+						width: 30px;
+						margin-right: 10px;
+					}
+				}
+				.media-body{
+					padding-top:6px;
+				}
+				.views-field-field-cantidad{
+						padding: 4px 0px;
+						font-weight: bold;
+				}
+			}
+			
+		}
+	}
