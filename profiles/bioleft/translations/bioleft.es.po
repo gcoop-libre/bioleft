@@ -66,7 +66,7 @@ msgstr "Bioleft: nueva solicitud de transacción"
 
 msgid "Are you sure you want to approve the transaccion @transaccion?"
 msgstr ""
-"Estás seguro de que querés aprobar esta transacción "
+"¿Estás seguro de que querés aprobar esta transacción "
 "\"@transaccion\"?"
 
 msgid "Bioleft: your transaction has a new state"
@@ -78,13 +78,13 @@ msgstr "Requerimientos del archivo"
 
 #Custom
 msgid "Created the %label Licencia."
-msgstr "Se guardó la licencia." 
+msgstr "Se guardó la licencia."
 
 msgid "Created the %label Semilla."
 msgstr "Se guardó la semilla."
 
 msgid "Created the %label Transacción."
-msgstr "Se guardó la transacción." 
+msgstr "Se guardó la transacción."
 
 msgid "Access denied. You must log in to view this page."
 msgstr "Acceso no permitido. Debes iniciar sesión para ver esta página."
@@ -92,7 +92,7 @@ msgstr "Acceso no permitido. Debes iniciar sesión para ver esta página."
 msgid "Add Semilla type"
 msgstr "Añadir tipo de semilla"
 
-msgid "Save and import" 
+msgid "Save and import"
 msgstr "Guardar e importar"
 
 msgid "Fetching: %title"
@@ -103,3 +103,163 @@ msgstr "Procesando: %title"
 
 msgid "General discussion"
 msgstr "Debate General"
+
+
+msgid "Access denied. You must log in to view this page."
+msgstr "Acceso denegado. Debes iniciar sesión para ver esta página."
+
+msgid "Enter the characters shown in the image."
+msgstr "Ingresá los caracteres que se muestran en esta imagen."
+
+msgid "Save and add"
+msgstr "Agregar y guardar."
+
+msgid "The locality (i.e. city)."
+msgstr "Ciudad"
+
+msgid "The dependent locality (i.e. neighbourhood)."
+msgstr "Barrio"
+
+msgid "The country name"
+msgstr "País"
+
+msgid "Cuaderno de campo list"
+msgstr "Lista de cuadernos de campo."
+
+msgid "Terms of Use"
+msgstr "Términos y Condiciones"
+
+msgid "List Cuaderno de campo entities"
+msgstr "Listar entidades Cuaderno de campo."
+
+msgid "Add Terms of Use to the registration page."
+msgstr "Agregar términos y condiciones para el registro en el sitio web."
+
+msgid "Edit own Cuaderno de campo entities"
+msgstr "Editar entidad Cuaderno de campo propio."
+
+msgid "View any Cuaderno de campo entities"
+msgstr "Ver cualquier entidad Cuaderno de campo."
+
+msgid "View own Cuaderno de campo entities"
+msgstr "Ver entidad Cuaderno de campo propio."
+
+msgid "View published Licencia entities"
+msgstr "Ver Licencias publicadas."
+
+msgid "View unpublished Licencia entities"
+msgstr "Ver Licencias sin publicar."
+
+msgid "Create new Mis cultivos entities"
+msgstr "Crear nuevos \"Mis cultivos\"."
+
+msgid "%type_name: Create new semilla"
+msgstr "%type_name: Se creó una nueva semilla."
+
+msgid "%title has been created."
+msgstr "%title fue creada."
+
+msgid "Processing: %title"
+msgstr "Procesando %title."
+
+msgid "Upload requirements"
+msgstr "Requisitos de subida"
+
+msgctxt "Address label"
+msgid "Street address"
+msgstr "Dirección"
+
+msgctxt "Address label"
+msgid "Postal code"
+msgstr "Código Postal"
+
+msgctxt "Address label"
+msgid "City"
+msgstr "Ciudad"
+
+msgctxt "Address label"
+msgid "Province"
+msgstr "Provincia"
+
+msgid "I agree with these terms"
+msgstr "Estoy de acuerdo con estos términos y condiciones."
+
+msgid "Plain Text"
+msgstr "Texto plano."
+
+msgid "Dear @user,"
+msgstr "@user,"
+
+msgid ""
+"This e-mail has been sent from @site by the Swift Mailer module. The "
+"module has been successfully configured."
+msgstr ""
+"Este mail fue enviado desde @site por el módulo Swift Mailer. El "
+"módulo fue configurado exitosamente."
+
+msgid "Kind regards"
+msgstr "Saludos cordiales"
+
+msgid "The Swift Mailer module"
+msgstr "El módulo Swift Mailer."
+
+msgid "Swift Mailer has been successfully configured!"
+msgstr "Swift Mailer fue exitosamente configurado!"
+
+msgid "image"
+msgstr "imagen"
+
+msgid "Unable to geocode '@text'."
+msgstr "No es posible geocodificar  '@text'."
+
+msgid "Add Licencia"
+msgstr "Agregar Licencia"
+
+msgid "The name of the Licencia entity."
+msgstr "El nombre de la Licencia."
+
+msgid "Created the %label Licencia."
+msgstr "Se ha creado la licencia %label."
+
+msgid "Created the %label Semilla."
+msgstr "Se ha creado la semilla %label."
+
+msgid "Create Transaccion"
+msgstr "Crear transacción"
+
+msgid "Created the %label Transacción."
+msgstr "Se ha iniciado la transacción con %label."
+
+msgid "Bioleft: new transaction request"
+msgstr "Bioleft: nueva transacción solicitada."
+
+msgctxt "workflow state"
+msgid "Pending"
+msgstr "Pendiente"
+
+msgid "Confirmation Form"
+msgstr "Formulario de confirmación."
+
+msgid "Are you sure you want to approve the transaccion @transaccion?"
+msgstr ""
+"¿Estás seguro de que querés aprobar la transacción con "
+"@transaccion?"
+
+msgid "@type %title has been %action."
+msgstr "@type %title fue %action. "
+
+msgctxt "workflow state"
+msgid "Approved"
+msgstr "Aprobada"
+
+msgid "Bioleft: your transaction has a new state"
+msgstr "Bioleft: tu transacción tiene un nuevo estado."
+
+msgid "Created the %label Cuaderno de campo."
+msgstr "Se ha creado el Cuaderno de campo de %label."
+
+msgid "Saved the %label Cuaderno de campo."
+msgstr "Se ha guardado el Cuaderno de campo de %label."
+
+msgid "Created the %label Mis cultivos."
+msgstr "Se ha creado %label en Mis cultivos"
