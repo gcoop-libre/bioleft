@@ -19,5 +19,5 @@ settings:
   min: 0
   max: null
   prefix: ''
-  suffix: HA
+  suffix: ''
 field_type: integer
