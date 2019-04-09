@@ -10,7 +10,7 @@ id: transaccion.intercambio.field_transaccion_state
 field_name: field_transaccion_state
 entity_type: transaccion
 bundle: intercambio
-label: State
+label: Estado
 description: ''
 required: false
 translatable: false
