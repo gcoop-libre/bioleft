@@ -4,27 +4,15 @@ description: 'Entidad para tipos de Cuaderno de campo'
 core: 8.x
 package: Bioleft
 dependencies:
-  - address
-  - 'address:address'
-  - bioleft_cuaderno_de_campo
-  - 'bioleft_cuaderno_de_campo:bioleft_cuaderno_de_campo'
-  - 'drupal:field'
-  - 'drupal:options'
-  - 'drupal:user'
-  - 'drupal:views'
-  - field
-  - field_permissions
-  - 'field_permissions:field_permissions'
-  - 'geocoder:geocoder_field'
-  - geocoder_field
-  - geofield
-  - 'geofield:geofield'
-  - geolocation
-  - 'geolocation:geolocation'
-  - leaflet
-  - 'leaflet:leaflet'
-  - options
-  - user
-  - views
-  - views_bootstrap
-  - 'views_bootstrap:views_bootstrap'
+  - address:address
+  - bioleft_cuaderno_de_campo:bioleft_cuaderno_de_campo
+  - drupal:field
+  - drupal:options
+  - drupal:user
+  - drupal:views
+  - field_permissions:field_permissions
+  - geocoder:geocoder_field
+  - geofield:geofield
+  - geolocation:geolocation
+  - leaflet:leaflet
+  - views_bootstrap:views_bootstrap
