@@ -666,12 +666,12 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'ver transaccion'
           label: Opciones
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="/transaccion/{{id}}/confirm/" class="btn btn-primary btn-sm">Ver transacción</a>{{ transaccion.state }}'
+            text: '<a href="/admin/structure/transaccion/{{id}}" class="btn btn-primary btn-sm">Ver transacción</a>{{ transaccion.state }}'
             make_link: false
             path: ''
             absolute: false
