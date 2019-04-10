@@ -62,6 +62,7 @@ dependencies:
   - drupal:toolbar
   - drupal:user
   - drupal:views
+  - drupal:views_ui
   - entity_reference_views_select:entity_reference_views_select
   - eva:eva
   - features:features
