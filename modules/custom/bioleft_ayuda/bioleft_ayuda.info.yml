@@ -13,4 +13,6 @@ dependencies:
   - drupal:taxonomy
   - drupal:text
   - drupal:user
+  - drupal:views
+  - views_bootstrap:views_bootstrap
 package: Bioleft
