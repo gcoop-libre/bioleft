@@ -330,14 +330,13 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-  page_ayuda:
-    display_plugin: page
-    id: page_ayuda
-    display_title: Page
-    position: 1
+  block_ayuda:
+    display_plugin: block
+    id: block_ayuda
+    display_title: Bloque
+    position: 2
     display_options:
       display_extenders: {  }
-      path: ayuda
     cache_metadata:
       max-age: -1
       contexts:

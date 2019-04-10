@@ -1,0 +1,55 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.ayuda
+    - views.view.ayuda
+  module:
+    - panels
+    - tagclouds
+    - views
+id: ayuda-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    ad866b6b-b935-433f-990f-ec6ef95ddaca:
+      id: 'tagclouds_block:tags'
+      label: Tags
+      provider: tagclouds
+      label_display: visible
+      cache:
+        max_age: 0
+        contexts: {  }
+      region: content
+      weight: 1
+      uuid: ad866b6b-b935-433f-990f-ec6ef95ddaca
+      tags: '0'
+      vocabulary: tags
+      context_mapping: {  }
+    1f6426f1-3afa-4a98-9ea5-052852db47e1:
+      id: 'views_block:ayuda-block_ayuda'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 1f6426f1-3afa-4a98-9ea5-052852db47e1
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 18200f8b-bacf-4e7a-949e-c42052824e38
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: ayuda-panels_variant-0
+  builder: standard
+page: ayuda
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

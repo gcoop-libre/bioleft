@@ -14,5 +14,8 @@ dependencies:
   - drupal:text
   - drupal:user
   - drupal:views
+  - page_manager:page_manager
+  - panels:panels
+  - tagclouds:tagclouds
   - views_bootstrap:views_bootstrap
 package: Bioleft
