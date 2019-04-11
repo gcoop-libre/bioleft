@@ -40,4 +40,9 @@ function bioleft_portal_install() {
   \Drupal::configFactory()->getEditable('node.settings')
     ->set('use_admin_theme', TRUE)
     ->save(TRUE);
+
+  // Set the translation directory.
+  \Drupal::configFactory()->getEditable('locale.settings')
+    ->set('translation.path', 'translations')
+    ->save(TRUE);
 }
