@@ -46,12 +46,9 @@ content:
     region: content
   field_semilla:
     weight: 2
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   moderation_state:
     type: moderation_state_default
