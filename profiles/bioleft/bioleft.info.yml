@@ -95,6 +95,7 @@ dependencies:
   - select_or_other:select_or_other
   - social_media_links:social_media_links
   - smtp:smtp
+  - tagclouds:tagclouds
   - terms_of_use:terms_of_use
   - token:token
   - views_bootstrap:views_bootstrap
