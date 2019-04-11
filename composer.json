@@ -65,6 +65,7 @@
     "drupal/social_media_links": "^2.6",
     "drupal/state_machine": "^1.0@beta",
     "drupal/swiftmailer": "^1.0@beta",
+    "drupal/tagclouds": "^1.0",
     "drupal/terms_of_use": "^2.0@beta",
     "drupal/token": "^1.0",
     "drupal/views_bootstrap": "^3.0",
