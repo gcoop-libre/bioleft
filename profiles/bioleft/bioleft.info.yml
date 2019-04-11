@@ -87,6 +87,7 @@ dependencies:
   - page_manager:page_manager
   - panels:panels
   - pathauto:pathauto
+  - potx:potx
   - r4032login:r4032login
   - redirect:redirect
   - redirect:redirect_404
