@@ -1,6 +1,8 @@
 name: 'Cuaderno de campo'
 type: module
 description: 'Entidad para tipos de Cuaderno de campo'
+'interface translation project': bioleft
+'interface translation server pattern': modules/custom/bioleft_cuaderno_de_campo/translations/%project.%language.po
 core: 8.x
 package: Bioleft
 dependencies:

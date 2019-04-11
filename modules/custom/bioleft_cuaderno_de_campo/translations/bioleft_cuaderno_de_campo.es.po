@@ -1,0 +1,155 @@
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.module:19
+msgid "About"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.module:20 modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.info.yml:0
+msgid "Entidad para tipos de Cuaderno de campo"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.module:49;66
+msgid "Crear lote"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.module:82;88
+msgid "Crear cultivo"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.module:93
+msgid "Crear semilla"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.module:97
+msgid "Solicitar semilla"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.info.yml:0 modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:12
+msgid "Cuaderno de campo"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.info.yml:0
+msgid "Bioleft"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.action.yml:0
+msgid "Add Cuaderno de campo"
+msgstr "Agregar cuaderno de campo"
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.menu.yml:0
+msgid "Cuaderno de campo list"
+msgstr "Lista de Cuaderno de campo"
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.menu.yml:0
+msgid "Cuaderno de campo settings"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.menu.yml:0
+msgid "List Cuaderno de campo entities"
+msgstr "Lista de entidades Cuaderno de campo"
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.menu.yml:0
+msgid "Configure Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.task.yml:0
+msgid "Settings"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.task.yml:0
+msgid "View"
+msgstr "Ver"
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.task.yml:0
+msgid "Edit"
+msgstr "Editar"
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.task.yml:0
+msgid "Delete"
+msgstr "Eliminar"
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "Create new Cuaderno de campo entities"
+msgstr "Crear nueva entidad Cuaderno de campo"
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "Administer Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "Allow to access the administration form to configure Cuaderno de campo entities."
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "Edit any Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "Edit own Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "View any Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "View own Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "Delete any Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.permissions.yml:0
+msgid "Delete own Cuaderno de campo entities"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/CuadernoDeCampoListBuilder.php:20
+msgid "Cuaderno de campo ID"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/CuadernoDeCampoListBuilder.php:21 modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:177
+msgid "Name"
+msgstr "Nombre"
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:152
+msgid "Authored by"
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:153
+msgid "The user ID of author of the Cuaderno de campo entity."
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:178
+msgid "The name of the Cuaderno de campo entity."
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:198
+msgid "Publishing status"
+msgstr "Estado de publicación"
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:199
+msgid "A boolean indicating whether the Cuaderno de campo is published."
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:207
+msgid "Created"
+msgstr "Creado"
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:208
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:211
+msgid "Changed"
+msgstr "Modificado"
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:212
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Form/CuadernoDeCampoForm.php:34
+msgid "Created the %label Cuaderno de campo."
+msgstr "Se ha creado el Cuaderno de campo %label"
+
+#: modules/custom/bioleft_cuaderno_de_campo/src/Form/CuadernoDeCampoForm.php:40
+msgid "Saved the %label Cuaderno de campo."
+msgstr "Se ha guardado el Cuaderno de campo %label"
