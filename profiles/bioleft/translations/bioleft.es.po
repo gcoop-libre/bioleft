@@ -56,7 +56,7 @@ msgid "Created the %label Licencia."
 msgstr "Creado el %label Licencia"
 
 msgid "Created the %label Semilla."
-msgstr "Creado el %label Semilla"
+msgstr "Creado la semilla %label"
 
 msgid "Created the %label Transacción."
 msgstr "Creado el %label Transacción"
@@ -81,7 +81,7 @@ msgid "Created the %label Licencia."
 msgstr "Se guardó la licencia."
 
 msgid "Created the %label Semilla."
-msgstr "Se guardó la semilla."
+msgstr "Se guardó la %label semilla."
 
 msgid "Created the %label Transacción."
 msgstr "Se guardó la transacción."
