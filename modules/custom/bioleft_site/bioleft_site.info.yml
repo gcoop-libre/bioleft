@@ -12,6 +12,6 @@ dependencies:
   - drupal:language
   - drupal:text
   - drupal:user
-  - page_manager:page_manage
+  - page_manager:page_manager
   - panels:panels
 package: Bioleft
