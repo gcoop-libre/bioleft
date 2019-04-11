@@ -1,0 +1,351 @@
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.module:18
+msgid "About"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.module:19 modules/custom/bioleft_transaccion/bioleft_transaccion.info.yml:0
+msgid "Entidades para tipos de transaccion"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.module:85
+msgid "Bioleft: new transaction request"
+msgstr "Bioleft: nueva pedido de transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.module:96
+msgid "Bioleft: your transaction has a new state"
+msgstr "Bioleft: tu transacción tiene un nuevo estado"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.module:109
+msgid "Solicitar semillas"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.info.yml:0
+msgid "Transaccion"
+msgstr "Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.info.yml:0
+msgid "Bioleft"
+msgstr "Bioleft"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.action.yml:0
+msgid "Add Transacción"
+msgstr "Agregar Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.action.yml:0
+msgid "Add Transacción type"
+msgstr "Agregar tipo de Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.menu.yml:0
+msgid "Transacción list"
+msgstr "Lista de Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.menu.yml:0 modules/custom/bioleft_transaccion/src/TransaccionTypeListBuilder.php:17 modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:13 modules/custom/bioleft_transaccion/src/Entity/TransaccionType.php:7
+msgid "Transacción type"
+msgstr "Tipo de Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.menu.yml:0
+msgid "List Transacción entities"
+msgstr "Listado de entidades Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.menu.yml:0
+msgid "List Transacción type (bundles)"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.task.yml:0
+msgid "View"
+msgstr "Ver"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.task.yml:0
+msgid "Edit"
+msgstr "Editar"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.task.yml:0
+msgid "Revisions"
+msgstr "Revisiones"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.links.task.yml:0 modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:178 modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionDeleteForm.php:90 modules/custom/bioleft_transaccion/src/Form/TransaccionTypeDeleteForm.php:32
+msgid "Delete"
+msgstr "Eliminar"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Create new Transacción entities"
+msgstr "Se ha creado una entidad Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Administer Transacción entities"
+msgstr "Administrar entidades Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Allow to access the administration form to configure Transacción entities."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Delete Transacción entities"
+msgstr "Eliminar entidades Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Edit Transacción entities"
+msgstr "Editar las entidades Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Confirm Transaccion entities"
+msgstr "Confirmar entidades Transacción"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "View published Transacción entities"
+msgstr "Ver entidades Transacción publicadas"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "View unpublished Transacción entities"
+msgstr "Ver entidades Transacción sin publicar"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "View all Transacción revisions"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Revert all Transacción revisions"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Role requires permission <em>view Transacción revisions</em> and <em>edit rights</em> for transaccion entities in question or <em>administer transaccion entities</em>."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Delete all revisions"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.permissions.yml:0
+msgid "Role requires permission to <em>view Transacción revisions</em> and <em>delete rights</em> for transaccion entities in question or <em>administer transaccion entities</em>."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.routing.yml:0
+msgid "Confirmation Form"
+msgstr "Formulario de confirmación"
+
+#: modules/custom/bioleft_transaccion/bioleft_transaccion.routing.yml:0
+msgid "Create Transaccion"
+msgstr "Se ha creado una Transacción"
+
+#: modules/custom/bioleft_transaccion/config/schema/transaccion_type.schema.yml:0
+msgid "Transacción type config"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/config/schema/transaccion_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/TransaccionListBuilder.php:20
+msgid "Transacción ID"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/TransaccionListBuilder.php:21 modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:230
+msgid "Name"
+msgstr "Nombre"
+
+#: modules/custom/bioleft_transaccion/src/TransaccionTypeListBuilder.php:18
+msgid "Machine name"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:85
+msgid "Revision of %title from %date"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:108
+msgid "@langname revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:108
+msgid "Revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:109
+msgid "Revision"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:109
+msgid "Operations"
+msgstr "Operaciones"
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:158
+msgid "Current revision"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:171 modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionRevertForm.php:90
+msgid "Revert"
+msgstr "Revertir"
+
+#: modules/custom/bioleft_transaccion/src/Controller/TransaccionController.php:1
+msgid "@date by @username"
+msgstr "@date por @username"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:205
+msgid "Authored by"
+msgstr "Autorizado por"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:206
+msgid "The user ID of author of the Transacción entity."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:231
+msgid "The name of the Transacción entity."
+msgstr "El nombre de la entidad Transacción"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:252
+msgid "Publishing status"
+msgstr "Estado de publicación"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:253
+msgid "A boolean indicating whether the Transacción is published."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:262
+msgid "Created"
+msgstr "Creado"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:263
+msgid "The time that the entity was created."
+msgstr "El tiempo en que la entidad ha sido creada"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:266
+msgid "Changed"
+msgstr "Modificado"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:267
+msgid "The time that the entity was last edited."
+msgstr "El tiempo en que la entidad ha sido editada"
+
+#: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:13
+msgid "Transacción"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionCatalogoForm.php:28 modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:76
+msgid "Create new revision"
+msgstr "Crear nueva revisión"
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:75
+msgid "Are you sure you want to approve the transaccion @transaccion?"
+msgstr "¿Estás seguro que querés aprobar la transacción @transaccion?"
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:91
+msgid "Aceptar"
+msgstr "Aceptar"
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:98
+msgid "Rechazar"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:138 modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:98
+msgid "Your message has been sent."
+msgstr "Tu mensaje fue enviado."
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:141 modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:101
+msgid "There was a problem sending your message and it was not sent."
+msgstr "Hubo un problema al enviar tu mensaje y no fue enviado."
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:156
+msgid "@type %title has been %action."
+msgstr "@type %title fue %action."
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:165
+msgid "The transaccion can not be %action from its current state."
+msgstr "La transacción no fue %action desde este estado"
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:106
+msgid "Field Semilla does not have a defined value."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:134
+msgid "Created the %label Transacción."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:140
+msgid "Saved the %label Transacción."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionDeleteForm.php:76
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionDeleteForm.php:110
+msgid "Revision from %revision-date of Transacción %title has been deleted."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionDeleteForm.php:109
+msgid "Transacción: deleted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionRevertForm.php:76
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionRevertForm.php:119
+msgid "Copy of the revision from %date."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionRevertForm.php:123
+msgid "Transacción %title has been reverted to the revision from %revision-date."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionRevertForm.php:122
+msgid "Transacción: reverted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionRevertTranslationForm.php:71
+msgid "Are you sure you want to revert @language translation to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionRevertTranslationForm.php:83
+msgid "Revert content shared among translations"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr "Estás seguro que queres eliminar %name?"
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeForm.php:22
+msgid "Label"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeForm.php:25
+msgid "Label for the Transacción type."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeForm.php:52
+msgid "Created the %label Transacción type."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeForm.php:58
+msgid "Saved the %label Transacción type."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/templates/transaction-confirmation-message.html.twig:19
+msgid "Nueva notificación sobre la transacción entre @receiver y @sender!"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/templates/transaction-confirmation-message.html.twig:25
+msgid "La solicitud realizada por el usuario @sender tiene un nuevo estado: @result."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/templates/transaction-confirmation-message.html.twig:31
+msgid "Saludos!"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/templates/transaction-request-notification.html.twig:20
+msgid "Hola @receiver!"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/templates/transaction-request-notification.html.twig:26
+msgid "El usuario @sender desea llevar a cabo una transacción sobre una semilla que se fue registrada por usted."
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/templates/transaction-request-notification.html.twig:32
+msgid "Para aceptar o rechazar la transacción, acceda al formulario de confirmación haciendo click <a href=\"@url\">aquí</a>"
+msgstr ""
+
+#: modules/custom/bioleft_transaccion/templates/transaction-request-notification.html.twig:38
+msgid "Muchas gracias!"
+msgstr ""
