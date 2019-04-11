@@ -1,4 +1,1 @@
 bundle: bioleft
-excluded:
-  - field.storage.transaccion.field_usuario
-  - field.field.transaccion.intercambio.field_usuario
