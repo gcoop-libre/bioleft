@@ -1,9 +1,11 @@
 name: 'Mis Cultivos'
 type: module
 description: 'Modulo que habilita la creacion de entidades Mis Cultivos'
+'interface translation project': bioleft
+'interface translation server pattern': modules/custom/bioleft_mis_cultivos/translations/%project.%language.po
 core: 8.x
 package: 'Bioleft'
-dependencies: 
+dependencies:
   - bioleft_cuaderno_de_campo:bioleft_cuaderno_de_campo
   - bioleft_semilla:bioleft_semilla
   - bioleft_labor:bioleft_labor

@@ -1,0 +1,219 @@
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.module:18
+msgid "About"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.module:19 modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.info.yml:0
+msgid "Modulo que habilita la creacion de entidades Mis Cultivos"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.info.yml:0
+msgid "Mis Cultivos"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.info.yml:0
+msgid "Bioleft"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.action.yml:0
+msgid "Add Mis cultivos"
+msgstr "Agregar Mis cultivos"
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.menu.yml:0
+msgid "Mis cultivos list"
+msgstr "Lista de Mis cultivos"
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.menu.yml:0
+msgid "Mis cultivos settings"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.menu.yml:0
+msgid "List Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.menu.yml:0
+msgid "Configure Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.task.yml:0
+msgid "Settings"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.task.yml:0
+msgid "View"
+msgstr "Ver"
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.task.yml:0
+msgid "Edit"
+msgstr "Editar"
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.task.yml:0
+msgid "Revisions"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.task.yml:0 modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:133 modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionDeleteForm.php:90
+msgid "Delete"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "Create new Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "Administer Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "Allow to access the administration form to configure Mis cultivos entities."
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "Edit any Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "Edit own Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "View any Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "View own Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "Delete any Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.permissions.yml:0
+msgid "Delete own Mis cultivos entities"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/MisCultivosListBuilder.php:20
+msgid "Mis cultivos ID"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/MisCultivosListBuilder.php:21 modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:224
+msgid "Name"
+msgstr "Nombre"
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:45
+msgid "Revision of %title from %date"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:68
+msgid "@langname revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:68
+msgid "Revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:69
+msgid "Revision"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:69
+msgid "Operations"
+msgstr "Operaciones"
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:113
+msgid "Current revision"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:126 modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionRevertForm.php:90
+msgid "Revert"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Controller/MisCultivosController.php:1
+msgid "@date by @username"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:199
+msgid "Authored by"
+msgstr "Autorizado por"
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:200
+msgid "The user ID of author of the Mis cultivos entity."
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:225
+msgid "The name of the Mis cultivos entity."
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:246
+msgid "Publishing status"
+msgstr "Estado de publicación"
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:247
+msgid "A boolean indicating whether the Mis cultivos is published."
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:256
+msgid "Created"
+msgstr "Creado"
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:257
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:260
+msgid "Changed"
+msgstr "Modificado"
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:261
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:13
+msgid "Mis cultivos"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosForm.php:25
+msgid "Create new revision"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosForm.php:55
+msgid "Created the %label Mis cultivos."
+msgstr "Se ha creado el %label"
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosForm.php:61
+msgid "Saved the %label Mis cultivos."
+msgstr "Se ha guardado %label"
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionDeleteForm.php:76
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr "¿Estás seguro de que querés eliminar la revisión de %revision-date?"
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionDeleteForm.php:110
+msgid "Revision from %revision-date of Mis cultivos %title has been deleted."
+msgstr "La revisión del %revision-date de Mis cultivos %title ha sido eliminada"
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionDeleteForm.php:109
+msgid "Mis cultivos: deleted %title revision %revision."
+msgstr "Mis cultivos: %revision revision %title ha sido eliminada"
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionRevertForm.php:76
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr "¿Estás seguro de que querés revertir la revisión desde %revision-date"
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionRevertForm.php:119
+msgid "Copy of the revision from %date."
+msgstr "Revisión copiada desde %date"
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionRevertForm.php:123
+msgid "Mis cultivos %title has been reverted to the revision from %revision-date."
+msgstr "%title Mis cultivos ha sido revertida de la revisión desde %revision-date."
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionRevertForm.php:122
+msgid "Mis cultivos: reverted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionRevertTranslationForm.php:71
+msgid "Are you sure you want to revert @language translation to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosRevisionRevertTranslationForm.php:83
+msgid "Revert content shared among translations"
+msgstr ""
