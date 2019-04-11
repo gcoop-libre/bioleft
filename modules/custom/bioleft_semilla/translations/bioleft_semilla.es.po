@@ -1,0 +1,295 @@
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:20
+msgid "About"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:21 modules/custom/bioleft_semilla/bioleft_semilla.info.yml:0
+msgid "Entidad para tipos de semilla"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:107
+msgid "Especie"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:112
+msgid "Cultivar"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:117
+msgid "Nombre botánico"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:122
+msgid "Nro Registro"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:137
+msgid "Add existing @type_singular"
+msgstr "Agregar existente @type_singular"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.module:150
+msgid "@label"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.info.yml:0 modules/custom/bioleft_semilla/src/Entity/Semilla.php:13
+msgid "Semilla"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.info.yml:0
+msgid "Bioleft"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.action.yml:0
+msgid "Add Semilla"
+msgstr "Agregar semilla"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.action.yml:0
+msgid "Add Semilla type"
+msgstr "Agregar tipo de Semilla"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.menu.yml:0
+msgid "Semilla list"
+msgstr "Lista de semillas"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.menu.yml:0 modules/custom/bioleft_semilla/src/SemillaTypeListBuilder.php:17 modules/custom/bioleft_semilla/src/Entity/Semilla.php:13 modules/custom/bioleft_semilla/src/Entity/SemillaType.php:7
+msgid "Semilla type"
+msgstr "Tipo de semilla"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.menu.yml:0
+msgid "List Semilla entities"
+msgstr "Lista de entidades Semilla"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.menu.yml:0
+msgid "List Semilla type (bundles)"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.task.yml:0
+msgid "View"
+msgstr "Ver"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.task.yml:0
+msgid "Edit"
+msgstr "Editar"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.task.yml:0
+msgid "Revisions"
+msgstr "Revisiones"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.links.task.yml:0 modules/custom/bioleft_semilla/src/Controller/SemillaController.php:178 modules/custom/bioleft_semilla/src/Form/SemillaRevisionDeleteForm.php:90 modules/custom/bioleft_semilla/src/Form/SemillaTypeDeleteForm.php:32
+msgid "Delete"
+msgstr "Eliminar"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.permissions.yml:0
+msgid "Administer Semilla entities"
+msgstr "Administrar entidades Semilla"
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.permissions.yml:0
+msgid "Allow to access the administration form to configure Semilla entities."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.permissions.yml:0
+msgid "View all Semilla revisions"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.permissions.yml:0
+msgid "Revert all Semilla revisions"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.permissions.yml:0
+msgid "Role requires permission <em>view Semilla revisions</em> and <em>edit rights</em> for semilla entities in question or <em>administer semilla entities</em>."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.permissions.yml:0
+msgid "Delete all revisions"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/bioleft_semilla.permissions.yml:0
+msgid "Role requires permission to <em>view Semilla revisions</em> and <em>delete rights</em> for semilla entities in question or <em>administer semilla entities</em>."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/config/schema/semilla_type.schema.yml:0
+msgid "Semilla type config"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/config/schema/semilla_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/SemillaListBuilder.php:20
+msgid "Semilla ID"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/SemillaListBuilder.php:21 modules/custom/bioleft_semilla/src/Entity/Semilla.php:228
+msgid "Name"
+msgstr "Nombre"
+
+#: modules/custom/bioleft_semilla/src/SemillaPermissions.php:51
+msgid "%type_name: Create new semilla"
+msgstr "%type_name: Crear nueva semilla"
+
+#: modules/custom/bioleft_semilla/src/SemillaPermissions.php:54
+msgid "%type_name: View any semilla"
+msgstr "%type_name: Ver cualquier semilla"
+
+#: modules/custom/bioleft_semilla/src/SemillaPermissions.php:57
+msgid "%type_name: View own semilla"
+msgstr "%type_name: Ver semilla propias"
+
+#: modules/custom/bioleft_semilla/src/SemillaPermissions.php:60
+msgid "%type_name: Edit any semilla"
+msgstr "%type_name: Editar cualquier semilla"
+
+#: modules/custom/bioleft_semilla/src/SemillaPermissions.php:63
+msgid "%type_name: Edit own semilla"
+msgstr "%type_name: Editar semilla propias"
+
+#: modules/custom/bioleft_semilla/src/SemillaPermissions.php:66
+msgid "%type_name: Delete any semilla"
+msgstr "%type_name: Eliminar cualquier semilla"
+
+#: modules/custom/bioleft_semilla/src/SemillaPermissions.php:69
+msgid "%type_name: Delete own semilla"
+msgstr "%type_name: Eliminar semilla propias"
+
+#: modules/custom/bioleft_semilla/src/SemillaTypeListBuilder.php:18
+msgid "Machine name"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:85
+msgid "Revision of %title from %date"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:108
+msgid "@langname revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:108
+msgid "Revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:109
+msgid "Revision"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:109
+msgid "Operations"
+msgstr "Operaciones"
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:158
+msgid "Current revision"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:171 modules/custom/bioleft_semilla/src/Form/SemillaRevisionRevertForm.php:90
+msgid "Revert"
+msgstr "Revertir"
+
+#: modules/custom/bioleft_semilla/src/Controller/SemillaController.php:1
+msgid "@date by @username"
+msgstr "@date por @username"
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:203
+msgid "Authored by"
+msgstr "Autorizado por"
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:204
+msgid "The user ID of author of the Semilla entity."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:229
+msgid "The name of the Semilla entity."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:250
+msgid "Publishing status"
+msgstr "Estado de publicación"
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:251
+msgid "A boolean indicating whether the Semilla is published."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:260
+msgid "Created"
+msgstr "Creado"
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:261
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:264
+msgid "Changed"
+msgstr "Modificado"
+
+#: modules/custom/bioleft_semilla/src/Entity/Semilla.php:265
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaForm.php:67
+msgid "Create new revision"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaForm.php:98
+msgid "Created the %label Semilla."
+msgstr "Se ha creado la semilla %label"
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaForm.php:104
+msgid "Saved the %label Semilla."
+msgstr "Se ha guardado la semilla %label"
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionDeleteForm.php:76
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr "¿Estás seguro de que querés eliminar la revisión desde %revision-date?"
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionDeleteForm.php:110
+msgid "Revision from %revision-date of Semilla %title has been deleted."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionDeleteForm.php:109
+msgid "Semilla: deleted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionRevertForm.php:76
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionRevertForm.php:119
+msgid "Copy of the revision from %date."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionRevertForm.php:123
+msgid "Semilla %title has been reverted to the revision from %revision-date."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionRevertForm.php:122
+msgid "Semilla: reverted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionRevertTranslationForm.php:71
+msgid "Are you sure you want to revert @language translation to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaRevisionRevertTranslationForm.php:83
+msgid "Revert content shared among translations"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr "¿Estás seguro de que querés eliminar %name?"
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaTypeForm.php:22
+msgid "Label"
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaTypeForm.php:25
+msgid "Label for the Semilla type."
+msgstr ""
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaTypeForm.php:52
+msgid "Created the %label Semilla type."
+msgstr "Se ha creado el %label tipo de Semilla"
+
+#: modules/custom/bioleft_semilla/src/Form/SemillaTypeForm.php:58
+msgid "Saved the %label Semilla type."
+msgstr "Se ha guardado el %label tipo de Semilla"

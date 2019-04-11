@@ -1,6 +1,8 @@
 name: Semilla
 type: module
 description: 'Entidad para tipos de semilla'
+'interface translation project': bioleft
+'interface translation server pattern': modules/custom/bioleft_semilla/translations/%project.%language.po
 core: 8.x
 package: Bioleft
 dependencies:
