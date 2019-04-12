@@ -196,7 +196,7 @@ msgstr "Estado de publicación"
 
 #: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:253
 msgid "A boolean indicating whether the Transacción is published."
-msgstr ""
+msgstr "Tildar para indicar que la Transacción está publicada"
 
 #: modules/custom/bioleft_transaccion/src/Entity/Transaccion.php:262
 msgid "Created"
@@ -232,7 +232,7 @@ msgstr "Aceptar"
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:98
 msgid "Rechazar"
-msgstr ""
+msgstr "Rechazar"
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionConfirmationForm.php:138 modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:98
 msgid "Your message has been sent."
@@ -256,11 +256,11 @@ msgstr ""
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:134
 msgid "Created the %label Transacción."
-msgstr ""
+msgstr "Se ha guardado Transacción %label."
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionForm.php:140
 msgid "Saved the %label Transacción."
-msgstr ""
+msgstr "Se ha guardado la Transacción %label."
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionRevisionDeleteForm.php:76
 msgid "Are you sure you want to delete the revision from %revision-date?"
@@ -300,7 +300,7 @@ msgstr ""
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeDeleteForm.php:18
 msgid "Are you sure you want to delete %name?"
-msgstr "Estás seguro que queres eliminar %name?"
+msgstr "¿Estás seguro que queres eliminar %name?"
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeDeleteForm.php:42
 msgid "content @type: deleted @label."
@@ -316,11 +316,11 @@ msgstr ""
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeForm.php:52
 msgid "Created the %label Transacción type."
-msgstr ""
+msgstr "Se ha creado el tipo de Transacción %label."
 
 #: modules/custom/bioleft_transaccion/src/Form/TransaccionTypeForm.php:58
 msgid "Saved the %label Transacción type."
-msgstr ""
+msgstr "Se ha guardado el tipo de Transacción %label"
 
 #: modules/custom/bioleft_transaccion/templates/transaction-confirmation-message.html.twig:19
 msgid "Nueva notificación sobre la transacción entre @receiver y @sender!"
