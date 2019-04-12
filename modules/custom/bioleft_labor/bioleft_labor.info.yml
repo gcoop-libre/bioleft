@@ -1,6 +1,8 @@
 name: 'Labor'
 type: module
 description: 'Modulo contenedor de entidad Labor.'
+'interface translation project': bioleft
+'interface translation server pattern': modules/custom/bioleft_labor/translations/%project.%language.po
 core: 8.x
 package: 'Bioleft'
 dependencies:

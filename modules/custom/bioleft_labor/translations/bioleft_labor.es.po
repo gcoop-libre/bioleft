@@ -1,0 +1,248 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/custom/bioleft_labor/bioleft_labor.module: n/a
+#  modules/custom/bioleft_labor/bioleft_labor.info.yml: n/a
+#  modules/custom/bioleft_labor/src/Entity/Labor.php: n/a
+#  modules/custom/bioleft_labor/bioleft_labor.links.action.yml: n/a
+#  modules/custom/bioleft_labor/bioleft_labor.links.menu.yml: n/a
+#  modules/custom/bioleft_labor/bioleft_labor.links.task.yml: n/a
+#  modules/custom/bioleft_labor/src/Controller/LaborController.php: n/a
+#  modules/custom/bioleft_labor/src/Form/LaborRevisionDeleteForm.php: n/a
+#  modules/custom/bioleft_labor/bioleft_labor.permissions.yml: n/a
+#  modules/custom/bioleft_labor/src/LaborListBuilder.php: n/a
+#  modules/custom/bioleft_labor/src/Form/LaborRevisionRevertForm.php: n/a
+#  modules/custom/bioleft_labor/src/Form/LaborForm.php: n/a
+#  modules/custom/bioleft_labor/src/Form/LaborRevisionRevertTranslationForm.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-04-12 00:59-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/custom/bioleft_labor/bioleft_labor.module:18
+msgid "About"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.module:19 modules/custom/bioleft_labor/bioleft_labor.info.yml:0
+msgid "Modulo contenedor de entidad Labor."
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.info.yml:0 modules/custom/bioleft_labor/src/Entity/Labor.php:13
+msgid "Labor"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.info.yml:0
+msgid "Bioleft"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.action.yml:0
+msgid "Add Labor"
+msgstr "Agregar Labor"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.menu.yml:0
+msgid "Labor list"
+msgstr "Lista de Labores"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.menu.yml:0
+msgid "Labor settings"
+msgstr "Configuración Labor"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.menu.yml:0
+msgid "List Labor entities"
+msgstr "Lista de entidades Labor"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.menu.yml:0
+msgid "Configure Labor entities"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.task.yml:0
+msgid "Settings"
+msgstr "Configuración"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.task.yml:0
+msgid "View"
+msgstr "Ver"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.task.yml:0
+msgid "Edit"
+msgstr "Editar"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.task.yml:0
+msgid "Revisions"
+msgstr "Revisiones"
+
+#: modules/custom/bioleft_labor/bioleft_labor.links.task.yml:0 modules/custom/bioleft_labor/src/Controller/LaborController.php:139 modules/custom/bioleft_labor/src/Form/LaborRevisionDeleteForm.php:90
+msgid "Delete"
+msgstr "Eliminar"
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "Create new Labor entities"
+msgstr "Crear nueva entidad Labor"
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "Administer Labor entities"
+msgstr "Administrar entidad Labor"
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "Allow to access the administration form to configure Labor entities."
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "Edit any Labor entities"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "Edit own Labor entities"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "View any Labor entities"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "View own Labor entities"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "Delete any Labor entities"
+msgstr ""
+
+#: modules/custom/bioleft_labor/bioleft_labor.permissions.yml:0
+msgid "Delete own Labor entities"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/LaborListBuilder.php:20
+msgid "Labor ID"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/LaborListBuilder.php:21 modules/custom/bioleft_labor/src/Entity/Labor.php:224
+msgid "Name"
+msgstr "Nombre"
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:46
+msgid "Revision of %title from %date"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:69
+msgid "@langname revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:69
+msgid "Revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:70
+msgid "Revision"
+msgstr "Revision"
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:70
+msgid "Operations"
+msgstr "Operaciones"
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:119
+msgid "Current revision"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:132 modules/custom/bioleft_labor/src/Form/LaborRevisionRevertForm.php:90
+msgid "Revert"
+msgstr "Revertir"
+
+#: modules/custom/bioleft_labor/src/Controller/LaborController.php:1
+msgid "@date by @username"
+msgstr "@date por @username"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:199
+msgid "Authored by"
+msgstr "Autorizado por"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:200
+msgid "The user ID of author of the Labor entity."
+msgstr "El ID de usuario autor de la entidad Labor"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:225
+msgid "The name of the Labor entity."
+msgstr "El nombre de la entidad Labor"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:246
+msgid "Publishing status"
+msgstr "Estado de publicación"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:247
+msgid "A boolean indicating whether the Labor is published."
+msgstr "Tildar si el Labor está publicado"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:256
+msgid "Created"
+msgstr "Creado"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:257
+msgid "The time that the entity was created."
+msgstr "El tiempo en que la entidad ha sido creada"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:260
+msgid "Changed"
+msgstr "Modificado"
+
+#: modules/custom/bioleft_labor/src/Entity/Labor.php:261
+msgid "The time that the entity was last edited."
+msgstr "El tiempo en que la entidad fue editada"
+
+#: modules/custom/bioleft_labor/src/Form/LaborForm.php:25
+msgid "Create new revision"
+msgstr "Crear una nueva revisión"
+
+#: modules/custom/bioleft_labor/src/Form/LaborForm.php:56
+msgid "Created the %label Labor."
+msgstr "Se ha creado %label Labor."
+
+#: modules/custom/bioleft_labor/src/Form/LaborForm.php:62
+msgid "Saved the %label Labor."
+msgstr "Se ha guardado %label Labor"
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionDeleteForm.php:76
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionDeleteForm.php:110
+msgid "Revision from %revision-date of Labor %title has been deleted."
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionDeleteForm.php:109
+msgid "Labor: deleted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionRevertForm.php:76
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionRevertForm.php:119
+msgid "Copy of the revision from %date."
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionRevertForm.php:123
+msgid "Labor %title has been reverted to the revision from %revision-date."
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionRevertForm.php:122
+msgid "Labor: reverted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionRevertTranslationForm.php:71
+msgid "Are you sure you want to revert @language translation to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_labor/src/Form/LaborRevisionRevertTranslationForm.php:83
+msgid "Revert content shared among translations"
+msgstr ""
+
