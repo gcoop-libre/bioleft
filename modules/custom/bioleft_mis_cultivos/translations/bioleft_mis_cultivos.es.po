@@ -140,7 +140,7 @@ msgstr ""
 
 #: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:225
 msgid "The name of the Mis cultivos entity."
-msgstr ""
+msgstr "El nombre de la entidad Mis cultivos"
 
 #: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:246
 msgid "Publishing status"
@@ -148,7 +148,7 @@ msgstr "Estado de publicación"
 
 #: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:247
 msgid "A boolean indicating whether the Mis cultivos is published."
-msgstr ""
+msgstr "Tildar para indicar que la entidad estará publicada."
 
 #: modules/custom/bioleft_mis_cultivos/src/Entity/MisCultivos.php:256
 msgid "Created"
@@ -172,7 +172,7 @@ msgstr ""
 
 #: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosForm.php:25
 msgid "Create new revision"
-msgstr ""
+msgstr "Crear nueva revisión"
 
 #: modules/custom/bioleft_mis_cultivos/src/Form/MisCultivosForm.php:55
 msgid "Created the %label Mis cultivos."

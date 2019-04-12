@@ -112,7 +112,7 @@ msgstr "Nombre"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:152
 msgid "Authored by"
-msgstr ""
+msgstr "Autorizado por"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:153
 msgid "The user ID of author of the Cuaderno de campo entity."
@@ -120,7 +120,7 @@ msgstr ""
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:178
 msgid "The name of the Cuaderno de campo entity."
-msgstr ""
+msgstr "El nombre de la entidad Cuaderno de campo"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:198
 msgid "Publishing status"
@@ -128,7 +128,7 @@ msgstr "Estado de publicación"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:199
 msgid "A boolean indicating whether the Cuaderno de campo is published."
-msgstr ""
+msgstr "Tildar para indicar si el Cuaderno de campo está publicado."
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:207
 msgid "Created"
@@ -136,7 +136,7 @@ msgstr "Creado"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:208
 msgid "The time that the entity was created."
-msgstr ""
+msgstr "El tiempo en que la entidad fue creada"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:211
 msgid "Changed"
@@ -144,7 +144,7 @@ msgstr "Modificado"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Entity/CuadernoDeCampo.php:212
 msgid "The time that the entity was last edited."
-msgstr ""
+msgstr "El tiempo en que la entidad fue editada"
 
 #: modules/custom/bioleft_cuaderno_de_campo/src/Form/CuadernoDeCampoForm.php:34
 msgid "Created the %label Cuaderno de campo."
