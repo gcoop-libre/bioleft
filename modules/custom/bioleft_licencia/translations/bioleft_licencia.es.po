@@ -1,0 +1,260 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/custom/bioleft_licencia/bioleft_licencia.module: n/a
+#  modules/custom/bioleft_licencia/bioleft_licencia.info.yml: n/a
+#  modules/custom/bioleft_licencia/src/Entity/Licencia.php: n/a
+#  modules/custom/bioleft_licencia/bioleft_licencia.links.action.yml: n/a
+#  modules/custom/bioleft_licencia/bioleft_licencia.links.menu.yml: n/a
+#  modules/custom/bioleft_licencia/bioleft_licencia.links.task.yml: n/a
+#  modules/custom/bioleft_licencia/src/Controller/LicenciaController.php: n/a
+#  modules/custom/bioleft_licencia/src/Form/LicenciaRevisionDeleteForm.php: n/a
+#  modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml: n/a
+#  modules/custom/bioleft_licencia/src/LicenciaListBuilder.php: n/a
+#  modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertForm.php: n/a
+#  modules/custom/bioleft_licencia/src/Form/LicenciaForm.php: n/a
+#  modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertTranslationForm.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-04-12 00:38-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.module:18
+msgid "About"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.module:19 modules/custom/bioleft_licencia/bioleft_licencia.info.yml:0
+msgid "Entidad para Licencia"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.info.yml:0 modules/custom/bioleft_licencia/src/Entity/Licencia.php:13
+msgid "Licencia"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.info.yml:0
+msgid "Bioleft"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.action.yml:0
+msgid "Add Licencia"
+msgstr "Agregar Licencia"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.menu.yml:0
+msgid "Licencia list"
+msgstr "Lista de Licencias"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.menu.yml:0
+msgid "Licencia settings"
+msgstr "Configuración Licencia"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.menu.yml:0
+msgid "List Licencia entities"
+msgstr "Lista de entidades Licencia"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.menu.yml:0
+msgid "Configure Licencia entities"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.task.yml:0
+msgid "Settings"
+msgstr "Configuración"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.task.yml:0
+msgid "View"
+msgstr "Ver"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.task.yml:0
+msgid "Edit"
+msgstr "Editar"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.task.yml:0
+msgid "Revisions"
+msgstr "Revisiones"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.links.task.yml:0 modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:178 modules/custom/bioleft_licencia/src/Form/LicenciaRevisionDeleteForm.php:90
+msgid "Delete"
+msgstr "Eliminar"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Create new Licencia entities"
+msgstr "Crear nueva entidad Licencia"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Administer Licencia entities"
+msgstr "Administrar entidades Licencia"
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Allow to access the administration form to configure Licencia entities."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Delete Licencia entities"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Edit Licencia entities"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "View published Licencia entities"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "View unpublished Licencia entities"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "View all Licencia revisions"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Revert all Licencia revisions"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Role requires permission <em>view Licencia revisions</em> and <em>edit rights</em> for licencia entities in question or <em>administer licencia entities</em>."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Delete all revisions"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/bioleft_licencia.permissions.yml:0
+msgid "Role requires permission to <em>view Licencia revisions</em> and <em>delete rights</em> for licencia entities in question or <em>administer licencia entities</em>."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/LicenciaListBuilder.php:20
+msgid "Licencia ID"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/LicenciaListBuilder.php:21 modules/custom/bioleft_licencia/src/Entity/Licencia.php:224
+msgid "Name"
+msgstr "Nombre"
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:85
+msgid "Revision of %title from %date"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:108
+msgid "@langname revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:108
+msgid "Revisions for %title"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:109
+msgid "Revision"
+msgstr "Revisiones"
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:109
+msgid "Operations"
+msgstr "Operaciones"
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:158
+msgid "Current revision"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:171 modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertForm.php:90
+msgid "Revert"
+msgstr "Revertir"
+
+#: modules/custom/bioleft_licencia/src/Controller/LicenciaController.php:1
+msgid "@date by @username"
+msgstr "@date por @username"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:199
+msgid "Authored by"
+msgstr "Autorizado por"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:200
+msgid "The user ID of author of the Licencia entity."
+msgstr "El ID del usuario autor de la entidad Licencia"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:225
+msgid "The name of the Licencia entity."
+msgstr "El nombre de la entidad Licencia"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:246
+msgid "Publishing status"
+msgstr "Estado de publicación"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:247
+msgid "A boolean indicating whether the Licencia is published."
+msgstr "Tildar para indicar si la Licencia está publicada"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:256
+msgid "Created"
+msgstr "Creada"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:257
+msgid "The time that the entity was created."
+msgstr "El tiempo en que la entidad fue creada"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:260
+msgid "Changed"
+msgstr "Modificada"
+
+#: modules/custom/bioleft_licencia/src/Entity/Licencia.php:261
+msgid "The time that the entity was last edited."
+msgstr "El tiempo en que la entidad fue editada"
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaForm.php:67
+msgid "Create new revision"
+msgstr "Se ha creado una nueva revision"
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaForm.php:98
+msgid "Created the %label Licencia."
+msgstr "Se ha creado %label Licencia"
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaForm.php:104
+msgid "Saved the %label Licencia."
+msgstr "Se ha guardado %label Licencia"
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionDeleteForm.php:76
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionDeleteForm.php:110
+msgid "Revision from %revision-date of Licencia %title has been deleted."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionDeleteForm.php:109
+msgid "Licencia: deleted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertForm.php:76
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertForm.php:119
+msgid "Copy of the revision from %date."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertForm.php:123
+msgid "Licencia %title has been reverted to the revision from %revision-date."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertForm.php:122
+msgid "Licencia: reverted %title revision %revision."
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertTranslationForm.php:71
+msgid "Are you sure you want to revert @language translation to the revision from %revision-date?"
+msgstr ""
+
+#: modules/custom/bioleft_licencia/src/Form/LicenciaRevisionRevertTranslationForm.php:83
+msgid "Revert content shared among translations"
+msgstr ""
+

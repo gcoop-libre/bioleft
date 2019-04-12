@@ -1,6 +1,8 @@
 name: Licencia
 type: module
 description: 'Entidad para Licencia'
+'interface translation project': bioleft
+'interface translation server pattern': modules/custom/bioleft_licencia/translations/%project.%language.po
 core: 8.x
 package: Bioleft
 dependencies:
