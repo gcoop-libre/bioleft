@@ -40,7 +40,7 @@ msgstr "Lista de Cuaderno de campo"
 
 #: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.menu.yml:0
 msgid "Cuaderno de campo settings"
-msgstr ""
+msgstr "Configuración Cuaderno de campo"
 
 #: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.menu.yml:0
 msgid "List Cuaderno de campo entities"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.task.yml:0
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
 #: modules/custom/bioleft_cuaderno_de_campo/bioleft_cuaderno_de_campo.links.task.yml:0
 msgid "View"

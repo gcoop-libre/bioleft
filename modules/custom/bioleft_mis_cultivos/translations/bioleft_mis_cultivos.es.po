@@ -24,11 +24,11 @@ msgstr "Lista de Mis cultivos"
 
 #: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.menu.yml:0
 msgid "Mis cultivos settings"
-msgstr ""
+msgstr "Configuración Mis cultivos"
 
 #: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.menu.yml:0
 msgid "List Mis cultivos entities"
-msgstr ""
+msgstr "Listado de entidades Mis cultivos"
 
 #: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.menu.yml:0
 msgid "Configure Mis cultivos entities"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.task.yml:0
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
 #: modules/custom/bioleft_mis_cultivos/bioleft_mis_cultivos.links.task.yml:0
 msgid "View"
