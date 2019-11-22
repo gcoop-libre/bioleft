@@ -1,0 +1,31 @@
+cdn_provider: ''
+logo:
+  path: ''
+  url: /themes/custom/semilla/logo.png
+  use_default: false
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: /themes/custom/semilla/favicon.ico
+  use_default: true
+  admin: seven
+schemas:
+  bootstrap: 8000
+  semilla: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: false
+  node_user_picture: true
+region_wells:
+  header_left: ''
+  header_right: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  footer: ''
+table_responsive: '-1'
+table: ''
