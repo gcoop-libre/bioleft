@@ -7,6 +7,8 @@
 
 use Drupal\user\Entity\User;
 use Drupal\user\UserInterface;
+use Drupal\Core\Config\InstallStorage;
+use Drupal\Core\Config\FileStorage;
 
 /**
  * Implements hook_install().
@@ -45,4 +47,24 @@ function bioleft_portal_install() {
   \Drupal::configFactory()->getEditable('locale.settings')
     ->set('translation.path', 'translations')
     ->save(TRUE);
+}
+
+/**
+ * Add configs for profile system.
+ */
+function bioleft_update_8001() {
+  // Gets the config/install directory.
+  $config_path = drupal_get_path('profile', 'bioleft') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+  $source = new FileStorage($config_path);
+  $config_storage = \Drupal::service('config.storage');
+
+  $configs = [
+    'semilla.settings',
+  ];
+
+  // Writes the configs into the database.
+  foreach ($configs as $config_name) {
+    $config_storage->write($config_name, $source->read($config_name));
+  }
+
 }
