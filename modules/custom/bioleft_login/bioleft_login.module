@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * @file
+ * Allows users to login exclusively with their email address in the input box.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bioleft_login_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
+  $form['name']['#title'] = t('Email address');
+  $form['name']['#description'] = t('Enter your email address.');
+  $form['name']['#element_validate'][] = 'bioleft_login_user_login_validate';
+}
+
+/**
+ * Form element validation handler for the user login form.
+ *
+ * Allows users to authenticate by email.
+ */
+function bioleft_login_user_login_validate($form, FormStateInterface $form_state) {
+  $name_input = $form_state->getValue('name');
+
+  // Try loading by email.
+  if ($user = user_load_by_mail($name_input)) {
+    // Set the username for further validation.
+    $form_state->setValue('name', $user->getAccountName());
+    return TRUE;
+  }
+
+  // Block loading by username.
+  if ($user = user_load_by_name($name_input)) {
+    $form_state->setErrorByName(
+      'name', t('Please use only your registered email address when signing up.',
+          [
+            ':password' => URL::fromRoute('user.pass', [], ['query' => ['name' => $name_input]])->toString(),
+          ]
+        )
+      );
+    $form_state->setRebuild();
+    return FALSE;
+  }
+  return FALSE;
+}
+
+/**
+ * {@inheritdoc}
+ */
+function bioleft_login_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.bioleft_login':
+      $text = file_get_contents(__DIR__ . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . $text . '</pre>';
+      }
+      else {
+        // Use the Markdown filter to render the README.
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        return $filter->process($text, 'en');
+      }
+  }
+  return NULL;
+}
