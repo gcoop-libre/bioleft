@@ -9,7 +9,7 @@ id: cuaderno_de_campo.cuaderno_de_campo.field_superficie_ha
 field_name: field_superficie_ha
 entity_type: cuaderno_de_campo
 bundle: cuaderno_de_campo
-label: 'Superficie HA'
+label: Superficie
 description: ''
 required: true
 translatable: false
@@ -19,5 +19,5 @@ settings:
   min: 0
   max: null
   prefix: ''
-  suffix: ''
+  suffix: hectáreas
 field_type: integer
