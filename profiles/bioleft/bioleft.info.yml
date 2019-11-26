@@ -7,9 +7,11 @@ description: 'Sitio para bioleft.'
 dependencies:
   - admin_toolbar:admin_toolbar
   - bioleft_ayuda:bioleft_ayuda
+  - bioleft_core:bioleft_core
   - bioleft_cuaderno_de_campo:bioleft_cuaderno_de_campo
   - bioleft_labor:bioleft_labor
   - bioleft_licencia:bioleft_licencia
+  - bioleft_login:bioleft_login
   - bioleft_menu_agrupador:bioleft_menu_agrupador
   - bioleft_mis_cultivos:bioleft_mis_cultivos
   - bioleft_pagina:bioleft_pagina
