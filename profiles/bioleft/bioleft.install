@@ -68,3 +68,15 @@ function bioleft_update_8001() {
   }
 
 }
+
+/**
+ * Enables bioleft_login module.
+ */
+function bioleft_update_8002() {
+  $modules = [
+    'bioleft_login',
+  ];
+  \Drupal::service('module_installer')->install($modules);
+
+  return t('bioleft_login has been enabled.');
+}
