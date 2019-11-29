@@ -3024,7 +3024,9 @@
                     "replace": false,
                     "merge-extra": false
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "2174633: View output is not used for entityreference options": "https://www.drupal.org/files/issues/2019-10-14/2174633-351.patch"
+                }
             },
             "autoload": {
                 "psr-4": {
