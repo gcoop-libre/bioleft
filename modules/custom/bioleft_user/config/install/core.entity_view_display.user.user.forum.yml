@@ -9,6 +9,7 @@ dependencies:
     - field.field.user.user.field_mapa_usuario
     - field.field.user.user.field_nombre
     - field.field.user.user.field_ocupacion
+    - field.field.user.user.field_telefono
     - field.field.user.user.field_trabajo
     - field.field.user.user.field_ubicacion
     - image.style.thumbnail
@@ -45,6 +46,7 @@ hidden:
   field_ocupacion: true
   field_suelo: true
   field_superficie_ha: true
+  field_telefono: true
   field_trabajo: true
   field_ubicacion: true
   langcode: true
