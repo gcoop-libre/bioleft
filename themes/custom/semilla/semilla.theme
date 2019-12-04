@@ -24,3 +24,12 @@ function semilla_preprocess_swiftmailer(&$variables) {
   $variables['logo_mail'] = $base_url . $base_path . drupal_get_path('theme','semilla') . '/logo_mail.png';
   $variables['footer_mail'] = $base_url . $base_path . drupal_get_path('theme','semilla') . '/footer_mail.jpg';
 }
+
+function semilla_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (\Drupal::state()->get('system.maintenance_mode')) {
+    $message = \Drupal::config('system.maintenance')->get('message');
+    $site_name = \Drupal::config('system.site')->get('name');
+    $message = str_replace('@site', $site_name, $message);
+    drupal_set_message($message, 'warning');
+  }
+}
