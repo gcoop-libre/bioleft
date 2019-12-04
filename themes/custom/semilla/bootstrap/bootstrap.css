@@ -6032,7 +6032,7 @@ table .checkbox.form-no-label, table .radio.form-no-label {
       color: #8a6d3b; }
 
 .form-required:after {
-  background-image: url(../images/required.svg);
+  background-image: url(../css/images/required.svg);
   background-size: 10px 7px;
   content: "";
   display: inline-block;
