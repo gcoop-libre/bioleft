@@ -81,12 +81,13 @@
 // @see https://www.drupal.org/node/2274631
 .form-required:after {
   background-image: url(../css/images/required.svg);
-  background-size: 10px 7px;
+  background-size: 7px 8px;
   content:"";
   display: inline-block;
   line-height:1;
-  height: 7px;
-  width: 10px;
+  height: 8px;
+  width: 7px;
+  margin-bottom: 6px;
 }
 
 // Form action buttons.
