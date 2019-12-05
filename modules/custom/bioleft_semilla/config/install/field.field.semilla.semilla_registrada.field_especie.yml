@@ -11,7 +11,7 @@ entity_type: semilla
 bundle: semilla_registrada
 label: Especie
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
