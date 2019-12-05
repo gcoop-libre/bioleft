@@ -78,6 +78,7 @@ dependencies:
   - geofield:geofield
   - geolocation:geolocation
   - inline_entity_form:inline_entity_form
+  - js_confirm_pop_up:js_confirm_pop_up
   - leaflet:leaflet
   - leaflet:leaflet_views
   - libraries:libraries
