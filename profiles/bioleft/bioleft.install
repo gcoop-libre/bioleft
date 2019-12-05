@@ -60,6 +60,7 @@ function bioleft_update_8001() {
 
   $configs = [
     'semilla.settings',
+    'js_confirm_pop_up.settings',
   ];
 
   // Writes the configs into the database.
@@ -75,8 +76,9 @@ function bioleft_update_8001() {
 function bioleft_update_8002() {
   $modules = [
     'bioleft_login',
+    'js_confirm_pop_up',
   ];
   \Drupal::service('module_installer')->install($modules);
 
-  return t('bioleft_login has been enabled.');
+  return t('bioleft_login and js_confirm_pop_up has been enabled.');
 }
