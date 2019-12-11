@@ -5,11 +5,11 @@ dependencies:
     - bioleft_semilla.semilla_type.mis_semillas
     - field.storage.semilla.field_cantidad
     - field.storage.semilla.field_cultivar
-    - field.storage.semilla.field_especie
     - field.storage.semilla.field_licencia
     - field.storage.semilla.field_nro_registro
   module:
     - bioleft_semilla
+    - taxonomy
     - user
     - views_bootstrap
     - views_conditional
@@ -204,11 +204,11 @@ display:
           entity_type: semilla
           entity_field: id
           plugin_id: field
-        field_especie_1:
-          id: field_especie_1
-          table: semilla__field_especie
-          field: field_especie
-          relationship: field_form_semilla
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_especie
           group_type: group
           admin_label: ''
           label: Especie
@@ -244,70 +244,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_cultivar:
-          id: field_cultivar
-          table: semilla__field_cultivar
-          field: field_cultivar
-          relationship: field_semilla
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -329,7 +266,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+          convert_spaces: false
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
         field_cultivar_1:
           id: field_cultivar_1
           table: semilla__field_cultivar
@@ -991,15 +931,6 @@ display:
       footer: {  }
       empty: {  }
       relationships:
-        field_semilla:
-          id: field_semilla
-          table: semilla__field_semilla
-          field: field_semilla
-          relationship: field_form_semilla
-          group_type: group
-          admin_label: 'field_semilla: Semilla'
-          required: false
-          plugin_id: standard
         field_form_semilla:
           id: field_form_semilla
           table: semilla__field_form_semilla
@@ -1027,6 +958,15 @@ display:
           relationship: field_form_semilla
           group_type: group
           admin_label: 'field_semilla_registrada: Semilla'
+          required: false
+          plugin_id: standard
+        field_especie:
+          id: field_especie
+          table: semilla__field_especie
+          field: field_especie
+          relationship: field_form_semilla
+          group_type: group
+          admin_label: 'field_especie: Término de taxonomía'
           required: false
           plugin_id: standard
       arguments:
@@ -1083,7 +1023,6 @@ display:
       tags:
         - 'config:field.storage.semilla.field_cantidad'
         - 'config:field.storage.semilla.field_cultivar'
-        - 'config:field.storage.semilla.field_especie'
         - 'config:field.storage.semilla.field_licencia'
         - 'config:field.storage.semilla.field_nro_registro'
   page_catalogo:
@@ -1239,10 +1178,11 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              administrator: '0'
               editor: '0'
               biolefter: '0'
               admin: '0'
-            placeholder: 'Inserte un número de registro o cultivar'
+            placeholder: 'Busque por número de registro, especie o cultivar'
           is_grouped: false
           group_info:
             label: 'Combinar los campos de filtro'
@@ -1259,6 +1199,7 @@ display:
               2: {  }
               3: {  }
           fields:
+            name: name
             field_cultivar_1: field_cultivar_1
             field_nro_registro_1: field_nro_registro_1
             field_nro_registro: field_nro_registro
@@ -1298,6 +1239,5 @@ display:
       tags:
         - 'config:field.storage.semilla.field_cantidad'
         - 'config:field.storage.semilla.field_cultivar'
-        - 'config:field.storage.semilla.field_especie'
         - 'config:field.storage.semilla.field_licencia'
         - 'config:field.storage.semilla.field_nro_registro'
