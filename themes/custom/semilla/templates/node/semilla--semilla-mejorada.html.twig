@@ -1,0 +1,56 @@
+{#
+/**
+ * @file semilla.html.twig
+ * Default theme implementation to present Semilla data.
+ *
+ * This template is used when viewing Semilla pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_semilla()
+ *
+ * @ingroup themeable
+ */
+#}
+{# <h4>Semilla mejorada</h4> #}
+<div{{ attributes.addClass('semilla-mejorada') }}>
+  {% if content %}
+  <div>
+    {# Formulario Semilla mejorada #}
+    {% if content.field_adn %}
+      {{ content.field_adn }}
+    {% endif %}
+
+    {% if content.field_aspectos %}
+      {{ content.field_aspectos }}
+    {% endif %}
+
+    {% if content.field_cultivar %}
+      {{ content.field_cultivar }}
+    {% endif %}
+
+    {% if content.field_descripcion_adn %}
+      {{ content.field_descripcion_adn }}
+    {% endif %}
+
+    {% if content.field_especie %}
+      {{ content.field_especie }}
+    {% endif %}
+
+    {% if content.field_fundamento %}
+      {{ content.field_fundamento }}
+    {% endif %}
+
+    {% if content.field_poder_germinativo %}
+      {{ content.field_poder_germinativo }}
+    {% endif %}
+
+    {% if content.field_semilla_registrada %}
+      {{ content.field_semilla_registrada }}
+    {% endif %}
+    </div>
+  {% endif %}
+</div>

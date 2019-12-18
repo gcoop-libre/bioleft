@@ -1,0 +1,85 @@
+{#
+/**
+ * @file semilla.html.twig
+ * Default theme implementation to present Semilla data.
+ *
+ * This template is used when viewing Semilla pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_semilla()
+ *
+ * @ingroup themeable
+ */
+#}
+{# <h4>Semilla sin registrar</h4> #}
+<div{{ attributes.addClass('semilla-sin-registrar') }}>
+  {% if content %}
+  <div>
+    {# Formulario Semilla sin registrar #}
+    {% if content.field_adn %}
+        {{ content.field_adn }}
+    {% endif %}
+
+    {% if content.field_aspectos %}
+        {{ content.field_aspectos }}
+    {% endif %}
+
+    {% if content.field_cultivar %}
+        {{ content.field_cultivar }}
+    {% endif %}
+
+    {% if content.field_descripcion_adn %}
+        {{ content.field_descripcion_adn }}
+    {% endif %}
+
+    {% if content.field_enfermedades %}
+        {{ content.field_enfermedades }}
+    {% endif %}
+
+    {% if content.field_especie %}
+        {{ content.field_especie }}
+    {% endif %}
+
+    {% if content.field_fundamento %}
+        {{ content.field_fundamento }}
+    {% endif %}
+
+    {% if content.field_hongos %}
+        {{ content.field_hongos }}
+    {% endif %}
+
+    {% if content.field_imagen %}
+        {{ content.field_imagen }}
+    {% endif %}
+
+    {% if content.field_informacion_genetica %}
+        {{ content.field_informacion_genetica }}
+    {% endif %}
+
+    {% if content.field_insectos %}
+        {{ content.field_insectos }}
+    {% endif %}
+
+    {% if content.field_poder_germinativo %}
+        {{ content.field_poder_germinativo }}
+    {% endif %}
+
+    {% if content.field_rendimiento_promedio %}
+        {{ content.field_rendimiento_promedio }}
+    {% endif %}
+
+    {% if content.field_salinidad %}
+        {{ content.field_salinidad }}
+    {% endif %}
+
+    {% if content.field_sequia %}
+        {{ content.field_sequia }}
+    {% endif %}
+
+  </div>
+  {% endif %}
+</div>

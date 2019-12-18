@@ -1,0 +1,88 @@
+{#
+/**
+ * @file semilla.html.twig
+ * Default theme implementation to present Semilla data.
+ *
+ * This template is used when viewing Semilla pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_semilla()
+ *
+ * @ingroup themeable
+ */
+#}
+{# <h4>Semilla registrada</h4> #}
+<div{{ attributes.addClass('semilla-registrada') }}>
+  {% if content %}
+    <div>
+    {# Formulario Semilla registrada #}
+      {% if content.field_caracteristica %}
+        {{ content.field_caracteristica }}
+      {% endif %}
+
+      {% if content.field_condicion_genetica %}
+          {{ content.field_condicion_genetica }}
+      {% endif %}
+
+      {% if content.field_cultivar %}
+          {{ content.field_cultivar }}
+      {% endif %}
+
+      {% if content.field_especie %}
+          {{ content.field_especie }}
+      {% endif %}
+
+      {% if content.field_evento_transformacion %}
+        {{ content.field_evento_transformacion }}
+      {% endif %}
+
+      {% if content.field_grupo_especie %}
+        {{ content.field_grupo_especie }}
+      {% endif %}
+
+      {% if content.field_inscripcion_rnc %}
+        {{ content.field_inscripcion_rnc }}
+      {% endif %}
+
+      {% if content.field_inscripcion_rncp %}
+        {{ content.field_inscripcion_rncp }}
+      {% endif %}
+
+      {% if content.field_nombre_botanico %}
+        {{ content.field_nombre_botanico }}
+      {% endif %}
+
+      {% if content.field_nro_registro %}
+        {{ content.field_nro_registro }}
+      {% endif %}
+
+      {% if content.field_pais %}
+        {{ content.field_pais }}
+      {% endif %}
+
+      {% if content.field_representante %}
+        {{ content.field_representante }}
+      {% endif %}
+
+      {% if content.field_solicitante %}
+        {{ content.field_solicitante }}
+      {% endif %}
+
+      {% if content.field_tipo %}
+        {{ content.field_tipo }}
+      {% endif %}
+
+      {% if content.field_validez_rnpc %}
+        {{ content.field_validez_rnpc }}
+      {% endif %}
+
+      {% if content.field_vigencia %}
+        {{ content.field_vigencia }}
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
