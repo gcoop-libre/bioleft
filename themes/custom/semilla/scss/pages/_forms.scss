@@ -25,23 +25,7 @@ form .field--type-entity-reference {
   padding: 10px;
 }
 
-//Formulario de Semillas responsive
-@media (min-width: 1080px) {
-  .mis-semillas > .field {
-    width: inherit;
-    float: inherit;
-    position: inherit;
-  }
-  .semilla .field {
-    width: 32%;
-    margin: 0px 5px;
-    float: left;
-    position: relative;
-  }
-  .field--type-text-long {
-    width: 100% !important;
-  }
-}
+//Formulario de Semillas
 .licencia {
   .field--name-field-icono {
     width: 150px;
@@ -50,13 +34,24 @@ form .field--type-entity-reference {
 }
 .field--name-field-licencia,
 .field--name-field-cantidad {
-  /*border: 2px solid #f1f1f1;*/
   .field--name-name {
     font-size: 16px;
   }
 }
 
-//Formulario interior para semilla
+//Formulario de transaccion
+//.transaccion {
+  //.field--name-field-semilla {
+
+  //}
+//}
+
+//Formulario de semillas
+.page-header {
+  .field--name-name {
+    text-transform: lowercase;
+  }
+}
 .form-item-field-licencia {
   background-color: #f1f1f1;
   padding: 20px;
@@ -107,8 +102,7 @@ li.action-links {
         width: 100%;
     }
     .local-number{
-        box-shadow: none; 
+        box-shadow: none;
         height: inherit;
     }
-} 
-
+}
