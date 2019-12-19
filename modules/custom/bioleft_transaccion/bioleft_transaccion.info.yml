@@ -8,7 +8,6 @@ package: Bioleft
 dependencies:
   - bioleft_semilla:bioleft_semilla
   - bioleft_transaccion:bioleft_transaccion
-  - conditional_fields:conditional_fields
   - drupal:content_moderation
   - drupal:datetime
   - drupal:field
@@ -18,8 +17,8 @@ dependencies:
   - drupal:views
   - drupal:workflows
   - field_permissions:field_permissions
-  - rules:rules
   - state_machine:state_machine
   - swiftmailer:swiftmailer
   - views_bootstrap:views_bootstrap
   - views_conditional:views_conditional
+core_incompatible: false
