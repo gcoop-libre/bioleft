@@ -81,19 +81,19 @@ content:
     weight: 4
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      date_format: d-m-Y
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_custom
     region: content
   field_inscripcion_rncp:
     weight: 5
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      date_format: d-m-Y
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_custom
     region: content
   field_nombre_botanico:
     weight: 10
@@ -148,10 +148,10 @@ content:
     weight: 6
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      date_format: d-m-Y
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_custom
     region: content
   field_vigencia:
     weight: 15

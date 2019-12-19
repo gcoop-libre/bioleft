@@ -82,7 +82,7 @@ content:
     region: content
   field_fundamento:
     weight: 3
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default

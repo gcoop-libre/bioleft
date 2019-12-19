@@ -7,9 +7,12 @@ dependencies:
     - field.field.semilla.mis_semillas.field_form_semilla
     - field.field.semilla.mis_semillas.field_imagen
     - field.field.semilla.mis_semillas.field_licencia
+    - field.field.semilla.mis_semillas.field_otros_terminos
     - field.field.semilla.mis_semillas.field_semilla
+    - field.field.semilla.mis_semillas.field_terminos_opcionales
   module:
     - image
+    - options
 id: semilla.mis_semillas.default
 targetEntityType: semilla
 bundle: mis_semillas
@@ -51,6 +54,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
+  field_otros_terminos:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_semilla:
     type: entity_reference_label
     weight: 4
@@ -59,6 +70,13 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_terminos_opcionales:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   user_id:
     type: entity_reference_label
     weight: 3

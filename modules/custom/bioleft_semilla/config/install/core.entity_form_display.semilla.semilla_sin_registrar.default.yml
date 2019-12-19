@@ -21,7 +21,6 @@ dependencies:
     - image.style.thumbnail
   module:
     - chosen_field
-    - content_moderation
     - field_group
     - image
     - text

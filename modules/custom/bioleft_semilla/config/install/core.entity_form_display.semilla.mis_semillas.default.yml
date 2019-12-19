@@ -7,7 +7,9 @@ dependencies:
     - field.field.semilla.mis_semillas.field_form_semilla
     - field.field.semilla.mis_semillas.field_imagen
     - field.field.semilla.mis_semillas.field_licencia
+    - field.field.semilla.mis_semillas.field_otros_terminos
     - field.field.semilla.mis_semillas.field_semilla
+    - field.field.semilla.mis_semillas.field_terminos_opcionales
     - image.style.thumbnail
   module:
     - entity_reference_views_select
@@ -29,6 +31,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Detalles de semilla'
+      region: hidden
 id: semilla.mis_semillas.default
 targetEntityType: semilla
 bundle: mis_semillas
@@ -70,6 +73,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: erviews_options_buttons
+    region: content
+  field_otros_terminos:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_terminos_opcionales:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
 hidden:
   field_semilla: true
