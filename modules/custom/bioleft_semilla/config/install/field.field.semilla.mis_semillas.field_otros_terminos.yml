@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.mis_semillas
+    - field.storage.semilla.field_otros_terminos
+id: semilla.mis_semillas.field_otros_terminos
+field_name: field_otros_terminos
+entity_type: semilla
+bundle: mis_semillas
+label: 'Otros terminos'
+description: 'Escriba otros términos que requiera para este intercambio o transacción. Es opcional.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - bioleft_semilla.semilla_type.mis_semillas
+    - field.storage.semilla.field_terminos_opcionales
+  module:
+    - options
+id: semilla.mis_semillas.field_terminos_opcionales
+field_name: field_terminos_opcionales
+entity_type: semilla
+bundle: mis_semillas
+label: 'Terminos opcionales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
