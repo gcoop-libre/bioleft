@@ -4,6 +4,7 @@ dependencies:
   config:
     - bioleft_semilla.semilla_type.mis_semillas
     - field.field.semilla.mis_semillas.field_cantidad
+    - field.field.semilla.mis_semillas.field_detalles
     - field.field.semilla.mis_semillas.field_form_semilla
     - field.field.semilla.mis_semillas.field_imagen
     - field.field.semilla.mis_semillas.field_licencia
@@ -27,6 +28,13 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
+  field_detalles:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_form_semilla:
     weight: 0
     label: hidden
