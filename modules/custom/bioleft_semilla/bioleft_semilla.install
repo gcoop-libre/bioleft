@@ -47,7 +47,7 @@ function bioleft_semilla_update_8102() {
 }
 
 /**
- * Update view Catalogo de semillas.
+ * Actualizar display de las entidades Semilla.
  */
 function bioleft_semilla_update_8103() {
   $config_path = drupal_get_path('module', 'bioleft_semilla') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
@@ -61,6 +61,50 @@ function bioleft_semilla_update_8103() {
     'core.entity_view_display.semilla.mis_semillas.default',
     'core.entity_view_display.semilla.semilla_registrada.default',
     'core.entity_view_display.semilla.semilla_sin_registrar.default',
+  ];
+
+  // Writes the configs into the database.
+  foreach ($configs as $config_name) {
+    $config_storage->write($config_name, $source->read($config_name));
+  }
+}
+
+/**
+ * Crear campos de transacción para Mis Semillas.
+ */
+function bioleft_semilla_update_8104() {
+  $config_path = drupal_get_path('module', 'bioleft_semilla') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+  $source = new FileStorage($config_path);
+
+  $config_storage = \Drupal::service('config.storage');
+
+  $configs = [
+    'field.field.semilla.mis_semillas.field_otros_terminos',
+    'field.field.semilla.mis_semillas.field_terminos_opcionales',
+    'field.storage.semilla.field_otros_terminos',
+    'field.storage.semilla.field_terminos_opcionales',
+    'field.field.semilla.mis_semillas.field_detalles',
+    'field.storage.semilla.field_detalles',
+  ];
+
+  // Writes the configs into the database.
+  foreach ($configs as $config_name) {
+    $config_storage->write($config_name, $source->read($config_name));
+  }
+}
+
+/**
+ * Actualizar formulario de las Semillas.
+ */
+function bioleft_semilla_update_8105() {
+  $config_path = drupal_get_path('module', 'bioleft_semilla') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+  $source = new FileStorage($config_path);
+
+  $config_storage = \Drupal::service('config.storage');
+
+  $configs = [
+    'core.entity_form_display.semilla.mis_semillas.default',
+    'core.entity_view_display.semilla.mis_semillas.default',
   ];
 
   // Writes the configs into the database.
