@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the module.
+ */
+
+use Drupal\Core\Config\FileStorage;
+use Drupal\Core\Config\InstallStorage;
+
+/**
+ * Update view Catalogo de semillas.
+ */
+function bioleft_transaccion_update_8101() {
+  $config_path = drupal_get_path('module', 'bioleft_transaccion') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+  $source = new FileStorage($config_path);
+
+  $config_storage = \Drupal::service('config.storage');
+
+  $configs = [
+    'core.entity_form_display.transaccion.intercambio.default',
+    'core.entity_view_display.transaccion.intercambio.default',
+  ];
+
+  // Writes the configs into the database.
+  foreach ($configs as $config_name) {
+    $config_storage->write($config_name, $source->read($config_name));
+  }
+}
+
