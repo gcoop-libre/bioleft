@@ -272,6 +272,11 @@ form .field--type-entity-reference {
 .field--name-field-cantidad .field--name-name {
   font-size: 16px; }
 
+.transaccion .field--name-field-semilla {
+  border: 2px solid #f1f1f1; }
+  .transaccion .field--name-field-semilla .field--item .semilla .field--name-field-form-semilla {
+    border: 0px solid white; }
+
 .page-header .field--name-name {
   text-transform: lowercase; }
 

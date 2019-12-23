@@ -40,11 +40,17 @@ form .field--type-entity-reference {
 }
 
 //Formulario de transaccion
-//.transaccion {
-  //.field--name-field-semilla {
 
-  //}
-//}
+.transaccion {
+  .field--name-field-semilla {
+    border: 2px solid #f1f1f1;
+    .field--item {
+      .semilla .field--name-field-form-semilla {
+        border: 0px solid white;
+      }
+    }
+  }
+}
 
 //Formulario de semillas
 .page-header {
