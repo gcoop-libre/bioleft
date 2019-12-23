@@ -126,6 +126,19 @@ function bioleft_semilla_inline_entity_form_table_fields_alter(&$fields, $contex
 }
 
 /**
+ * Implements hook_fields_alter_edit_form().
+ */
+function bioleft_semilla_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  switch ($form_id) {
+    case 'semilla_mis_semillas_edit_form':
+      $form['field_otros_terminos']['#disabled'] = 'disabled';
+      $form['field_terminos_opcionales']['#disabled'] = 'disabled';
+      $form['field_detalles']['#disabled'] = 'disabled';
+      break;
+  }
+}
+
+/**
  * Implements hook_inline_entity_form_reference_form_alter().
  */
 function bioleft_semilla_inline_entity_form_reference_form_alter(&$reference_form, &$form_state) {
