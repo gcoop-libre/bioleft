@@ -1,9 +1,6 @@
-uuid: ab2041dc-0c75-4e50-86a5-2ce757a0ecdb
 langcode: es
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: O11nB9Assnic6AhIuaeK_CQdh_zO0udxABDnUZJupis
 formId: user_register_form
 captchaType: image_captcha/Image
 label: user_register_form
