@@ -28,3 +28,21 @@ function bioleft_transaccion_update_8101() {
   }
 }
 
+/**
+ * Update view Transaccion.
+ */
+function bioleft_transaccion_update_8102() {
+  $config_path = drupal_get_path('module', 'bioleft_transaccion') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+  $source = new FileStorage($config_path);
+
+  $config_storage = \Drupal::service('config.storage');
+
+  $configs = [
+    'views.view.mis_transacciones',
+  ];
+
+  // Writes the configs into the database.
+  foreach ($configs as $config_name) {
+    $config_storage->write($config_name, $source->read($config_name));
+  }
+}
