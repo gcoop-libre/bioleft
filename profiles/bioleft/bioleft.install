@@ -82,3 +82,26 @@ function bioleft_update_8002() {
 
   return t('bioleft_login and js_confirm_pop_up has been enabled.');
 }
+
+/**
+ * Add configs for profile system.
+ */
+function bioleft_update_8003() {
+  // Gets the config/install directory.
+  $config_path = drupal_get_path('profile', 'bioleft') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+  $source = new FileStorage($config_path);
+  $config_storage = \Drupal::service('config.storage');
+
+  $configs = [
+    'captcha.settings',
+    'captcha.captcha_point.user_login_form',
+    'captcha.captcha_point.user_pass',
+    'captcha.captcha_point.user_register_form',
+  ];
+
+  // Writes the configs into the database.
+  foreach ($configs as $config_name) {
+    $config_storage->write($config_name, $source->read($config_name));
+  }
+
+}
