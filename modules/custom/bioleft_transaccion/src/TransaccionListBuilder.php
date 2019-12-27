@@ -14,6 +14,30 @@ use Drupal\Core\Link;
 class TransaccionListBuilder extends EntityListBuilder {
 
   /**
+   * Gets this list's default operations.
+   *
+   * @param \Drupal\Core\Entity\EntityInterface $entity
+   *   The entity the operations are for.
+   *
+   * @return array
+   *   The array structure is identical to the return value of
+   *   self::getOperations().
+   */
+  protected function getDefaultOperations(EntityInterface $entity) {
+    $operations = parent::getDefaultOperations($entity);
+
+    if ($entity->access('confirm') && $entity->hasLinkTemplate('confirm-form')) {
+      $operations['confirm'] = [
+        'title' => $this->t('Confirm'),
+        'weight' => 10,
+        'url' => $this->ensureDestination($entity->toUrl('confirm-form')),
+      ];
+    }
+
+    return $operations;
+  }
+
+  /**
    * {@inheritdoc}
    */
   public function buildHeader() {

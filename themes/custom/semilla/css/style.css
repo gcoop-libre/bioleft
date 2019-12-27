@@ -128,8 +128,12 @@ body {
   border-color: #902d05; }
 
 .btn.btn-primary {
-  background-color: #009aa3;
-  border-color: #009aa3; }
+  background-color: #8dc63f;
+  border-color: #8dc63f;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
 
 a {
   color: #8dc63f;

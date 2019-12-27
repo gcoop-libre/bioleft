@@ -1,4 +1,4 @@
-entity.bioleft_transaccion.add_form:
+entity.transaccion.add_form:
   path: '/transaccion/add/{transaccion_type}'
   defaults:
     _entity_form: 'transaccion.add'
@@ -9,7 +9,7 @@ entity.bioleft_transaccion.add_form:
     parameters:
       transaccion_type:
         type: entity:transaccion_type
-entity.bioleft_transaccion.confirm_form:
+entity.transaccion.confirm_form:
   path: '/transaccion/{transaccion}/confirm'
   defaults:
     _entity_form: 'transaccion.confirm'
@@ -22,7 +22,7 @@ entity.bioleft_transaccion.confirm_form:
     parameters:
       transaccion:
         type: entity:transaccion
-entity.bioleft_transaccion.add-from-catalogo:
+entity.transaccion.add-from-catalogo:
   path: '/semillas/{semilla}/transaccion/{transaccion_type}'
   defaults:
     _entity_form: 'transaccion.add-from-catalogo'

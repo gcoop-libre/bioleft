@@ -57,6 +57,7 @@ use Drupal\user\UserInterface;
  *     "add-page" = "/admin/structure/transaccion/add",
  *     "add-form" = "/admin/structure/transaccion/add/{transaccion_type}",
  *     "edit-form" = "/admin/structure/transaccion/{transaccion}/edit",
+ *     "confirm-form" = "/admin/structure/transaccion/{transaccion}/confirm",
  *     "delete-form" = "/admin/structure/transaccion/{transaccion}/delete",
  *     "version-history" = "/admin/structure/transaccion/{transaccion}/revisions",
  *     "revision" = "/admin/structure/transaccion/{transaccion}/revisions/{transaccion_revision}/view",
