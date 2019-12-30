@@ -26,7 +26,7 @@ function template_preprocess_transaction_request_notification(array &$variables)
     $variables['receiver'] = $transaction->get('field_semilla')->entity->getOwner()->getDisplayName();
     $variables['sender'] = $transaction->getOwner()->getDisplayName();
   }
-  $variables['url'] = (new Url('entity.bioleft_transaccion.confirm_form',
+  $variables['url'] = (new Url('entity.transaccion.confirm_form',
     ['transaccion' => $transaction->id()],
     ['absolute' => TRUE, 'https' => TRUE]))->toString();
 };
