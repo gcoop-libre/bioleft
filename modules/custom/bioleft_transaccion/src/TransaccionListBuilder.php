@@ -25,15 +25,13 @@ class TransaccionListBuilder extends EntityListBuilder {
    */
   protected function getDefaultOperations(EntityInterface $entity) {
     $operations = parent::getDefaultOperations($entity);
-
-    if ($entity->access('confirm') && $entity->hasLinkTemplate('confirm-form')) {
+    if ($entity->access('confirm')) {
       $operations['confirm'] = [
         'title' => $this->t('Confirm'),
         'weight' => 10,
         'url' => $this->ensureDestination($entity->toUrl('confirm-form')),
       ];
     }
-
     return $operations;
   }
 
